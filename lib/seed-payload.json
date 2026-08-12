@@ -1,0 +1,3564 @@
+{
+  "siteSettings": {
+    "siteName": "FMS Africa",
+    "siteDescription": "Real-time fleet and asset monitoring solutions — vehicle tracking, fuel management, AI-powered video telematics and more, across five continents.",
+    "logoUrl": "/assets/FMS-Logo-Blue-1.png",
+    "headerTagline": "Real-time fleet & asset intelligence across five continents",
+    "headerPhone": "+256 772 753 829",
+    "loginLabel": "FMS IoT Login",
+    "loginUrl": "http://app.fms-ecsafrica.com/login",
+    "footerBlurb": "Our solutions provide businesses with real-time monitoring, analysis and control over their assets — enabling asset optimization, significant OPEX reductions and productivity maximization.",
+    "footerPhone": "+256 200 909 900",
+    "footerWhatsapp": "https://api.whatsapp.com/send?phone=+256772753829&text=Hello%20FMS%20Africa",
+    "contactPageUrl": "/about-us/contact-us",
+    "designCreditLabel": "Alphasoft Ltd",
+    "designCreditUrl": "https://alphasoft.ltd/",
+    "footerCopyright": "© Fleet Monitoring Systems Ltd. All rights reserved.",
+    "facebookUrl": "",
+    "twitterUrl": "",
+    "linkedinUrl": "",
+    "youtubeUrl": "",
+    "instagramUrl": "",
+    "regionalPhones": [
+      {
+        "region": "Europe",
+        "phone": "+44 745 235 3356"
+      },
+      {
+        "region": "Asia",
+        "phone": "+60 11 3772 7425"
+      },
+      {
+        "region": "N. America",
+        "phone": "+1 236 991 9802"
+      },
+      {
+        "region": "S. America",
+        "phone": "+52 614 242 5538"
+      },
+      {
+        "region": "Africa",
+        "phone": "+256 772 753 829"
+      }
+    ],
+    "aboutLinks": [
+      {
+        "label": "About Us",
+        "href": "/about-us/about-us"
+      },
+      {
+        "label": "Accreditations",
+        "href": "/about-us/acreditation"
+      },
+      {
+        "label": "CSR",
+        "href": "/about-us/csr"
+      },
+      {
+        "label": "Gallery",
+        "href": "/about-us/gallery"
+      },
+      {
+        "label": "Contact Us",
+        "href": "/about-us/contact-us"
+      }
+    ],
+    "primaryLinks": [
+      {
+        "label": "Benefits",
+        "href": "/benefits"
+      },
+      {
+        "label": "Partner",
+        "href": "/resellers"
+      },
+      {
+        "label": "Clientele",
+        "href": "/clientele"
+      },
+      {
+        "label": "Blog",
+        "href": "/blog"
+      }
+    ],
+    "footerQuickLinks": [
+      {
+        "label": "Galooli Spaces",
+        "href": "https://login.galooli.com/"
+      },
+      {
+        "label": "CRM Tool",
+        "href": "https://crm.monkeypesa.com/login?return_to=%2Fusers%2Fcurrent%2Forganizations"
+      },
+      {
+        "label": "System Integration using API",
+        "href": "https://developers.navixy.com/general/overview/"
+      },
+      {
+        "label": "ZON MAX Software Download",
+        "href": "https://zon.galooli-systems.com/"
+      },
+      {
+        "label": "Galooli Configuration Center",
+        "href": "https://tools.galooli-systems.com/ConfigurationCenter/publish.htm"
+      },
+      {
+        "label": "BCE FMSET",
+        "href": "https://xdm.xgfleet.eu/login"
+      },
+      {
+        "label": "Teltonika Configurator",
+        "href": "https://wiki.teltonika-gps.com/view/Teltonika_Configurator_versions"
+      },
+      {
+        "label": "System Development using SDK",
+        "href": "https://github.com/SquareGPS/navixy-js-sdk"
+      },
+      {
+        "label": "Galooli Ticketing System",
+        "href": "https://galooli.atlassian.net/servicedesk/customer/portal/5"
+      },
+      {
+        "label": "Xirgo Ticketing System",
+        "href": "https://sensatacloud.atlassian.net/servicedesk/customer/portal/35/user/login"
+      },
+      {
+        "label": "Teltonika Ticketing System",
+        "href": "https://viphelpdesk.teltonika.lt/en/Account/LogOn?ReturnUrl=%2f"
+      },
+      {
+        "label": "Webmail",
+        "href": "https://accounts.google.com/ServiceLogin?continue=http%3A%2F%2Fmail.google.com%2Fa%2Ffms-ecsafrica.com%2F&service=mail&sacu=1&hd=fms-ecsafrica.com#identifier"
+      },
+      {
+        "label": "Privacy Policy",
+        "href": "/privacy-policy"
+      },
+      {
+        "label": "API Reports",
+        "href": "https://fms-ecsafrica.com/reports/"
+      }
+    ],
+    "footerPortalLinks": [
+      {
+        "label": "Client Portal",
+        "href": "http://galoolitools.dnsalias.com/portal/clients/"
+      },
+      {
+        "label": "Hubspot CRM",
+        "href": "https://app.hubspot.com/login"
+      },
+      {
+        "label": "CMS Manager",
+        "href": "https://cms.fms-ecsafrica.com/"
+      },
+      {
+        "label": "Galooli Configuration Center",
+        "href": "https://zon.galooli-systems.com/zonProX/publish.htm"
+      },
+      {
+        "label": "BCE Configuration Center",
+        "href": "https://bce.fmset.eu/login"
+      }
+    ],
+    "footerFeaturedProducts": [
+      {
+        "label": "Fleet Management",
+        "href": "/services/fleet-management"
+      },
+      {
+        "label": "AI-Powered Video Telematics",
+        "href": "/services/ai-powered-video-telematics"
+      },
+      {
+        "label": "Cargo Tracking",
+        "href": "/services/cargo-tracking"
+      },
+      {
+        "label": "Cold Chain Management",
+        "href": "/services/cold-chain-management"
+      },
+      {
+        "label": "Generator Fuel Management",
+        "href": "/services/generator-fuel-management"
+      },
+      {
+        "label": "Push-To-Talk Telematics",
+        "href": "/services/push-to-talk-telematics"
+      }
+    ]
+  },
+  "heroSlides": [
+    {
+      "image": "/assets/landing/hero-fleet.jpg",
+      "alt": "Cargo truck on a highway monitored in real time",
+      "lineOne": "Embrace the data,",
+      "lineTwo": "empower your fleet.",
+      "body": "Internet of Things, Big Data and AI — customer-centric solutions tailored to your industry, so every decision is a data-driven one.",
+      "order": 0,
+      "active": true
+    },
+    {
+      "image": "/assets/landing/trucks-highway.jpg",
+      "alt": "Heavy truck managed with FMS Africa fleet management",
+      "lineOne": "Your fleet,",
+      "lineTwo": "always in sight.",
+      "body": "Real-time GPS tracking, driver identification and utilization reports that maximize the productivity of every vehicle you own.",
+      "order": 1,
+      "active": true
+    },
+    {
+      "image": "/assets/landing/control-room.jpg",
+      "alt": "AI-powered video telematics analytics dashboard",
+      "lineOne": "See risk coming,",
+      "lineTwo": "before it costs you.",
+      "body": "AI-powered video telematics detects risky driving as it happens — protecting your drivers, your cargo and your bottom line.",
+      "order": 2,
+      "active": true
+    },
+    {
+      "image": "/assets/landing/logistics-port.jpg",
+      "alt": "Container port with cargo tracked end to end",
+      "lineOne": "Every shipment,",
+      "lineTwo": "delivered intact.",
+      "body": "Cargo tracking and cold chain monitoring with GPS and temperature sensors safeguard product integrity at every stage.",
+      "order": 3,
+      "active": true
+    }
+  ],
+  "homepage": {
+    "stats": [
+      {
+        "value": "100%",
+        "label": "Customer satisfaction with our work"
+      },
+      {
+        "value": "24/7",
+        "label": "Prompt reaction to your service needs"
+      },
+      {
+        "value": "3+",
+        "label": "Countries — Uganda, Kenya, Tanzania & more"
+      },
+      {
+        "value": "5",
+        "label": "Continents with dedicated support lines"
+      }
+    ],
+    "missionEyebrow": "Who we are",
+    "missionHeadline": "We are dedicated to giving businesses real-time monitoring, analysis and control over their assets.",
+    "missionBody": "Our solutions enable asset optimization, significant OPEX reductions and productivity maximization — for fleets, generators, cargo and cold chains across Africa and beyond.",
+    "missionImage": "/assets/landing/control-room.jpg",
+    "missionCalloutText": "GPS trackers with temperature sensors protect the integrity of your products at every stage of the cold chain.",
+    "missionCalloutHref": "/services/cold-chain-management",
+    "solutions": [
+      {
+        "title": "Vehicle Tracking",
+        "href": "/services/vehicle-tracking",
+        "description": "Real-time GPS visibility of every vehicle in your fleet, wherever the road leads.",
+        "theme": "bg-navy-800 text-white",
+        "iconPath": "M3 13l1.5-4.5A2 2 0 016.4 7h11.2a2 2 0 011.9 1.5L21 13v5a1 1 0 01-1 1h-1a2 2 0 11-4 0H9a2 2 0 11-4 0H4a1 1 0 01-1-1v-5zm3.5-4L5.6 12h12.8l-.9-3H6.5z"
+      },
+      {
+        "title": "AI-Powered Video Telematics",
+        "href": "/services/ai-powered-video-telematics",
+        "description": "Smart cameras that detect risk, coach drivers and protect you against false claims.",
+        "theme": "bg-brand-500 text-navy-900",
+        "iconPath": "M4 6a2 2 0 012-2h8a2 2 0 012 2v3.5l4-2.5v10l-4-2.5V18a2 2 0 01-2 2H6a2 2 0 01-2-2V6z"
+      },
+      {
+        "title": "Vehicle Fuel Management",
+        "href": "/services/vehicle-fuel-management",
+        "description": "Monitor consumption, catch theft and cut fuel costs with precise tank-level data.",
+        "theme": "bg-navy-700 text-white",
+        "iconPath": "M6 3h7a2 2 0 012 2v14h1a1 1 0 001-1v-6.5l-2-1V8l3.5 1.8c.3.2.5.5.5.9V18a3 3 0 01-3 3H6a2 2 0 01-2-2V5a2 2 0 012-2zm1 3v4h5V6H7z"
+      }
+    ],
+    "solutionsPhotoHref": "/services/fleet-management",
+    "solutionsPhotoImage": "/assets/landing/trucks-highway.jpg",
+    "solutionsPhotoTitle": "Fleet Management",
+    "benefits": [
+      {
+        "title": "Risk Mitigation",
+        "body": "Each stage of the cold chain provides an opportunity for risk that can be avoided and managed with GPS trackers and temperature sensors, ensuring the integrity of your products and assets end to end."
+      },
+      {
+        "title": "OPEX Reduction",
+        "body": "Fuel utilization, maintenance-due alerts and cost-per-kilometre reporting give management the data to significantly reduce fleet operating and maintenance costs."
+      },
+      {
+        "title": "Productivity Maximization",
+        "body": "Driver identification, performance reports and utilization analytics help you get more out of every vehicle, operator and piece of heavy equipment you own."
+      },
+      {
+        "title": "Real-Time Visibility",
+        "body": "Clear, live visibility of your transporter fleet dramatically improves turnaround times, delivery reliability and customer satisfaction across your supply chain."
+      }
+    ],
+    "pillars": [
+      {
+        "title": "Internet of Things",
+        "body": "Sensors and trackers that connect your vehicles, generators, cargo and cold rooms to one platform."
+      },
+      {
+        "title": "Big Data",
+        "body": "Every trip, litre and degree captured and turned into reports management can act on."
+      },
+      {
+        "title": "Artificial Intelligence",
+        "body": "AI video telematics and analytics that detect risk before it becomes a loss."
+      },
+      {
+        "title": "24/7 Support",
+        "body": "We are on around the clock to react promptly to your service needs, wherever you operate."
+      }
+    ],
+    "stories": [
+      {
+        "company": "MTN Zambia",
+        "quote": "Identification of fleet drivers for departments with pool vehicles was achieved through the use of RFID driver tags."
+      },
+      {
+        "company": "African Queen",
+        "quote": "Fuel utilization and driver performance reports from the system have been used to improve fleet utilization and driver productivity."
+      },
+      {
+        "company": "Equity Bank",
+        "quote": "Reports on generator working hours and maintenance-due alerts to management were activated."
+      },
+      {
+        "company": "UMEME Limited",
+        "quote": "Reduction in fleet maintenance costs thanks to system reporting on maintenance costs per kilometre covered."
+      },
+      {
+        "company": "Nile Breweries Ltd",
+        "quote": "Turnaround time for delivery of beer supplies to the market drastically improved due to clear visibility of the transporter fleet's location."
+      },
+      {
+        "company": "Ministry of Water & Environment",
+        "quote": "Heavy equipment utilization and operator performance reports have been used to improve equipment utilization and operator productivity."
+      },
+      {
+        "company": "International School of Uganda",
+        "quote": "Reports of fleet fuel utilization and maintenance from the system are used by management to reduce operational costs."
+      }
+    ],
+    "ctaImage": "/assets/landing/hero-fleet.jpg",
+    "ctaHeadline": "Get started with a free consultation",
+    "ctaPrimaryLabel": "Request a Free Quote",
+    "ctaPrimaryHref": "/about-us/contact-us",
+    "ctaSecondaryLabel": "Contact Us",
+    "ctaSecondaryHref": "/about-us/contact-us"
+  },
+  "aboutPage": {
+    "heroHeadline": "Driven by innovation,\npowered by data.",
+    "intro": "Fleet Monitoring Systems Ltd (FMS Africa) is the leading Internet of Things technology company of choice globally. Our solutions provide businesses with real-time monitoring, analysis and control over their assets — enabling asset optimization, significant OPEX reductions and productivity maximization.",
+    "heroImage": "/assets/landing/trucks-highway.jpg",
+    "stats": [
+      {
+        "value": "100+",
+        "label": "Enterprise clients served globally"
+      },
+      {
+        "value": "24/7",
+        "label": "Support across all time zones"
+      },
+      {
+        "value": "5",
+        "label": "Continents with dedicated phone lines"
+      },
+      {
+        "value": "3+",
+        "label": "Countries — Uganda, Kenya, Tanzania & more"
+      }
+    ],
+    "vision": "To become the world's trusted provider of innovative telematics solutions through innovation, efficiency, and sustainability.",
+    "mission": "Our mission is to deliver innovative, reliable and scalable telematics solutions that enable businesses to optimize their operations through real-time monitoring, advanced analytics and proactive support. We strive to enhance productivity, reduce environmental degradation and ensure the safety and satisfaction of our clients.",
+    "purpose": "We empower businesses with real-time operational data, enabling smarter decision making that drives productivity, cost savings and operational excellence.",
+    "coreValues": [
+      {
+        "title": "Integrity",
+        "body": "Acting with honesty, transparency and ethical principles in all situations and at all times."
+      },
+      {
+        "title": "Commitment",
+        "body": "Dedication to achieving goals, persevering through challenges and staying focused on results."
+      },
+      {
+        "title": "Reliability",
+        "body": "Dependability in delivering consistent, high-quality results and fulfilling promises."
+      },
+      {
+        "title": "Teamwork",
+        "body": "Collaborative efforts, valuing diverse perspectives and working together to achieve shared goals."
+      },
+      {
+        "title": "Innovation",
+        "body": "Embracing new ideas, creative problem-solving and driving progress through change."
+      },
+      {
+        "title": "Passion",
+        "body": "Enthusiasm and strong emotional drive for the work, the people, the purpose and the mission."
+      }
+    ],
+    "trustedBy": [
+      "MTN Zambia",
+      "African Queen",
+      "Equity Bank",
+      "UMEME Limited",
+      "Nile Breweries Ltd",
+      "Ministry of Water & Environment",
+      "International School of Uganda"
+    ],
+    "faqs": [
+      {
+        "question": "What does FMS Africa do?",
+        "answer": "Fleet Monitoring Systems Ltd (FMS Africa) is a leading Internet of Things technology company. We provide businesses with real-time monitoring, analysis and control over their assets — enabling optimization, OPEX reduction and productivity maximization."
+      },
+      {
+        "question": "Which industries do you serve?",
+        "answer": "We serve logistics, banking, telecommunications, brewing, utilities, government, education and any organisation that relies on fleets, generators, cargo, cold chains or mobile assets."
+      },
+      {
+        "question": "Where do you operate?",
+        "answer": "We operate across Uganda, Kenya, Tanzania and more, with dedicated support lines covering Europe, Asia, North America, South America and Africa."
+      },
+      {
+        "question": "How can I partner with FMS Africa?",
+        "answer": "We are on 24/7 to react promptly to your service needs. If you are interested in partnering with us, leave a message through our partner page and we will reply as soon as we can."
+      }
+    ],
+    "featuredQuote": "We empower businesses with real-time operational data, enabling smarter decision making that drives productivity, cost savings and operational excellence.",
+    "featuredQuoteAuthor": "FMS Africa Purpose Statement",
+    "ctaHeadline": "Join the connected fleet movement with FMS Africa",
+    "ctaBody": "We're on 24/7 to react promptly to your service needs. If you are interested in partnering with us, leave a message and we will reply as soon as we can."
+  },
+  "accreditationPage": {
+    "heroHeadline": "Certified compliance,\nproven quality.",
+    "intro": "Fleet Monitoring Systems Ltd is now ISO 45001:2018 Certified — the internationally recognised standard for occupational health and safety management systems.",
+    "certificateImage": "",
+    "certificateTitle": "ISO 45001:2018 Certified",
+    "highlights": [
+      "Occupational Health & Safety: ISO 45001:2018 is the international standard for occupational health and safety management systems, helping organisations reduce workplace risks and create safer working conditions.",
+      "Risk-Based Approach: The certification requires systematic identification of hazards, assessment of risks and implementation of controls — aligned with how we deploy telematics to mitigate fleet and field operation risks.",
+      "Continuous Improvement: Certified organisations must demonstrate ongoing review and improvement of their health and safety performance — a principle that runs through our products, services and support.",
+      "Global Recognition: ISO 45001 is recognised worldwide, giving our clients confidence that FMS Africa operates to internationally accepted standards of compliance and quality."
+    ],
+    "commitments": [
+      {
+        "title": "Worker Safety",
+        "body": "Protecting the health and safety of our engineers, installers and field teams across every deployment."
+      },
+      {
+        "title": "Client Assurance",
+        "body": "Giving enterprise clients documented proof that their telematics partner meets rigorous international standards."
+      },
+      {
+        "title": "Regulatory Alignment",
+        "body": "Maintaining processes that align with occupational health and safety regulations across the markets we serve."
+      },
+      {
+        "title": "Operational Excellence",
+        "body": "Embedding safety management into how we design, install and support every IoT and fleet monitoring solution."
+      }
+    ],
+    "stats": [
+      {
+        "value": "ISO",
+        "label": "45001:2018 certified"
+      },
+      {
+        "value": "24/7",
+        "label": "Safety-first operations"
+      },
+      {
+        "value": "5",
+        "label": "Continents served"
+      },
+      {
+        "value": "100+",
+        "label": "Enterprise clients worldwide"
+      }
+    ],
+    "ctaHeadline": "Need to verify our accreditation?",
+    "ctaBody": "Contact our team for certificate verification or to learn how our ISO 45001:2018 certification supports your compliance requirements."
+  },
+  "csrPage": {
+    "heroHeadline": "Giving back,\nmoving forward.",
+    "intro": "Corporate Social Responsibility at FMS Africa — investing in community health, road safety and lasting partnerships that make a difference beyond the fleet.",
+    "heroImage": "/assets/csr/medical-clinic-nyakinengo.jpg",
+    "pillars": [
+      {
+        "label": "01",
+        "title": "Community Health",
+        "body": "Investing in healthcare infrastructure that gives underserved communities access to medical services they would otherwise go without."
+      },
+      {
+        "label": "02",
+        "title": "Road Safety",
+        "body": "Promoting safer driving through training and recognition programmes — because our mission to monitor fleets extends to protecting lives on the road."
+      },
+      {
+        "label": "03",
+        "title": "Local Partnerships",
+        "body": "Working with established organisations like Rotary Club Kiwatule, Achelis Uganda and Care International to maximise impact on the ground."
+      },
+      {
+        "label": "04",
+        "title": "Sustainable Impact",
+        "body": "Building programmes that create lasting change in the communities where we operate across Uganda and the wider region."
+      }
+    ]
+  },
+  "csrInitiatives": [
+    {
+      "title": "FMS-Funded Medical Clinic in Nyakinengo Village",
+      "partner": "Rotary Club Kiwatule",
+      "description": "Medical clinic funded by FMS in Nyakinengo Village, Rukungiri District, Uganda — in partnership with Rotary Club Kiwatule, bringing essential healthcare access to the local community.",
+      "image": "/assets/csr/medical-clinic-nyakinengo.jpg",
+      "category": "healthcare",
+      "featured": true,
+      "order": 0,
+      "active": true
+    },
+    {
+      "title": "Road Safety Training Recognition",
+      "partner": "Achelis Uganda Ltd",
+      "description": "Road safety training recognition programme delivered in partnership with Achelis Uganda Ltd — promoting safer roads and responsible driving across fleet operations.",
+      "image": "/assets/csr/road-safety-achelis.jpg",
+      "category": "road-safety",
+      "featured": false,
+      "order": 1,
+      "active": true
+    },
+    {
+      "title": "Road Safety Training Recognition",
+      "partner": "Care International Uganda",
+      "description": "Road safety training recognition in collaboration with Care International Uganda — extending our commitment to community safety and responsible transport beyond commercial fleets.",
+      "image": "/assets/csr/road-safety-care-international.jpg",
+      "category": "road-safety",
+      "featured": false,
+      "order": 2,
+      "active": true
+    }
+  ],
+  "benefitsPage": {
+    "heroHeadline": "Effortless steps to fleet intelligence.",
+    "intro": "We provide customer-centric solutions tailored to the specific needs of each industry — empowering data-driven decisions that increase productivity and efficiency.",
+    "heroImage": "/assets/landing/trucks-highway.jpg",
+    "steps": [
+      {
+        "number": "01",
+        "title": "GPS Tracking Software",
+        "summary": "Real-time tracking, customizable alerts and seamless integration for fleets of any size.",
+        "details": "Unlock the power of precision with advanced GPS tracking. Stay connected to your assets 24/7 with live location updates, geofencing, speed violation alerts and a user-friendly interface designed for both beginners and experts."
+      },
+      {
+        "number": "02",
+        "title": "AI Video Telematics",
+        "summary": "AI-powered analytics, live video streaming and proactive safety for every vehicle.",
+        "details": "Harness artificial intelligence to transform fleet operations. Extract actionable insights from video footage — driver behaviour analysis, collision detection, distracted driving alerts and simplified regulatory compliance reporting."
+      },
+      {
+        "number": "03",
+        "title": "Fuel Management",
+        "summary": "Monitor generators and vehicles in real time to cut fuel waste and prevent theft.",
+        "details": "Track fuel levels and generator usage remotely around the clock. Receive alerts for low fuel, irregular usage and potential issues. Geofencing prevents unauthorized use while detailed reports help you optimize consumption."
+      },
+      {
+        "number": "04",
+        "title": "Speed Limiter Solutions",
+        "summary": "Customizable speed limits, real-time monitoring and regulatory compliance on the road.",
+        "details": "Set maximum speeds tailored to your regulations and company policies. Monitor speeds remotely with live alerts for violations, reduce accident risk, optimize fuel consumption and extend vehicle lifespan."
+      },
+      {
+        "number": "05",
+        "title": "Field Staff Tracking",
+        "summary": "Keep mobile teams safe, accountable and efficient with live GPS personnel monitoring.",
+        "details": "Real-time location updates, geofencing for work zones, instant messaging and detailed reports on employee movements and productivity — with robust encryption and user permissions built in."
+      },
+      {
+        "number": "06",
+        "title": "Industry-Specific Solutions",
+        "summary": "Tailored telematics for construction, cargo, oil & gas, mining, banking and NGOs.",
+        "details": "Customer-centric solutions designed for the specific needs of each industry — from cold chain compliance and cargo security to asset protection for financial institutions and humanitarian logistics."
+      }
+    ],
+    "industries": [
+      {
+        "title": "Construction",
+        "body": "Track heavy machinery, prevent theft and optimize resource allocation across every project site."
+      },
+      {
+        "title": "Cargo & Logistics",
+        "body": "End-to-end shipment visibility with geofencing, temperature monitoring and route optimization."
+      },
+      {
+        "title": "Oil & Gas",
+        "body": "Monitor remote assets, enforce safety zones and implement rapid emergency response protocols."
+      },
+      {
+        "title": "Banking & Finance",
+        "body": "Protect cash-in-transit vehicles, ATMs and staff with real-time tracking and panic alerts."
+      }
+    ],
+    "pillars": [
+      {
+        "title": "Bluetooth Low Energy",
+        "body": "Combine GNSS and BLE to track location and report on nearby tags and sensors — temperature, humidity and onboard asset data."
+      },
+      {
+        "title": "Safety & Compliance",
+        "body": "Complete cold chain tracking with real-time refrigerated trailer monitoring to meet safety and regulatory requirements."
+      },
+      {
+        "title": "Risk Mitigation",
+        "body": "GPS trackers with temperature sensors protect product integrity at every stage of the cold chain."
+      },
+      {
+        "title": "Reduce Paperwork",
+        "body": "Digital sensor reporting sent directly to your platform — cutting record-keeping errors and compliance complications."
+      }
+    ],
+    "stats": [
+      {
+        "value": "6",
+        "label": "Core solution areas"
+      },
+      {
+        "value": "24/7",
+        "label": "Real-time monitoring"
+      },
+      {
+        "value": "15+",
+        "label": "Industry verticals served"
+      },
+      {
+        "value": "100%",
+        "label": "Customer-centric approach"
+      }
+    ],
+    "ctaHeadline": "Join the connected fleet movement with FMS Africa",
+    "ctaBody": "Don't leave success up to chance. Partner with us and chart your course to efficiency, security and peace of mind."
+  },
+  "resellersPage": {
+    "badge": "Reseller partners required",
+    "heroHeadline": "Expand your business horizons: become a GPS tracking reseller",
+    "heroBody": "Join forces with us to tap into the booming market of GPS tracking solutions. Unlock lucrative opportunities while enjoying the support of a trusted industry leader.",
+    "heroCtaLabel": "Apply now",
+    "benefits": [
+      {
+        "id": "demand",
+        "title": "High-demand products",
+        "summary": "GPS tracking is in demand across logistics, security and fleet management.",
+        "detail": "GPS tracking solutions are in high demand across various industries — from logistics and transportation to security and fleet management. Position yourself in a market that continues to grow year on year."
+      },
+      {
+        "id": "advantage",
+        "title": "Competitive advantage",
+        "summary": "Offer state-of-the-art solutions known for reliability and accuracy.",
+        "detail": "Differentiate yourself in the market by offering our state-of-the-art GPS tracking solutions, known for their reliability, accuracy and advanced features including AI video telematics and fuel management."
+      },
+      {
+        "id": "margins",
+        "title": "Lucrative margins",
+        "summary": "Attractive margins and incentives as you scale your reseller business.",
+        "detail": "Enjoy attractive margins and incentives as you grow your business with our scalable reseller program — designed to reward partners who invest in building the FMS Africa brand in their territory."
+      },
+      {
+        "id": "support",
+        "title": "Extensive support",
+        "summary": "Training, marketing materials and ongoing technical backing.",
+        "detail": "Benefit from comprehensive training, marketing materials and ongoing support to help you succeed in selling and servicing our products — we are on 24/7 to react promptly to your service needs."
+      },
+      {
+        "id": "growth",
+        "title": "Growth opportunities",
+        "summary": "Limitless expansion as GPS adoption accelerates globally.",
+        "detail": "With the rising adoption of GPS tracking technology, the potential for expansion and profitability is limitless. Join forces with a trusted industry leader and tap into the booming telematics market."
+      }
+    ],
+    "steps": [
+      {
+        "step": "01",
+        "title": "Apply",
+        "body": "Submit your application with details about your market, experience and business goals."
+      },
+      {
+        "step": "02",
+        "title": "Onboard",
+        "body": "Complete product training and receive marketing materials tailored to your region."
+      },
+      {
+        "step": "03",
+        "title": "Launch",
+        "body": "Start selling FMS Africa solutions with full technical and sales support behind you."
+      },
+      {
+        "step": "04",
+        "title": "Grow",
+        "body": "Scale your territory with ongoing incentives, new product releases and 24/7 backing."
+      }
+    ],
+    "regions": [
+      "Uganda",
+      "Kenya",
+      "Tanzania",
+      "Zambia",
+      "Nigeria",
+      "Rwanda",
+      "DR Congo",
+      "Mozambique",
+      "Zimbabwe",
+      "Angola",
+      "Malawi",
+      "Ethiopia",
+      "South Africa",
+      "United Kingdom",
+      "United States"
+    ],
+    "testimonials": [
+      {
+        "quote": "The company has continued to maintain close interaction with us in a bid to receive feedback, adequately handle its obligations, quickly respond to challenges or breakdowns in case need arise, and provide preventative measures at the shortest possible time.",
+        "author": "Patrick Tani",
+        "company": "Alight Uganda"
+      },
+      {
+        "quote": "Fleet Monitoring Systems Limited has been very reliable, responsive, and have continued to provide us with quality services.",
+        "author": "Procurement Team",
+        "company": "Feed the Future (ISS Activity)"
+      },
+      {
+        "quote": "Over a period of ten years that they provided us their services, Fleet Monitoring Systems Limited has been very reliable, responsive, and have continued to provide us with quality services. We are glad to recommend them for any business.",
+        "author": "Mercy Mukalere",
+        "company": "Care International in Uganda"
+      },
+      {
+        "quote": "Their services to the bank have been satisfactory and commendable!",
+        "author": "Emily Abitegeka",
+        "company": "United Bank for Africa"
+      },
+      {
+        "quote": "They have been very reliable and have demonstrated their capability of rendering services that have met our expectations.",
+        "author": "Ann Njuguna",
+        "company": "World Vision Uganda"
+      },
+      {
+        "quote": "They have exhibited favorable business turnaround time hence there is no doubt that they will meet your expectations.",
+        "author": "Namitala Christine",
+        "company": "Equity Bank"
+      },
+      {
+        "quote": "The company has been our service provider for Vehicle Tracking and Generator Fuel Management services for all our assets for the last eight years.",
+        "author": "Vincent Ngabirano",
+        "company": "Health Partners"
+      }
+    ]
+  },
+  "contactPage": {
+    "heroHeadline": "Get in touch",
+    "intro": "We are on 24/7 to react promptly to your service needs. Reach our regional teams across Africa and beyond.",
+    "hqLocation": "Kampala, Uganda",
+    "hqPhone": "+256 200 909 900",
+    "hqEmail": "katongh@fms-ecsafrica.com",
+    "inquiryCards": [
+      {
+        "id": "general",
+        "title": "General Inquiries",
+        "description": "Questions about our products, services or how FMS Africa can support your fleet and asset monitoring needs.",
+        "email": "katongh@fms-ecsafrica.com",
+        "icon": "briefcase"
+      },
+      {
+        "id": "support",
+        "title": "Support & Maintenance",
+        "description": "24/7 technical support for existing clients — device troubleshooting, platform access and maintenance scheduling.",
+        "email": "katongh@fms-ecsafrica.com",
+        "icon": "gear"
+      },
+      {
+        "id": "partnerships",
+        "title": "Partnerships",
+        "description": "Interested in becoming a distributor, reseller or technology partner? Let's explore how we can grow together.",
+        "email": "katongh@fms-ecsafrica.com",
+        "href": "/resellers",
+        "icon": "envelope"
+      }
+    ],
+    "offices": [
+      {
+        "country": "Uganda",
+        "phone": "(+256) 200-909900 / 772-850055",
+        "email": "katongh@fms-ecsafrica.com"
+      },
+      {
+        "country": "Tanzania",
+        "phone": "(+255) 759-150088",
+        "email": "katongh@fms-ecsafrica.com"
+      },
+      {
+        "country": "United Kingdom",
+        "phone": "(+44) 745-353356",
+        "email": "katongh@fms-ecsafrica.com"
+      },
+      {
+        "country": "Zambia",
+        "phone": "(+260) 969-672222 / 967-327271",
+        "email": "katongh@fms-ecsafrica.com"
+      },
+      {
+        "country": "DR Congo",
+        "phone": "(+243) 813-771097",
+        "email": "katongh@fms-ecsafrica.com"
+      },
+      {
+        "country": "Rwanda",
+        "phone": "(+250) 787 494031",
+        "email": "katongh@fms-ecsafrica.com"
+      },
+      {
+        "country": "Nigeria",
+        "phone": "(+234) 803-2980119",
+        "email": "katongh@fms-ecsafrica.com"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What are your support hours?",
+        "answer": "FMS Africa provides 24/7 support to react promptly to your service needs. Our regional teams across Africa, Europe and beyond ensure you can reach us at any time."
+      },
+      {
+        "question": "Which countries do you operate in?",
+        "answer": "We operate across Uganda, Tanzania, Kenya, Zambia, Nigeria, Rwanda, DR Congo and more — with dedicated contact lines for Mozambique, Zimbabwe, Angola, Eswatini, Ethiopia, Malawi, South Sudan and Namibia."
+      },
+      {
+        "question": "How quickly will I receive a response?",
+        "answer": "We aim to reply to all inquiries as soon as possible. For urgent technical support, please call your regional office directly using the numbers listed on this page."
+      },
+      {
+        "question": "Can I request a product demonstration?",
+        "answer": "Yes. Leave a message through our contact form or request a free quote and our team will arrange a consultation tailored to your fleet and asset monitoring requirements."
+      }
+    ]
+  },
+  "privacyPage": {
+    "heroHeadline": "Privacy Policy",
+    "intro": "Last updated: June 2026",
+    "sections": [
+      {
+        "title": "Overview",
+        "paragraphs": [
+          "This privacy notice discloses the privacy practices for FMS Limited. This privacy notice applies solely to information collected by this website. It will notify you of the following:"
+        ],
+        "list": [
+          "What personally identifiable information is collected from you through the website, how it is used and with whom it may be shared.",
+          "What choices are available to you regarding the use of your data.",
+          "The security procedures in place to protect the misuse of your information.",
+          "How you can correct any inaccuracies in the information."
+        ]
+      },
+      {
+        "title": "Information Collection, Use, and Sharing",
+        "paragraphs": [
+          "We are the sole owners of the information collected on this site. We only have access to/collect information that you voluntarily give us via email or other direct contact from you. We will not sell or rent this information to anyone.",
+          "We will use your information to respond to you, regarding the reason you contacted us. We will not share your information with any third party outside of our organization, other than as necessary to fulfill your request, e.g. to ship an order.",
+          "Unless you ask us not to, we may contact you via email in the future to tell you about specials, new products or services, or changes to this privacy policy."
+        ]
+      },
+      {
+        "title": "Your Access to and Control Over Information",
+        "paragraphs": [
+          "You may opt out of any future contacts from us at any time. You can do the following at any time by contacting us via the email address or phone number given on our website:"
+        ],
+        "list": [
+          "See what data we have about you, if any.",
+          "Change/correct any data we have about you.",
+          "Have us delete any data we have about you.",
+          "Express any concern you have about our use of your data."
+        ]
+      },
+      {
+        "title": "Security",
+        "paragraphs": [
+          "We take precautions to protect your information. When you submit sensitive information via the website, your information is protected both online and offline.",
+          "While we use encryption to protect sensitive information transmitted online, we also protect your information offline. Only employees who need the information to perform a specific job (for example, billing or customer service) are granted access to personally identifiable information. The computers/servers in which we store personally identifiable information are kept in a secure environment.",
+          "If you feel that we are not abiding by this privacy policy, you should contact us immediately."
+        ]
+      }
+    ]
+  },
+  "services": [
+    {
+      "slug": "speed-limiter-solutions",
+      "title": "Speed Limiter Solution",
+      "tagline": "SAY NO TO Accidents And Death!",
+      "metaDescription": "Speed Limiter Solutions for Enhanced Fleet Management Safety — digital speed governors with buzzer alerts, automatic slowdown and driver record logging.",
+      "heroImage": "/assets/services/speed-limiter-solutions/overspeeding-crash.jpg",
+      "heroImageAlt": "Overspeeding crash prevention with FMS Africa speed limiter",
+      "callout": "Digital speed limiters control maximum driving speed, alert drivers and automatically slow vehicles to prevent accidents.",
+      "blocks": [
+        {
+          "type": "steps",
+          "steps": [
+            {
+              "number": 1,
+              "title": "Install Speed Limiter",
+              "description": "Digital speed limiter can control the maximum speed driving."
+            },
+            {
+              "number": 2,
+              "title": "Buzzer Alert",
+              "description": "If the vehicle speed is tending towards max set speed, internal buzzer will buzz to remind driver."
+            },
+            {
+              "number": 3,
+              "title": "Slow down automatically",
+              "description": "Even if the driver keeps accelerating, the vehicle can't exceed the pre-set max speed."
+            },
+            {
+              "number": 4,
+              "title": "Driver Record",
+              "description": "Driver speed record will be sent to the tracking software on phone or computer of vehicle owner and also saved in device. It can be accessed with a portable printer for police accident investigations."
+            }
+          ]
+        },
+        {
+          "type": "split",
+          "title": "The Digital speed limiter",
+          "paragraphs": [
+            "Due to the accidents caused by over-speeding, corporate fleet businesses and insurance companies suffer from huge losses in most of the countries globally. This can often lead to a loss in productivity, reduction in revenue, paying insurance costs (if it's the driver's fault), as well as medical and collateral damage costs. To help resolve this major concern, here at FMS Africa we have developed and manufactured a unique GPS tracker with the speed limiter feature.",
+            "Many countries of the world have regulations for speed-limiting in commercial vehicles. As of today, some of them have already made it mandatory to install speed limiters, also known as speed governors, while other countries are announcing that speed limiters will be mandatory for all commercial vehicles in upcoming years. So, the demand for this solution is indisputable and the market is growing constantly.",
+            "For the sake of example, let's say, the speed limit is set to 90 km/h. When the vehicle speed reaches 85 km/h (5% lower than the set speed limit), the driver receives a buzzer signal to alert him/her.",
+            "If the driver reaches the set speed limit of 90 km/h and continues accelerating, electrically operated relay will be switched ON automatically and will trigger one of the possible speed limiting options:"
+          ],
+          "image": "/assets/services/speed-limiter-solutions/device.png",
+          "imageAlt": "FMS Africa digital speed limiter device"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Electronic throttle controller, which controls the accelerator pedal, will temporarily deactivate the accelerator pedal. As a result, vehicle speed will gradually slow down under 90 km/h and the relay will be switched OFF.",
+            "Solenoid will be activated and reduce fuel supply to the engine until vehicle speed throttles down under 90 km/h and the relay will be switched OFF."
+          ]
+        }
+      ],
+      "navLabel": "Speed Limiter Solution",
+      "order": 0,
+      "published": true
+    },
+    {
+      "slug": "vehicle-tracking",
+      "title": "Vehicle Tracking",
+      "tagline": "",
+      "metaDescription": "Vehicle Tracking Solutions for Effective Fleet Management — real-time GPS tracking with geofencing, driver behavior monitoring and fuel theft alerts.",
+      "heroImage": "/assets/services/vehicle-tracking/gps-vehicle-tracking.jpg",
+      "heroImageAlt": "GPS vehicle tracking dashboard",
+      "callout": "A vehicle tracking system uses in-vehicle telematics paired with fleet management software to give your organization robust, actionable data about field operations.",
+      "blocks": [
+        {
+          "type": "intro",
+          "paragraphs": [
+            "A vehicle tracking system is a business solution that uses in-vehicle telematics paired with fleet management software to collect data from both the vehicle (or mobile asset) and its driver/operator to give the organization robust and actionable data about the field operations processes previously only available via manual methods."
+          ]
+        },
+        {
+          "type": "split",
+          "title": "GPS Vehicle Tracking Services",
+          "paragraphs": [
+            "We provide high-end GPS Vehicle Tracking solutions with emphasis on meeting customized clients' needs. Our competitive advantage in provision of this service is largely attributed to our system reliability and accurate/precise reporting of fleet status and prompt client support.",
+            "With our GPS vehicle tracking solution, you can ably be in total control of your fleet irrespective of where you are or where your vehicles/motorcycles go 24/7."
+          ],
+          "image": "/assets/services/vehicle-tracking/gps-vehicle-tracking.jpg",
+          "imageAlt": "GPS vehicle tracking services",
+          "reverse": true
+        },
+        {
+          "type": "heading",
+          "title": "Benefits of our GPS vehicle tracking solution"
+        },
+        {
+          "type": "features",
+          "columns": 2,
+          "features": [
+            {
+              "title": "Real-time Vehicle Status reporting",
+              "description": "Precisely get accurate information on location and vehicle statuses whether they are mobile, idle or inoperative."
+            },
+            {
+              "title": "Geofencing capabilities",
+              "description": "Get to know when your vehicles are driven to un-authorized areas or outside normal specified working hours."
+            },
+            {
+              "title": "Freewheeling Detection capabilities",
+              "description": "Get real-time notifications when drivers freewheel your vehicles to save fuel. Freewheeling is a very dangerous practice which can lead to loss of control of a vehicle."
+            },
+            {
+              "title": "Driver behavior monitoring",
+              "description": "Immediately get to know reckless driving actions of your drivers such as over-speeding, harsh braking, harsh accelerations, harsh turns, etc."
+            },
+            {
+              "title": "Fuel Theft Alert System",
+              "description": "Fuel theft and fraud can be easily detected by our system — get to know when drivers or other un-scrupulous personnel steal fuel from your vehicles irrespective of the time of day or location of fraud. You can also know refueling quantities whenever and wherever your vehicle refuels, and consumption rate. Our fuel monitoring solution provides real fuel level data (in liters) and not statistical calculations based on mileage."
+            },
+            {
+              "title": "Monitor abnormal engine parameters for damage prevention",
+              "description": "Get to know immediately when your engine malfunctions through remote monitoring of its performance parameters."
+            },
+            {
+              "title": "Driver identification",
+              "description": "Our system enables you to authorize specific personnel to drive your vehicles by use of identity tags."
+            }
+          ]
+        }
+      ],
+      "navLabel": "Vehicle Tracking",
+      "order": 1,
+      "published": true
+    },
+    {
+      "slug": "motorcycle-tracking",
+      "title": "Motorcycle Tracking",
+      "tagline": "",
+      "metaDescription": "Motorcycle Tracking Solutions for GPS and Fleet Management — real-time location tracking, immobilization and battery-smart power management.",
+      "heroImage": "/assets/services/motorcycle-tracking/boda-boda.webp",
+      "heroImageAlt": "Motorcycle GPS tracking",
+      "callout": "Protect your valuable asset with our state-of-the-art GPS tracking system designed specifically for motorcycles.",
+      "blocks": [
+        {
+          "type": "heading",
+          "title": "GPS Motorcycle Tracking",
+          "subtitle": "Don't let motorcycle theft ruin your day. Protect your valuable asset with our state-of-the-art GPS tracking system."
+        },
+        {
+          "type": "intro",
+          "paragraphs": [
+            "Our customized system is designed specifically for motorcycles, making it easy to install and use.",
+            "Our system uses advanced GPS technology to provide real-time location tracking of your motorcycle, so you always know where it is. This makes it easy to recover your motorcycle in the event of theft, as you can quickly notify the authorities and provide them with the exact location of your motorcycle.",
+            "We understand the importance of battery life for motorcycles, and that's why our system is designed to manage power consumption between the backup battery and the motorcycle battery. This ensures that you never have to worry about the system draining your motorcycle's battery, even when the motorcycle is in off/stop mode.",
+            "Investing in our GPS tracking system is a smart choice for any motorcycle owner who wants to protect their investment. Don't let motorcycle theft ruin your day — contact us today to learn more about our customized GPS tracking system and how it can help keep your motorcycle safe and secure."
+          ]
+        },
+        {
+          "type": "split",
+          "title": "Real-time motorcycle status",
+          "paragraphs": [
+            "With our motorcycle GPS Tracking system you will be able to know the following about the status of your motor cycle at any given time:"
+          ],
+          "image": "/assets/services/motorcycle-tracking/boda-boda.webp",
+          "imageAlt": "Motorcycle tracking in action",
+          "reverse": true
+        },
+        {
+          "type": "numbered-list",
+          "items": [
+            "Current location with Google map display",
+            "Status – moving, idle, parked/off or disconnected.",
+            "Speed (Km/hr) at which they are ridden",
+            "Violations – such as over-speeding, going to un-authorized areas (geo-fence exit), etc.",
+            "You can also remotely stop (immobilize) the motorcycle in case of un-authorized usage."
+          ]
+        }
+      ],
+      "navLabel": "Motorcycle Tracking",
+      "order": 2,
+      "published": true
+    },
+    {
+      "slug": "vehicle-fuel-management",
+      "title": "Vehicle Fuel Management",
+      "tagline": "",
+      "metaDescription": "Vehicle Fuel Management Solutions for Fleet Optimization — monitor fuel level, consumption, refills and prevent fuel thefts.",
+      "heroImage": "/assets/services/vehicle-fuel-management/truck-fuel-tank.jpg",
+      "heroImageAlt": "Truck fuel tank monitoring",
+      "callout": "Monitor fuel level, consumption, refills and prevent fuel thefts.",
+      "blocks": [
+        {
+          "type": "heading",
+          "title": "Monitor fuel level, consumption, refills and prevent fuel thefts."
+        },
+        {
+          "type": "intro",
+          "paragraphs": [
+            "Fuel is a critical component of operating a fleet of vehicles and constitutes 60% of a company's operating budget and the FMS fuel monitoring and control system enables to reduce operating costs and increase efficiency.",
+            "The GPS tracking devices collect fuel level and consumption data from vehicle on-board computer (CANbus) or from a fuel level sensor, which is installed into the fuel tank. Collected data is sent to the platform, where the fleet manager can view it and use it."
+          ]
+        },
+        {
+          "type": "split",
+          "title": "Fuel Monitoring",
+          "paragraphs": [
+            "See where, when and how much fuel was filled into the tank. Ensure that all purchased fuel is put into the tank. Rate drivers and vehicles according to their fuel consumption and set real fuel consumption rates for vehicles."
+          ],
+          "image": "/assets/services/vehicle-fuel-management/station.png",
+          "imageAlt": "Fuel monitoring"
+        },
+        {
+          "type": "split",
+          "title": "Fuel Theft Protection",
+          "paragraphs": [
+            "Know where, when and how much fuel has been drained from the vehicle. Identify fuel theft events and get live notifications on sudden fuel level drops."
+          ],
+          "image": "/assets/services/vehicle-fuel-management/low-fuel.png",
+          "imageAlt": "Fuel theft protection",
+          "reverse": true
+        },
+        {
+          "type": "split",
+          "title": "Reports and notifications",
+          "paragraphs": [
+            "Receive detailed fuel level and fuel consumption reports. See total fuel consumed, fuel level at trip start and at the end, average fuel consumption, refuelling and fuel draining events and more. Get instant notifications on fuel draining events via SMS, email or mobile phone."
+          ],
+          "image": "/assets/services/vehicle-fuel-management/report.png",
+          "imageAlt": "Fuel reports and notifications"
+        },
+        {
+          "type": "heading",
+          "title": "Industries Covered by Our Fuel Monitoring Solution"
+        },
+        {
+          "type": "features",
+          "columns": 4,
+          "features": [
+            {
+              "title": "Truck",
+              "description": "Heavy-duty truck fuel monitoring and theft prevention."
+            },
+            {
+              "title": "Mining Truck",
+              "description": "Fuel tracking for mining and industrial fleet operations."
+            },
+            {
+              "title": "Tank Truck",
+              "description": "Tanker fuel level monitoring and delivery verification."
+            },
+            {
+              "title": "Car",
+              "description": "Passenger and light commercial vehicle fuel management."
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "src": "/assets/services/vehicle-fuel-management/truck-fuel-tank.jpg",
+          "alt": "Truck fuel tank sensor installation"
+        }
+      ],
+      "navLabel": "Vehicle Fuel Management",
+      "order": 3,
+      "published": true
+    },
+    {
+      "slug": "generator-fuel-management",
+      "title": "Generator Fuel Management",
+      "tagline": "",
+      "metaDescription": "Generator Fuel Management for Optimal Efficiency — online generator monitoring, fuel levels, maintenance scheduling and parameter control.",
+      "heroImage": "/assets/services/generator-fuel-management/generator-monitoring.png",
+      "heroImageAlt": "Generator fuel monitoring system",
+      "callout": "Ensure uninterrupted operation of generators, reduce fuel and operation costs, and prevent service outage.",
+      "blocks": [
+        {
+          "type": "heading",
+          "title": "Introduction",
+          "subtitle": "Online Generator Monitoring"
+        },
+        {
+          "type": "intro",
+          "paragraphs": [
+            "The generator fuel monitoring system ensures uninterrupted operation of generators, reduces fuel and operation costs, optimizes maintenance schedule and prevents generator service outage, thus extending the genset life cycle."
+          ]
+        },
+        {
+          "type": "split",
+          "title": "Control Generator Parameters",
+          "paragraphs": [
+            "The generator monitoring system allows generator owners and supervisors to monitor and control generator parameters including:"
+          ],
+          "image": "/assets/services/generator-fuel-management/generator-monitoring-1.png",
+          "imageAlt": "Generator parameter monitoring"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Service due date",
+            "Battery levels",
+            "Fuel levels",
+            "Oil pressures",
+            "Coolant levels",
+            "Power output",
+            "Operating temperature",
+            "Running time",
+            "Engine RPM",
+            "Radiator condition",
+            "Location"
+          ]
+        },
+        {
+          "type": "image",
+          "src": "/assets/services/generator-fuel-management/generator-structure.png",
+          "alt": "Generator fuel monitoring system structure diagram",
+          "caption": "Generator fuel monitoring system architecture"
+        }
+      ],
+      "navLabel": "Generator Fuel Management",
+      "order": 4,
+      "published": true
+    },
+    {
+      "slug": "fleet-management",
+      "title": "Fleet Management",
+      "tagline": "",
+      "metaDescription": "Fleet Management Solutions: Vehicle Tracking & Logistics — real-time data, fuel monitoring, eco driving, maintenance and route planning.",
+      "heroImage": "/assets/services/fleet-management/4-1.png",
+      "heroImageAlt": "Fleet management dashboard",
+      "callout": "Vehicle data in real time, alerts for key parameters and reports to get in-depth analysis for any time period.",
+      "blocks": [
+        {
+          "type": "features",
+          "columns": 2,
+          "features": [
+            {
+              "title": "Sensors and CAN",
+              "description": "Keep fleets updated on important indicators. Inform if the sensors are enable/disabled. Show their values online and in reports.",
+              "image": "/assets/services/fleet-management/1-1.png"
+            },
+            {
+              "title": "Mobile digital video recorder",
+              "description": "Transmit online what happens on the road or inside the cabin. Raise accountability and reconstruct past events.",
+              "image": "/assets/services/fleet-management/2-1.png"
+            },
+            {
+              "title": "Alerts to prevent accidents",
+              "description": "Enable urgent alarms to miss no important notifications, whether it's maintenance reminders, DTC or other key parameters.",
+              "image": "/assets/services/fleet-management/3-1.png"
+            }
+          ]
+        },
+        {
+          "type": "subsection",
+          "title": "Fuel Monitoring",
+          "subtitle": "Monitor fuel consumption and prevent fuel thefts",
+          "paragraphs": [
+            "Deliver the most positive user experience of fuel monitoring with clear calibration tables, detailed graphical reports and instant notifications."
+          ],
+          "image": "/assets/services/fleet-management/4-1.png",
+          "imageAlt": "Fuel monitoring dashboard",
+          "features": [
+            {
+              "title": "Prevent fuel thefts on the spot",
+              "description": "Provide instant alerts by sms or email on drastic or sudden fuel level changes."
+            },
+            {
+              "title": "Analyze each filling and drain",
+              "description": "Generate detailed fuel reports for any period to browse the fillings and drains of each driver."
+            },
+            {
+              "title": "Intuitive calibration",
+              "description": "Connect and manage any fuel sensors, including BLE and other innovative solutions."
+            }
+          ]
+        },
+        {
+          "type": "subsection",
+          "title": "Eco Driving",
+          "subtitle": "Optimize Costs and Improve Security",
+          "paragraphs": [
+            "Control driving behavior. Set parameters for each violation, get instant notifications and analyze the results for any period."
+          ],
+          "image": "/assets/services/fleet-management/5.gif",
+          "imageAlt": "Eco driving monitoring",
+          "features": [
+            {
+              "title": "Speeding",
+              "description": "Learn if drivers go over the speed limit. Save fuel and avoid fines."
+            },
+            {
+              "title": "Harsh driving",
+              "description": "Prevent deadly accidents. Monitor harsh acceleration, harsh braking and cornering."
+            },
+            {
+              "title": "Excessive Idling",
+              "description": "Get rid of needless idlings. Save engine lifetime, fuel and reduce carbon emissions."
+            }
+          ]
+        },
+        {
+          "type": "subsection",
+          "title": "Driver Journal",
+          "subtitle": "Save money on tax returns and refine discipline",
+          "paragraphs": [
+            "Easily sort journeys into business and private. Claim reimbursement on business mileage. Detect private errands during the shift."
+          ],
+          "image": "/assets/services/fleet-management/6-1.png",
+          "imageAlt": "Driver journal",
+          "features": [
+            {
+              "title": "Business trips",
+              "description": "Empower SMB and enterprises with most complete tax deductions, making every mile count."
+            },
+            {
+              "title": "Private trips",
+              "description": "Raise accountability by having a constant access to any past trips a driver takes."
+            },
+            {
+              "title": "Classify in seconds",
+              "description": "All trips are logged automatically. Sort them in seconds, using exact locations, mileage, and timing."
+            }
+          ]
+        },
+        {
+          "type": "subsection",
+          "title": "Maintenance",
+          "subtitle": "Prevent breakdowns and downtime",
+          "paragraphs": [
+            "Help customers keep the vehicles in mint condition. Create a detailed service job checklist for timely notifications and reminders."
+          ],
+          "image": "/assets/services/fleet-management/7-1.png",
+          "imageAlt": "Fleet maintenance planning",
+          "features": [
+            {
+              "title": "Schedule service jobs",
+              "description": "Create and manage fleet related service works in several clicks. Schedule jobs by date, mileage and engine hours."
+            },
+            {
+              "title": "Manage the service checklist",
+              "description": "View and print the list of planned service works at any time. Group jobs by vehicle, fuel type and departments."
+            },
+            {
+              "title": "Be notified to perform on time",
+              "description": "Get timely reminders about scheduled service works by SMS, email or push notifications to increase fleet life cycle."
+            }
+          ]
+        },
+        {
+          "type": "subsection",
+          "title": "ADAS",
+          "subtitle": "Advanced Driver Assistance System",
+          "paragraphs": [
+            "Enable Advanced Driver Assistance System (ADAS) to anticipate and detect upcoming dangers, provide adequate warning, and avoid collisions. With a suite of sensors and cameras onboard, ADAS scans the driving scene and key vehicle parameters to provide an early warning in case of danger: lane departure warning, adaptive cruise control, forward collision warning, adaptive highlights, etc. Sync data with the back office. Promote safer driving behavior to protect drivers and fleet."
+          ],
+          "image": "/assets/services/fleet-management/8-1.png",
+          "imageAlt": "ADAS driver assistance"
+        },
+        {
+          "type": "subsection",
+          "title": "Driver Identification",
+          "subtitle": "Safeguard fleet from unauthorized use",
+          "paragraphs": [
+            "If several employees use one vehicle separately, Driver ID feature allows to monitor who's driving now and learn how a driver sticks to work and rest requirements."
+          ],
+          "image": "/assets/services/fleet-management/9-1.png",
+          "imageAlt": "Driver identification",
+          "features": [
+            {
+              "title": "Real-time drivers control",
+              "description": "Browse the widget to know which employee is driving right now and what time the shift change took place."
+            },
+            {
+              "title": "Shifts and work/rest analytics",
+              "description": "Create visual reports with diagrams and tables. Find out employees' shifts and time without rest for any period of time."
+            },
+            {
+              "title": "Learn about every shift change",
+              "description": "Get instant notifications on e-mail or by SMS: shift in/out, SOS button, speeding, harsh driving."
+            }
+          ]
+        },
+        {
+          "type": "subsection",
+          "title": "Route Planning",
+          "subtitle": "Plan fastest routes",
+          "paragraphs": [
+            "Enable fast, automatic route planning. Enjoy the GPS tracking platform that considers road restrictions and flawlessly adapts to current traffic."
+          ],
+          "image": "/assets/services/fleet-management/10-1.png",
+          "imageAlt": "Route planning",
+          "features": [
+            {
+              "title": "Route deviation detected",
+              "description": "Empower supervisors to stay immediately updated on any detours and alterations. Detect personal trips or thefts with no time wasted."
+            },
+            {
+              "title": "Avoid bottlenecks",
+              "description": "Experience optimized routes generated automatically. Skip traffic jams or small trails, not suitable for specific vehicle types."
+            }
+          ]
+        }
+      ],
+      "navLabel": "Fleet Management",
+      "order": 5,
+      "published": true
+    },
+    {
+      "slug": "cargo-tracking",
+      "title": "Cargo Tracking",
+      "tagline": "",
+      "metaDescription": "Cargo Tracking Solutions for Efficient Shipment Management — electronic cargo tracking with e-Lock, GPS and tamper alerts.",
+      "heroImage": "/assets/services/cargo-tracking/6-2.png",
+      "heroImageAlt": "Electronic cargo tracking e-Lock",
+      "callout": "Electronic Cargo Tracking System (ECTS) for cross-border customs, security and tamper-proof cargo delivery.",
+      "blocks": [
+        {
+          "type": "heading",
+          "title": "Problems To Solve"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Electronic Cargo Tracking System (ECTS)",
+            "More efficiency for Cross Border Customs, less the queue time.",
+            "Increase level of security of monitored cargo.",
+            "Confirm nobody changes or steals stock in delivery",
+            "Active alert incase of any illegal opening or tamper of e-Lock",
+            "Only authorized person to unlock"
+          ]
+        },
+        {
+          "type": "features",
+          "columns": 3,
+          "features": [
+            {
+              "title": "Speed up customs queue time.",
+              "description": "Reduce border crossing delays with electronic tracking.",
+              "image": "/assets/services/cargo-tracking/guarantee-fuel-oil.png"
+            },
+            {
+              "title": "Guarantee fuel oil quality will not changed illegally.",
+              "description": "Ensure cargo integrity throughout transit.",
+              "image": "/assets/services/cargo-tracking/15.png"
+            },
+            {
+              "title": "Protect fuel from theft.",
+              "description": "Secure fuel tanker deliveries with tamper-proof locks.",
+              "image": "/assets/services/cargo-tracking/13-1.png"
+            }
+          ]
+        },
+        {
+          "type": "steps",
+          "steps": [
+            {
+              "number": 1,
+              "title": "Install the e-Lock",
+              "description": "Just use the e-lock to lock up the container door"
+            },
+            {
+              "number": 2,
+              "title": "Tracking Location",
+              "description": "E-lock will keep track the location, reporting the location in 30 mins per once."
+            },
+            {
+              "number": 3,
+              "title": "Smart Alert",
+              "description": "If the Lock was tempered, it will upload the signal to platform immediately."
+            },
+            {
+              "number": 4,
+              "title": "Remote Unlock",
+              "description": "Arrived destination, can unlock by SMS / Mobile APPS / RFID Card."
+            }
+          ]
+        },
+        {
+          "type": "intro",
+          "paragraphs": [
+            "HB-eLock is an intelligent tracking and positioning lock for securing logistics and freight assets. Key-less design, SIM slot, RFID/remote unlocking, large capacity battery (15200mAh), long working time, IP67 waterproof, built-in wireless communication module, real-time online monitoring, and illegal unlocking alarms.",
+            "Master eLock can connect with 7 slave elock (no GPS no GSM), through Bluetooth communication. The Slave lock operation can controlled by Master Lock. Standard for ATEX, suitable to use in Fuel Tank Trucks industrial."
+          ]
+        },
+        {
+          "type": "heading",
+          "title": "Product Information"
+        },
+        {
+          "type": "gallery",
+          "columns": 3,
+          "images": [
+            {
+              "src": "/assets/services/cargo-tracking/12.png",
+              "alt": "HB-eLock device"
+            },
+            {
+              "src": "/assets/services/cargo-tracking/16.png",
+              "alt": "Stainless steel wire with rubber enveloped"
+            },
+            {
+              "src": "/assets/services/cargo-tracking/17.png",
+              "alt": "Strong rugged and durable case"
+            },
+            {
+              "src": "/assets/services/cargo-tracking/18.png",
+              "alt": "RFID scan area"
+            },
+            {
+              "src": "/assets/services/cargo-tracking/19.png",
+              "alt": "GPS, GSM, operation LED indicator"
+            },
+            {
+              "src": "/assets/services/cargo-tracking/20.png",
+              "alt": "Charging port and SIM card slot"
+            },
+            {
+              "src": "/assets/services/cargo-tracking/30.png",
+              "alt": "Back side with strong magnet"
+            },
+            {
+              "src": "/assets/services/cargo-tracking/31.png",
+              "alt": "Main lock with GPS and GSM"
+            },
+            {
+              "src": "/assets/services/cargo-tracking/32.png",
+              "alt": "Slave lock without GPS and GSM"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "title": "Real Situation",
+          "subtitle": "Real Situation for Double Cargo trailer truck delivery"
+        },
+        {
+          "type": "gallery",
+          "columns": 2,
+          "images": [
+            {
+              "src": "/assets/services/cargo-tracking/33.png",
+              "alt": "Master and slave lock setup on cargo trailer"
+            }
+          ]
+        }
+      ],
+      "navLabel": "Cargo Tracking",
+      "order": 6,
+      "published": true
+    },
+    {
+      "slug": "animal-tracking",
+      "title": "Animal Tracking",
+      "tagline": "",
+      "metaDescription": "Animal Tracking Solutions for Effective Wildlife Monitoring — manage and monitor animal locations and conditions from anywhere.",
+      "heroImage": "/assets/services/animal-tracking/cows.png",
+      "heroImageAlt": "Animal tracking with GPS collars",
+      "callout": "Provide a way for people to better understand and monitor the movements of animals.",
+      "blocks": [
+        {
+          "type": "intro",
+          "paragraphs": [
+            "The purpose of the Animal Tracking Solution is to provide a way for people to better understand and monitor the movements of animals.",
+            "With our Animal Tracking Solution using your phone and the FMSTrack Android / IOS Apps and web based applications, you now manage and know the condition and locations of your animals from anywhere at any time."
+          ]
+        },
+        {
+          "type": "split",
+          "title": "Features of Animal Tracking",
+          "paragraphs": [],
+          "image": "/assets/services/animal-tracking/cows.png",
+          "imageAlt": "Cattle with GPS tracking collars"
+        },
+        {
+          "type": "features",
+          "columns": 3,
+          "features": [
+            {
+              "title": "Management",
+              "description": "Management refers to the process of managing resources, including the people, processes, money, technology and facilities of a company."
+            },
+            {
+              "title": "Geofencing",
+              "description": "Geofencing is a location-based service in which the user sets up a virtual boundary around a geographic area."
+            },
+            {
+              "title": "Alert in case of Robbery or Loss",
+              "description": "Receive instant alerts when animals leave designated areas or when unauthorized movement is detected."
+            }
+          ]
+        }
+      ],
+      "navLabel": "Animal Tracking",
+      "order": 7,
+      "published": true
+    },
+    {
+      "slug": "satellite-tracking",
+      "title": "Satellite Tracking",
+      "tagline": "",
+      "metaDescription": "Satellite Tracking Solutions for GPS Fleet Management — true satellite tracking for cross-border transporters with zero roaming fees.",
+      "heroImage": "/assets/services/satellite-tracking/fms-satellite-tracking.png",
+      "heroImageAlt": "FMS Africa DUO satellite tracking",
+      "callout": "True Satellite Tracking for Cross-border Transporters — monitor your fleet anywhere in the world.",
+      "blocks": [
+        {
+          "type": "heading",
+          "title": "Track your fleet anywhere in the World",
+          "subtitle": "Overcome cross-border logistical and operational challenges with the FMS-Africa DUO Satellite Tracking Solution."
+        },
+        {
+          "type": "intro",
+          "paragraphs": [
+            "Monitor and control your fleet and your bottom line from anywhere in the World. Improved efficiency, less risk and Business Intelligence at your fingertips that empowers you to make data-driven decisions with real-time impact on your fleet's efficiency, safety and performance."
+          ]
+        },
+        {
+          "type": "features",
+          "columns": 3,
+          "features": [
+            {
+              "title": "Smart Switch",
+              "description": "The DUO switches from GSM to Satellite tracking in areas where GSM reception is poor or unavailable.",
+              "image": "/assets/services/satellite-tracking/fms-satellite-tracking-1.png"
+            },
+            {
+              "title": "Zero Roaming Fees",
+              "description": "Know upfront what your monthly tracking costs will be. The DUO comes with zero additional roaming charges.",
+              "image": "/assets/services/satellite-tracking/fms-satellite-tracking-2.png"
+            },
+            {
+              "title": "Real-time Tracking",
+              "description": "24/7 Visibility on drivers & vehicles. Remotely monitor your fleet wherever in the World they may roam.",
+              "image": "/assets/services/satellite-tracking/fms-satellite-tracking.png"
+            }
+          ]
+        },
+        {
+          "type": "split",
+          "title": "Designed for Cross-border Transporters",
+          "paragraphs": [
+            "Remotely monitor your fleet across the World with the DUO Satellite Tracking Solution: True Satellite Tracking for Transport and Logistics Operators with Advanced fleet Management at a single monthly fee and zero roaming cost."
+          ],
+          "image": "/assets/services/satellite-tracking/designed-for-cross-border-transporters.png",
+          "imageAlt": "Cross-border transporter fleet"
+        },
+        {
+          "type": "split",
+          "title": "Guaranteed connectivity to your fleet",
+          "paragraphs": [
+            "Our state-of-the-art DUO Satellite Tracking Solution ensures uninterrupted control and remote monitoring of your fleet with instant alerts, industry-leading accuracy and zero roaming costs. You know upfront what your fleet's monthly tracking bill is going to be.",
+            "A tailor-made satellite tracking solution for cross-border commercial transport, the DUO provides real-time remote tracking, precise fleet location, route optimization, driver monitoring and comprehensive analytics across the World."
+          ],
+          "image": "/assets/services/satellite-tracking/guaranteed-connectivity-to-your-fleet.png",
+          "imageAlt": "Guaranteed fleet connectivity",
+          "reverse": true
+        },
+        {
+          "type": "heading",
+          "title": "Borderless Fleet Management",
+          "subtitle": "Stay informed with instant notifications when vehicles enter or exit specific areas, enhancing security and control over your operations, regardless of whether your fleet assets travel in low or no GSM-coverage areas."
+        },
+        {
+          "type": "intro",
+          "paragraphs": [
+            "DUO efficiently monitor routes, trip times, fuel consumption, and driver behavior through our advanced, intuitive Webtrack Fleet Management Software. Access detailed trip and route reports on-demand or schedule automatic delivery to your email inbox, enabling timely analysis and decision-making."
+          ]
+        },
+        {
+          "type": "features",
+          "columns": 3,
+          "features": [
+            {
+              "title": "Location Alerts",
+              "description": "Setup Geofences and Waypoints and be alerted when a vehicles passes, enters or leaves a specific geographical beacon wherever in the World they might be.",
+              "image": "/assets/services/satellite-tracking/location-alerts.png"
+            },
+            {
+              "title": "Route Optimization",
+              "description": "Monitor routes and trip times, fuel consumption and driver behavior for specific routes or trips to increase profitability.",
+              "image": "/assets/services/satellite-tracking/route-optimization.png"
+            },
+            {
+              "title": "Driver Monitoring",
+              "description": "Monitor driver behavior through Driver Score Cards that highlights speeding, harsh braking, excessive idling etc. on-demand or via automatic reporting.",
+              "image": "/assets/services/satellite-tracking/driver-monitoring.png"
+            },
+            {
+              "title": "Fleet Maintenance Planning",
+              "description": "Set reminders for upcoming fleet maintenance or for the renewal of vehicle & driver PDP licenses and receive automated alerts before due.",
+              "image": "/assets/services/satellite-tracking/fleet-maintenance-planning.png"
+            },
+            {
+              "title": "Reduced Operational Risk",
+              "description": "Monitor consecutive hours driven, driving violations & overall driver wellness. Target driver training and improve safety ratings with data-backed reports.",
+              "image": "/assets/services/satellite-tracking/reduced-operational-risk.png"
+            },
+            {
+              "title": "Business Intelligence",
+              "description": "On demand or automated data-based reports ensures that your business decisions are based on real time data and business intelligence.",
+              "image": "/assets/services/satellite-tracking/business.png"
+            }
+          ]
+        },
+        {
+          "type": "split",
+          "title": "DUO Satellite Tracking + Fuel Management",
+          "paragraphs": [
+            "Whether you choose to access our award-winning Webtrack Advanced Fleet Management system on your PC or from the mobile app, you are in complete control, around the clock.",
+            "A.I. Fuel Management Solution together with DUO Satellite Tracking puts you in the driving seat and your foot on the diesel pedal, regardless of how many vehicles you operate or where they may roam across the World."
+          ],
+          "image": "/assets/services/satellite-tracking/duo-satellite-tracking-fuel-management.png",
+          "imageAlt": "DUO satellite tracking with fuel management"
+        },
+        {
+          "type": "split",
+          "title": "Around the clock Customer Care and Support",
+          "paragraphs": [
+            "As our valued client, you will have the benefit of our Customer Care Department. Your dedicated Customer Care Specialist will assist with any of your needs relating to training, health checks, reports, upsells or any client query you need to resolve. Whether it is via calls, emails, Whatsapp or face to face."
+          ],
+          "image": "/assets/services/satellite-tracking/around-the-clock-customer-care-and-support.png",
+          "imageAlt": "Customer care and support",
+          "reverse": true
+        }
+      ],
+      "navLabel": "Satellite Tracking",
+      "order": 8,
+      "published": true
+    },
+    {
+      "slug": "ai-powered-video-telematics",
+      "title": "AI-Powered Video Telematics",
+      "tagline": "Why Video Telematics?",
+      "metaDescription": "AI-Powered Video Telematics for Effective Fleet Management — HD live streaming, driver assistance, ADAS/DMS and event-based video alerts.",
+      "heroImage": "/assets/services/ai-powered-video-telematics/feature-1.png",
+      "heroImageAlt": "AI-powered video telematics dashboard",
+      "callout": "Reduce accidents, detect fatigue driving, provide evidence for insurance and improve fleet safety with AI video telematics.",
+      "blocks": [
+        {
+          "type": "list",
+          "title": "Why Video Telematics?",
+          "items": [
+            "Reduce traffic accidents",
+            "Shows Transport Overload",
+            "Shows Fatigue Driving",
+            "Provides evidence for law suits & insurance",
+            "Reduce Terrorism/robbery/theft"
+          ]
+        },
+        {
+          "type": "features",
+          "columns": 4,
+          "features": [
+            {
+              "title": "HD live Video & Audio Streaming",
+              "description": "Real-time video and audio from vehicle cameras.",
+              "image": "/assets/services/ai-powered-video-telematics/feature-1.png"
+            },
+            {
+              "title": "Historical Video playback and download",
+              "description": "Review and export recorded footage on demand.",
+              "image": "/assets/services/ai-powered-video-telematics/feature-2.png"
+            },
+            {
+              "title": "Alarm/Event-based Videos",
+              "description": "Automatically capture video when events trigger.",
+              "image": "/assets/services/ai-powered-video-telematics/feature-3.png"
+            },
+            {
+              "title": "Snapshots from cameras",
+              "description": "Instant still images from any connected camera.",
+              "image": "/assets/services/ai-powered-video-telematics/feature-4.png"
+            },
+            {
+              "title": "Driving Behavior",
+              "description": "Monitor speeding, harsh braking and cornering.",
+              "image": "/assets/services/ai-powered-video-telematics/feature-5.png"
+            },
+            {
+              "title": "Vehicle Status detection",
+              "description": "ACC/ignition status, sensors, speed and more.",
+              "image": "/assets/services/ai-powered-video-telematics/feature-6.png"
+            },
+            {
+              "title": "Accessory Integration",
+              "description": "Connect additional sensors and peripherals.",
+              "image": "/assets/services/ai-powered-video-telematics/feature-7.png"
+            },
+            {
+              "title": "Integrated with MDVR Solution",
+              "description": "Mobile digital video recorder for fleet vehicles.",
+              "image": "/assets/services/ai-powered-video-telematics/feature-8.png"
+            }
+          ]
+        },
+        {
+          "type": "tabs",
+          "title": "Video Telematics – Driver Assistance",
+          "tabs": [
+            {
+              "label": "FCW",
+              "paragraphs": [
+                "FCW is an automotive safety system designed to alert drivers when a collision with an object or vehicle in front of them is imminent."
+              ]
+            },
+            {
+              "label": "HMW",
+              "paragraphs": [
+                "The Headway Monitoring Warning (HMW) system helps transit operators monitor the performance of their bus fleet."
+              ]
+            },
+            {
+              "label": "Closed eyes",
+              "paragraphs": [
+                "Closed eyes detection recognizes when a person has their eyes closed using computer vision and machine learning algorithms."
+              ]
+            },
+            {
+              "label": "LDW",
+              "paragraphs": [
+                "Lane Departure Warning (LDW) alerts a driver when their vehicle begins to move out of its lane."
+              ]
+            },
+            {
+              "label": "Smoking",
+              "paragraphs": [
+                "Detect smoking in video frames and alert users in real-time when a smoking event is detected."
+              ]
+            },
+            {
+              "label": "Yawning",
+              "paragraphs": [
+                "Yawning detection uses sensors and cameras to detect when a driver is yawning — a key fatigue indicator."
+              ]
+            },
+            {
+              "label": "Calling",
+              "paragraphs": [
+                "Detect phone usage while driving using computer vision and image processing techniques."
+              ]
+            },
+            {
+              "label": "Drinking",
+              "paragraphs": [
+                "Water drinking detection uses sensors to detect when a person is drinking and monitor hydration."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "split",
+          "title": "Physical DMS & ADAS devices",
+          "paragraphs": [
+            "Our Driver Monitoring System (DMS) and Advanced Driver Assistance Systems (ADAS) hardware integrate seamlessly with the FMS video telematics platform for real-time alerts and recorded evidence."
+          ],
+          "image": "/assets/services/ai-powered-video-telematics/dms.jpg",
+          "imageAlt": "Physical DMS driver monitoring device"
+        },
+        {
+          "type": "image",
+          "src": "/assets/services/ai-powered-video-telematics/adas.jpg",
+          "alt": "Physical ADAS advanced driver assistance systems",
+          "caption": "Physical ADAS (Advanced Driver Assistance Systems)"
+        },
+        {
+          "type": "interactive-gallery",
+          "title": "Video Telematics: Keeping Your Fleet Safe and Informed",
+          "images": [
+            {
+              "src": "/assets/services/ai-powered-video-telematics/video-telematics-notifications.png",
+              "alt": "Video telematics notifications",
+              "caption": "Video Telematics notifications"
+            },
+            {
+              "src": "/assets/services/ai-powered-video-telematics/events-report.png",
+              "alt": "Events report",
+              "caption": "Events report"
+            },
+            {
+              "src": "/assets/services/ai-powered-video-telematics/sos-emergency-button-alerts.png",
+              "alt": "SOS emergency button alerts",
+              "caption": "SOS Emergency button alerts"
+            },
+            {
+              "src": "/assets/services/ai-powered-video-telematics/driver-distracted-phone-email-alert.png",
+              "alt": "Driver distracted phone alert",
+              "caption": "Driver distracted - Phone email alert"
+            },
+            {
+              "src": "/assets/services/ai-powered-video-telematics/driver-distracted--yawning-email-alert.png",
+              "alt": "Driver yawning alert",
+              "caption": "Driver distracted – Yawning email alert"
+            },
+            {
+              "src": "/assets/services/ai-powered-video-telematics/distance-between-objects-notification-setup.png",
+              "alt": "Distance between objects setup",
+              "caption": "Distance between objects notification setup"
+            },
+            {
+              "src": "/assets/services/ai-powered-video-telematics/email-display-of-notifications-from-the-tracking-platform.png",
+              "alt": "Email notification display",
+              "caption": "Email display of notifications from the tracking platform"
+            }
+          ]
+        }
+      ],
+      "navLabel": "AI-Powered Video Telematics",
+      "order": 9,
+      "published": true
+    },
+    {
+      "slug": "cold-chain-management",
+      "title": "Cold Chain Management",
+      "tagline": "",
+      "metaDescription": "Cold Chain Management Solutions for Temperature Monitoring — real-time GPS tracking and sensor monitoring for temperature-sensitive assets.",
+      "heroImage": "/assets/services/cold-chain-management/hero.webp",
+      "heroImageAlt": "Cold chain temperature monitoring",
+      "callout": "Manage temperature, humidity and moisture-sensitive assets with real-time GPS tracking and cold chain monitoring devices.",
+      "blocks": [
+        {
+          "type": "intro",
+          "paragraphs": [
+            "Reliable cold chain temperature monitoring systems ensure the safety and compliance of cold chain assets in storage and transportation en route to their destination.",
+            "Our range of cold chain monitoring telematics devices combine sensor monitoring and GNSS tracking to ensure critical assets are always accounted for and kept at safe conditions during transport. Our integration-ready devices are designed with the capabilities to meet the unique needs of your operation — from temperature, humidity, and moisture monitoring, to indoor to outdoor asset tracking, detailed fleet management with driver behavior reporting, and theft recovery solutions that provide live tracking for asset retrieval."
+          ]
+        },
+        {
+          "type": "heading",
+          "title": "Build a better Cold Chain and Asset Management Solution",
+          "subtitle": "Our cold chain tracking and monitoring sensors provide high precision positioning with global connectivity and flexible configurations to target and track the data most crucial to your operation."
+        },
+        {
+          "type": "accordion",
+          "title": "Explore cold chain capabilities",
+          "items": [
+            {
+              "title": "Capture Critical Data",
+              "description": "Monitor and record location, movement history, trailer temperature monitoring, humidity, moisture, door open/close, and more with our versatile and rugged range of GPS tracking devices for cold chain management. Custom geofencing tracks the movement of your cold assets and sends alerts when assets enter or leave specific locations. Devices can also be tailored with location-based behaviors. Preventative maintenance alerts, impact detection, and theft recovery reduce costs for loss and inefficiencies in operation.",
+              "image": "/assets/services/cold-chain-management/temperature-monitoring.jpg",
+              "imageAlt": "Temperature monitoring dashboard"
+            },
+            {
+              "title": "Vehicle & Equipment Monitoring",
+              "description": "Vehicle temperature monitoring systems applied to refrigerated trucks and trailers can also not only provide reports on temperature monitoring; cold chain trackers can also provide insights related to driver behavior and safety and aid in theft recovery with GPS tracking features.",
+              "image": "/assets/services/cold-chain-management/refrigerated-truck.jpg",
+              "imageAlt": "Refrigerated truck monitoring"
+            }
+          ]
+        },
+        {
+          "type": "features",
+          "columns": 3,
+          "features": [
+            {
+              "title": "Temperature alerts",
+              "description": "Instant notifications when cargo temperature exits safe ranges."
+            },
+            {
+              "title": "Humidity & moisture",
+              "description": "Monitor environmental conditions for sensitive pharmaceuticals and food."
+            },
+            {
+              "title": "Geofencing",
+              "description": "Track asset movement and receive alerts on entry or exit from zones."
+            },
+            {
+              "title": "Door open/close",
+              "description": "Detect unauthorized access to refrigerated compartments."
+            },
+            {
+              "title": "Theft recovery",
+              "description": "Live GPS tracking for rapid asset retrieval."
+            },
+            {
+              "title": "Driver behavior",
+              "description": "Combine cold chain data with fleet safety monitoring."
+            }
+          ]
+        }
+      ],
+      "navLabel": "Cold Chain Management",
+      "order": 10,
+      "published": true
+    },
+    {
+      "slug": "weight-monitoring-system",
+      "title": "Weight Monitoring System",
+      "tagline": "",
+      "metaDescription": "Vehicle Weight Monitoring System Load & Health Tracking — axle load sensors, Eurosens controllers and real-time cargo weight control.",
+      "heroImage": "/assets/services/weight-monitoring-system/13.jpg",
+      "heroImageAlt": "Axle load weight monitoring system",
+      "callout": "Axle load sensors designed for cargo weight control on each axle using tracking systems connected to displacement sensors, strain gauges and load cells.",
+      "blocks": [
+        {
+          "type": "intro",
+          "paragraphs": [
+            "Axle load sensor is designed for cargo weight control on each of the axles of a vehicle using a tracking systems. Axle load sensor can be connected to the analog input of tracking device for example, vehicle sensors, displacement sensors, strain gauges, load cells, pressure sensors, etc."
+          ]
+        },
+        {
+          "type": "tabs",
+          "title": "Weight monitoring components",
+          "tabs": [
+            {
+              "label": "Introduction",
+              "paragraphs": [
+                "An axle load monitoring system measures the amount of weight placed on each axle of a vehicle. It helps operators understand how cargo is distributed and whether the vehicle remains within safe operating limits.",
+                "Unlike traditional weighing methods, axle load monitoring provides continuous visibility. Drivers and fleet managers do not need to wait until a vehicle reaches a weighbridge."
+              ],
+              "image": "/assets/services/weight-monitoring-system/13.jpg",
+              "imageAlt": "Weight monitoring introduction"
+            },
+            {
+              "label": "EUROSENS Difference T",
+              "paragraphs": [
+                "The EUROSENS Difference T controller provides precise axle load measurement integrated with FMS tracking platforms for real-time weight data and compliance reporting."
+              ],
+              "image": "/assets/services/weight-monitoring-system/14.jpg",
+              "imageAlt": "EUROSENS Difference T controller",
+              "items": [
+                "Real-time axle load measurement",
+                "Integration with GPS tracking devices",
+                "Overload alerts and compliance records",
+                "Support for strain gauges and load cells"
+              ]
+            },
+            {
+              "label": "Eurosens Display RS",
+              "paragraphs": [
+                "The Eurosens Display RS provides in-cab weight readouts for drivers, enabling immediate load adjustments before vehicles become unsafe or non-compliant."
+              ],
+              "image": "/assets/services/weight-monitoring-system/15.jpg",
+              "imageAlt": "Eurosens Display RS",
+              "items": [
+                "In-cab weight display for drivers",
+                "Clear calibration tables",
+                "Compatible with Difference T controller"
+              ]
+            },
+            {
+              "label": "Display RS Readings",
+              "paragraphs": [
+                "View detailed weight readings per axle with historical data for audits, inspections and fleet optimization."
+              ],
+              "image": "/assets/services/weight-monitoring-system/16.jpg",
+              "imageAlt": "Display RS readings"
+            },
+            {
+              "label": "Sensor installation",
+              "paragraphs": [
+                "Professional installation of axle load sensors on suspension and axle components ensures accurate force measurement and long-term reliability."
+              ],
+              "image": "/assets/services/weight-monitoring-system/17.jpg",
+              "imageAlt": "Location and installation of sensors"
+            }
+          ]
+        },
+        {
+          "type": "features",
+          "columns": 2,
+          "features": [
+            {
+              "title": "Improved fleet safety",
+              "description": "Identify load imbalances before they cause accidents or instability."
+            },
+            {
+              "title": "Regulatory compliance",
+              "description": "Stay within axle weight limits and maintain accurate records for inspections."
+            },
+            {
+              "title": "Reduced maintenance",
+              "description": "Vehicles operating within limits experience less tyre and suspension wear."
+            },
+            {
+              "title": "Real-time alerts",
+              "description": "Get notified when axle limits are exceeded during transit."
+            }
+          ]
+        }
+      ],
+      "navLabel": "Weight Monitoring System",
+      "order": 11,
+      "published": true
+    },
+    {
+      "slug": "push-to-talk-telematics",
+      "title": "Push-to-talk Telematics",
+      "tagline": "",
+      "metaDescription": "Push to Talk Telematics Solutions for Advanced Communication — GPS tracking with instant voice, Wi-Fi coverage and AES256 encryption.",
+      "heroImage": "/assets/services/push-to-talk-telematics/features.png",
+      "heroImageAlt": "Push-to-talk telematics features",
+      "callout": "Provide employees of manufacturing plants with personal monitoring — simple to use, long battery life and reliable even without cellular coverage.",
+      "blocks": [
+        {
+          "type": "split",
+          "title": "Simplicity in use",
+          "paragraphs": [
+            "The task is to provide employees of manufacturing plants with personal monitoring. It's simple to use at first glance, has a long battery life of up to 5000mAh, can work at factories with no cellular networks coverage in some areas using Wi-fi, and also eliminates employee sabotage."
+          ],
+          "image": "/assets/services/push-to-talk-telematics/device.png",
+          "imageAlt": "Push-to-talk telematics device"
+        },
+        {
+          "type": "tabs",
+          "title": "Push-to-talk capabilities",
+          "tabs": [
+            {
+              "label": "Features",
+              "image": "/assets/services/push-to-talk-telematics/features.png",
+              "imageAlt": "Features of push-to-talk telematics",
+              "items": [
+                "GPS Tracker working on GSM and Wi-Fi",
+                "Battery life greater than 3000mAh",
+                "Voice communication between employees",
+                "Wi-Fi points installed around work place extend coverage.",
+                "SOS buttons for emergencies.",
+                "Reliability at all times",
+                "Ease in use at first glance",
+                "Can be connected to over 99 channels"
+              ]
+            },
+            {
+              "label": "Advantages",
+              "image": "/assets/services/push-to-talk-telematics/merits.png",
+              "imageAlt": "Advantages of push-to-talk telematics",
+              "items": [
+                "GPS fleet management",
+                "GPS local and hosting App",
+                "AES256 E2E encryption",
+                "Voice quality (8,16,24,48KHz)",
+                "Video quality (320×240, 640×480)",
+                "OTAP device management",
+                "SOS Emergency Alerts",
+                "Call history (audio, video)",
+                "Up to 99 channels for customer",
+                "Private user calls",
+                "OTA device updates",
+                "TTS speech of selected channels"
+              ]
+            }
+          ]
+        }
+      ],
+      "navLabel": "Push-to-talk Telematics",
+      "order": 12,
+      "published": true
+    },
+    {
+      "slug": "asset-tracking",
+      "title": "Asset Tracking",
+      "tagline": "Asset tracking: more than GPS location",
+      "metaDescription": "Asset Tracking Solutions for Fleet Management & GPS Tracking — real-time telemetry, geofencing and alerts on 1100+ supported devices.",
+      "heroImage": "/assets/services/asset-tracking/hero.webp",
+      "heroImageAlt": "GPS asset tracking platform",
+      "callout": "Deliver efficiency and uncompromised security of assets even if taken to most remote locations. Streamline manual operations and make data-driven decisions.",
+      "blocks": [
+        {
+          "type": "tabs",
+          "title": "Future-proof GPS Asset tracking",
+          "tabs": [
+            {
+              "label": "Core tracking",
+              "features": [
+                {
+                  "title": "Track and manage multiple objects",
+                  "description": "Monitor all assets from a single platform."
+                },
+                {
+                  "title": "Accurate real-time positioning",
+                  "description": "Precise GPS location updates in seconds."
+                },
+                {
+                  "title": "360° street view and traffic",
+                  "description": "Context-rich location intelligence."
+                },
+                {
+                  "title": "Location",
+                  "description": "Continuous asset location history and live view."
+                },
+                {
+                  "title": "Battery life",
+                  "description": "Optimized power management for remote assets."
+                },
+                {
+                  "title": "Statuses",
+                  "description": "Moving, idle, parked and disconnected states."
+                }
+              ]
+            },
+            {
+              "label": "Telemetry",
+              "paragraphs": [
+                "Seconds matter when it comes to high-value assets. Empower clients with profound realtime visibility."
+              ],
+              "image": "/assets/services/asset-tracking/telemetry.png",
+              "imageAlt": "Real-time telemetry data",
+              "features": [
+                {
+                  "title": "OBD2 and CAN",
+                  "description": "Engine diagnostics and vehicle bus data."
+                },
+                {
+                  "title": "Engine hours",
+                  "description": "Track utilization for maintenance planning."
+                },
+                {
+                  "title": "Container doors opening / closing",
+                  "description": "Detect unauthorized cargo access."
+                },
+                {
+                  "title": "Odometer",
+                  "description": "Accurate mileage tracking."
+                },
+                {
+                  "title": "Conditions (temperature, humidity)",
+                  "description": "Environmental monitoring for sensitive cargo."
+                }
+              ]
+            },
+            {
+              "label": "Alerts",
+              "features": [
+                {
+                  "title": "Fall detection",
+                  "description": "Instant alert when assets are dropped or tipped."
+                },
+                {
+                  "title": "Door closing/opening",
+                  "description": "Monitor container and equipment access."
+                },
+                {
+                  "title": "SOS button pressing",
+                  "description": "Emergency alerts from field personnel."
+                },
+                {
+                  "title": "Temperature regime change",
+                  "description": "Cold chain deviation notifications."
+                },
+                {
+                  "title": "Route deviations",
+                  "description": "Detect unauthorized route changes."
+                },
+                {
+                  "title": "Geofence entrance/exit",
+                  "description": "Virtual perimeter alerts."
+                },
+                {
+                  "title": "Case intrusion",
+                  "description": "Tamper detection on secured assets."
+                },
+                {
+                  "title": "Tow detection",
+                  "description": "Alert when stationary assets are moved."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "features",
+          "columns": 2,
+          "features": [
+            {
+              "title": "Over 1100+ GPS tracking devices closely supported",
+              "description": "Effortlessly scale up your business, reach customers with different business needs and requirements with the hardware-independent platform. We automated M2M commands to provide plug-and-play simplicity of the initial configuration."
+            },
+            {
+              "title": "Remote GPS hardware management",
+              "description": "FMS provides graphic interface with easy controls so that users could adjust parameters in a very convenient way. All saved settings are automatically converted to M2M commands and sent immediately even if the device is currently offline."
+            }
+          ]
+        }
+      ],
+      "navLabel": "Asset Tracking",
+      "order": 13,
+      "published": true
+    },
+    {
+      "slug": "mobile-workforce-management",
+      "title": "Mobile Workforce Management",
+      "tagline": "",
+      "metaDescription": "Mobile Workforce Management Solutions for Field Services — visibility, task dispatching, digital forms and customer excellence.",
+      "heroImage": "/assets/services/mobile-workforce-management/field-operations.jpg",
+      "heroImageAlt": "Mobile workforce field operations",
+      "callout": "Increase field service efficiency with improved transparency and real-time data.",
+      "blocks": [
+        {
+          "type": "accordion",
+          "title": "Enhance visibility of field operations",
+          "items": [
+            {
+              "title": "Precise locations",
+              "description": "Track GPS locations of mobile workers online or generate reports for any past trips. Detect deviations from the route. Prevent time-wasting and personal trips during the shift."
+            },
+            {
+              "title": "Working statuses",
+              "description": "Visualize field team activities with custom statuses, e.g. \"on my way\", \"at the warehouse\", etc. Spot available employees for urgent orders."
+            },
+            {
+              "title": "Check-in: proof of visits",
+              "description": "Mark locations and capture pictures of customer visits. Monitor late arrivals and track performance. Browse through comments from employees."
+            },
+            {
+              "title": "Mobile forms",
+              "description": "Review task forms as soon as they have been filled in. Control and improve service quality, employee performance and customer satisfaction."
+            }
+          ]
+        },
+        {
+          "type": "tabs",
+          "title": "Streamline workflow",
+          "tabs": [
+            {
+              "label": "Dispatching",
+              "features": [
+                {
+                  "title": "Seamless task dispatching",
+                  "description": "Assign jobs intuitively based on employee location, skill set and current workload."
+                },
+                {
+                  "title": "Digital to-do list",
+                  "description": "Turn an employee's smartphone into a personal organizer with clear directions and documents."
+                },
+                {
+                  "title": "Automatic route optimization",
+                  "description": "Build efficient routes across assignments. Spend less time behind the wheel."
+                },
+                {
+                  "title": "Decreased overhead expenses",
+                  "description": "Calculate actual working hours and accurate payroll. Slash fleet costs with optimized routes."
+                }
+              ]
+            },
+            {
+              "label": "Communication",
+              "image": "/assets/services/mobile-workforce-management/workflow.png",
+              "imageAlt": "Smart communication workflow",
+              "features": [
+                {
+                  "title": "Eliminate paperwork",
+                  "description": "Go digital to add and receive data in several clicks instead of paper forms."
+                },
+                {
+                  "title": "Documents, attachments, signatures",
+                  "description": "Attach files and pictures. Obtain electronic PODs with e-signatures."
+                },
+                {
+                  "title": "In-app chat",
+                  "description": "Replace phone calls with a single secure chat with delivery and read receipts."
+                }
+              ]
+            },
+            {
+              "label": "Customer excellence",
+              "features": [
+                {
+                  "title": "Online delivery tracking",
+                  "description": "Enable clients to check delivery status in real-time without calling the hotline."
+                },
+                {
+                  "title": "Transparent field operation",
+                  "description": "Share field activity with customers by putting all team and fleet on a single map."
+                },
+                {
+                  "title": "Faster order management",
+                  "description": "Take orders on site and submit to the back office with no time wasted."
+                },
+                {
+                  "title": "Increased customer satisfaction",
+                  "description": "Exceed expectations with improved delivery time and a rush option."
+                }
+              ]
+            },
+            {
+              "label": "Analytics",
+              "features": [
+                {
+                  "title": "Reports on everything",
+                  "description": "Analyze expenses, field performance, and customer visits with charts and automatic delivery."
+                },
+                {
+                  "title": "Key performance indicators",
+                  "description": "Benchmark quantitative and qualitative indicators for any mobile worker or department."
+                },
+                {
+                  "title": "Payroll and taxes",
+                  "description": "Track time with trips and activity logging. Classify journeys into private and business."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "navLabel": "Mobile Workforce Management",
+      "order": 14,
+      "published": true
+    },
+    {
+      "slug": "logistics-management",
+      "title": "Logistics Management",
+      "tagline": "",
+      "metaDescription": "Logistics Management and Supply Chain Solutions — efficient forward and reverse flow of goods with GPS tracking and fuel monitoring.",
+      "heroImage": "/assets/services/logistics-management/hero.jpg",
+      "heroImageAlt": "Logistics management supply chain",
+      "callout": "Plans, implements and controls the efficient & effective forward & reverse flow and storage of goods and services from origin to consumption.",
+      "blocks": [
+        {
+          "type": "split",
+          "title": "Introduction",
+          "paragraphs": [
+            "FMS International Ltd provides Logistics management as part of supply chain management. It plans, implements, controls; the efficient & effective, forward & reverse flow and storage of goods and services between the point of origin to the point of consumption."
+          ],
+          "image": "/assets/services/logistics-management/hero.jpg",
+          "imageAlt": "FMS logistics management",
+          "reverse": true
+        },
+        {
+          "type": "split",
+          "title": "FMS Logistics Hosting",
+          "paragraphs": [
+            "It involves the flow of information, materials handling, production, packaging, inventory, transportation, warehousing, and often security."
+          ],
+          "image": "/assets/services/logistics-management/supply-chain.png",
+          "imageAlt": "Supply chain logistics hosting"
+        },
+        {
+          "type": "heading",
+          "title": "Key Features of the FMS Logistics",
+          "subtitle": "The benefits of Logistics management include but not limited to perishable cargo monitoring & safety, GPS tracking, driver monitoring, driver safety and Eco monitoring, fuel monitoring, vehicle maintenance and periodic record keeping, vehicle tyre management and more."
+        },
+        {
+          "type": "features",
+          "columns": 3,
+          "features": [
+            {
+              "title": "Perishable cargo monitoring",
+              "description": "Temperature and safety monitoring for time-sensitive goods.",
+              "image": "/assets/services/logistics-management/features.png"
+            },
+            {
+              "title": "GPS tracking",
+              "description": "Real-time visibility across your logistics network."
+            },
+            {
+              "title": "Driver monitoring & safety",
+              "description": "Eco monitoring and driver behavior analytics."
+            },
+            {
+              "title": "Fuel monitoring",
+              "description": "Track consumption and prevent fuel theft across fleet."
+            },
+            {
+              "title": "Vehicle maintenance",
+              "description": "Periodic record keeping and proactive service scheduling."
+            },
+            {
+              "title": "Tyre management",
+              "description": "Track tyre life and replacement schedules."
+            }
+          ]
+        }
+      ],
+      "navLabel": "Logistics Management",
+      "order": 15,
+      "published": true
+    },
+    {
+      "slug": "track-and-trace",
+      "title": "Track And Trace",
+      "tagline": "",
+      "metaDescription": "Track and Trace Solutions for Supply Chain and Logistics — basic and superior GPS tracking with fuel monitoring and driver identification.",
+      "heroImage": "/assets/services/track-and-trace/45.jpg",
+      "heroImageAlt": "Track and trace GPS system",
+      "callout": "Vehicle and bike tracking with basic and superior tiers — from GPS location to full fuel management and driver analytics.",
+      "blocks": [
+        {
+          "type": "comparison",
+          "title": "Vehicle / Bike Tracking",
+          "leftTitle": "Basic Tracking",
+          "rightTitle": "Superior Tracking",
+          "leftImage": "/assets/services/track-and-trace/45.jpg",
+          "rightImage": "/assets/services/track-and-trace/46.jpg",
+          "leftFeatures": [
+            {
+              "title": "GPS location and time monitoring",
+              "description": "Real time and historical navigation data based on the journey taken by the vehicle or bike as per route movements."
+            },
+            {
+              "title": "Speed/distance covered",
+              "description": "Historical & real time mileage with speed events like average speed per kilometer, over speeding, harsh driving, and more."
+            },
+            {
+              "title": "Engine cut-off",
+              "description": "The FMS Track App gives a client access to cut-off or stop a vehicle engine in cases of theft or driver misuse."
+            }
+          ],
+          "rightFeatures": [
+            {
+              "title": "Fleet Maintenance",
+              "description": "Driver behavior, vehicle safety & compliance, fuel monitoring, route planning, and fleet operations."
+            },
+            {
+              "title": "Fuel Management / Monitoring",
+              "description": "Complete reports on fuel changes — refuel, fuel drop, consumption per trip and tank level."
+            },
+            {
+              "title": "Driver Identification and Behavior",
+              "description": "Monitor reporting times, fueling habits, over speeding, harsh driving, idle times, and more."
+            },
+            {
+              "title": "Geo-fencing of areas",
+              "description": "Set up virtual boundaries around any geographical area or point of interest."
+            },
+            {
+              "title": "Multiple & secure login",
+              "description": "Access via the FMS Track App or FMS Ltd Web page to view your fleet."
+            },
+            {
+              "title": "Report Analysis & SMS/Email alerts",
+              "description": "Generate history reports and receive notification alerts at the point of occurrence."
+            }
+          ]
+        },
+        {
+          "type": "split",
+          "title": "Superior tracking hardware",
+          "paragraphs": [
+            "Superior tracking includes all features of basic tracking with the additional benefit of fuel monitoring. FMS International Ltd supplies the hardware units and materials for installation."
+          ],
+          "image": "/assets/services/track-and-trace/48.jpg",
+          "imageAlt": "Superior tracking dashboard",
+          "reverse": true
+        }
+      ],
+      "navLabel": "Track And Trace",
+      "order": 16,
+      "published": true
+    },
+    {
+      "slug": "renewables-and-iot-energy-storage-monitoring",
+      "title": "Renewables and IOT Energy Storage Monitoring",
+      "tagline": "Actively monitoring energy KPIs to limit outages",
+      "metaDescription": "Renewable Energy and IoT Energy Storage Monitoring — live backup power monitoring, KPI tracking and intelligent optimization.",
+      "heroImage": "/assets/services/renewables-and-iot-energy-storage-monitoring/hero.png",
+      "heroImageAlt": "Energy storage monitoring platform",
+      "callout": "When faced with unstable power sources and periodic outages, ensure your backup power solutions are ready to kick in at a moment's notice.",
+      "blocks": [
+        {
+          "type": "intro",
+          "paragraphs": [
+            "When faced with unstable power sources and periodic – or even frequent – outages, there is a need to ensure your backup power solutions are ready to kick in at a moment's notice. This begins with understanding when these energy solutions are being used, and if they are supposed to be active at that time. To achieve this goal, our RMM actively monitors KPIs including availability, use time, voltage, load, state of charge, and state of health, and notifies of any malfunctions, in real-time, so that backup power can be provided, in a flash."
+          ]
+        },
+        {
+          "type": "before-after",
+          "title": "Transform your energy monitoring",
+          "beforeLabel": "Before",
+          "afterLabel": "After",
+          "before": [
+            "Backup energy assets operate unsupervised",
+            "Lack of priority or usage strategy for less-polluting assets",
+            "Asset health and performance checks are limited to onsite visits",
+            "Durability and life cycle of energy storage assets are often below expectations"
+          ],
+          "after": [
+            "Live monitoring of remote backup energy storage assets",
+            "Intelligent insights and optimizations to maximize energy storage use and efficiency",
+            "Tracking of energy KPIs and asset status from our web or mobile platform",
+            "Maximized energy storage infrastructure lifetime and warranty"
+          ],
+          "image": "/assets/services/renewables-and-iot-energy-storage-monitoring/after.png",
+          "imageAlt": "Energy storage monitoring after implementation"
+        },
+        {
+          "type": "stats",
+          "title": "A Renewed Lease on Energy Consumption",
+          "stats": [
+            {
+              "value": "1hr",
+              "label": "Global sunlight = world's annual power demand"
+            },
+            {
+              "value": "29%",
+              "label": "Renewable's share of global electricity 2020"
+            },
+            {
+              "value": "24/7",
+              "label": "Real-time KPI monitoring"
+            },
+            {
+              "value": "0",
+              "label": "Unplanned outage blind spots"
+            }
+          ]
+        },
+        {
+          "type": "accordion",
+          "title": "Ongoing energy management",
+          "items": [
+            {
+              "title": "Ongoing management",
+              "description": "All too often, these sustainable energy sources are integrated and forgotten, as if they will automatically operate at peak effectiveness. Yet, to ensure these assets operate properly and provide the optimal effect, they must be monitored and managed, around the clock.",
+              "image": "/assets/services/renewables-and-iot-energy-storage-monitoring/energy-1.png",
+              "imageAlt": "Ongoing energy management"
+            },
+            {
+              "title": "Real-time reporting",
+              "description": "To fully leverage the efficiency and carbon footprint improvements these natural energy sources provide, you need to consistently stay on top of your usage and the effectiveness of these energy assets. This includes tracking KPIs like time in use, power generated, carbon emissions saved, and relative cost savings.",
+              "image": "/assets/services/renewables-and-iot-energy-storage-monitoring/energy-2.png",
+              "imageAlt": "Real-time energy reporting"
+            },
+            {
+              "title": "External factors",
+              "description": "Renewable energy sources are highly affected by Mother Nature. External factors such as weather patterns and the time of year must consistently be considered to adapt energy operations and optimize for efficiency.",
+              "image": "/assets/services/renewables-and-iot-energy-storage-monitoring/energy-3.png",
+              "imageAlt": "External factor monitoring"
+            }
+          ]
+        },
+        {
+          "type": "features",
+          "columns": 4,
+          "features": [
+            {
+              "title": "Backup energy assets",
+              "description": "Monitor remote backup systems in real time.",
+              "image": "/assets/services/renewables-and-iot-energy-storage-monitoring/backup-energy-assets.png"
+            },
+            {
+              "title": "Performance checks",
+              "description": "Automated health and performance verification.",
+              "image": "/assets/services/renewables-and-iot-energy-storage-monitoring/performance-checks.png"
+            },
+            {
+              "title": "Priority strategy",
+              "description": "Intelligent usage strategy for less-polluting assets.",
+              "image": "/assets/services/renewables-and-iot-energy-storage-monitoring/priority.png"
+            },
+            {
+              "title": "Durability & life cycle",
+              "description": "Maximize infrastructure lifetime and warranty.",
+              "image": "/assets/services/renewables-and-iot-energy-storage-monitoring/durability-and-life-cycle.png"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "src": "/assets/services/renewables-and-iot-energy-storage-monitoring/storage.gif",
+          "alt": "Energy storage assets animation",
+          "caption": "Live energy storage asset monitoring"
+        }
+      ],
+      "navLabel": "Renewables and IOT Energy Storage Monitoring",
+      "order": 17,
+      "published": true
+    }
+  ],
+  "blogPosts": [
+    {
+      "slug": "benefits-of-axle-load-monitoring-systems-for-fleet-operators",
+      "title": "Benefits of Axle Load Monitoring Systems for Fleet Operators",
+      "excerpt": "Fleet operators manage several challenges every day. They must maintain safety, control costs, improve efficiency, and meet transport regulations.",
+      "content": "<p>Fleet operators manage several challenges every day. They must maintain safety, control costs, improve efficiency, and meet transport regulations. One major factor that affects these goals is vehicle weight distribution. When trucks carry uneven loads, they experience increased stress, reduced stability, and higher maintenance requirements. This is where an axle load monitoring system becomes valuable. The technology helps fleet operators measure how weight is distributed across each axle in real time. Instead of relying on manual checks, businesses can monitor load conditions throughout a vehicle's journey.</p><p>With accurate axle load information, companies can improve safety, protect their assets, and maintain compliance. As transport operations become more technology-driven, axle load monitoring has become an important part of modern fleet management.</p><h2>What Is an Axle Load Monitoring System?</h2><p>An axle load monitoring system is a technology that measures the amount of weight placed on each axle of a vehicle. It helps operators understand how cargo is distributed and whether the vehicle remains within safe operating limits.</p><p>The system uses sensors installed on key vehicle components. These sensors detect pressure, strain, or suspension movement caused by the load. The collected data is then sent to a monitoring platform where fleet managers can access real-time information.</p><p>Unlike traditional weighing methods, axle load monitoring provides continuous visibility. Drivers and fleet managers do not need to wait until a vehicle reaches a weighbridge. They can identify load issues before they affect safety, compliance, or vehicle performance.</p><p>Many businesses integrate these systems with broader fleet technologies. When combined with solutions like Fleet Management Solutions, operators gain deeper insights into vehicle operations, driver behavior, and cargo conditions.</p><h2>How Does Axle Load Monitoring Work?</h2><p>Axle load monitoring works by measuring the force placed on different parts of a vehicle. When cargo is loaded, the weight creates pressure on the suspension and axle components. The sensors detect these changes and convert them into digital information.</p><p>The monitoring unit processes this information and calculates the load carried by each axle. Fleet managers can view this data through a dashboard or connected platform. This allows them to make decisions based on accurate and current information.</p><p>Advanced systems can also provide alerts when axle limits are exceeded. These notifications help operators take action before the vehicle becomes unsafe. They can adjust cargo placement or redistribute weight to maintain proper balance. This real-time approach improves vehicle control and reduces the risks associated with overloaded or poorly balanced trucks.</p><h2>Benefits of Using Axle Load Monitoring</h2><p>One of the biggest benefits of axle load monitoring is improved fleet safety. By understanding how weight is distributed, drivers can operate vehicles with greater confidence. The system reduces the chances of accidents caused by instability or excessive loads.</p><p>Another advantage is better compliance with transport regulations. Many regions have strict axle weight limits to protect roads and improve public safety. Businesses that exceed these limits may face fines, penalties, or delays. Real-time axle information helps companies stay within legal requirements. It also provides accurate records that support inspections and compliance checks.</p><p>Axle load monitoring also reduces maintenance expenses. Vehicles that operate within recommended limits experience less wear. Tyres, suspension systems, and other components last longer, which lowers repair costs over time.</p><h2>The Role of an Axle Load Control System</h2><p>An axle load control system takes weight management further by helping operators maintain safe loading conditions. While monitoring systems provide information, control systems support active load management. These systems help prevent excessive weight from concentrating on specific axles. They allow operators to make better loading decisions before vehicles begin their routes.</p><p>For businesses that transport heavy goods, this level of control provides significant value. It reduces operational risks and improves the reliability of transport activities.</p><p>An axle load control system is especially useful for industries that handle changing cargo volumes. It provides flexibility while maintaining safety and compliance standards.</p><h2>Axle Load Monitoring and Fleet Management</h2><p>Modern fleet management relies on accurate data. Operators need information that helps them improve efficiency and reduce unnecessary costs. Axle load monitoring provides valuable insights that support better fleet decisions. When integrated with Vehicle Tracking Systems, businesses can monitor both vehicle movement and load conditions. This creates a complete view of fleet operations from one platform.</p><p>Managers can identify patterns such as repeated overloading, inefficient loading methods, or routes that create unnecessary vehicle stress. These insights help businesses improve their processes and protect their assets.</p><p>Axle load monitoring also works well with logistics technology. When connected with Logistics Management Solutions, companies can improve cargo planning and delivery efficiency.</p><h2>How Telematics Improves Axle Load Monitoring</h2><p>Telematics has changed how transport businesses manage vehicles. It connects different data sources and allows operators to monitor performance in real time. When axle load monitoring is integrated with telematics, fleet managers gain access to more detailed information. They can compare weight data with vehicle location, fuel usage, and driver behavior. This combination helps companies understand the complete picture of their operations. A vehicle may appear efficient based on location data alone, but load information reveals additional factors affecting performance.</p><p>Real-time alerts also improve response times. Managers can address weight issues quickly instead of discovering them after damage occurs.</p><h2>Industries That Benefit From Axle Load Monitoring</h2><p>Many industries rely on axle load monitoring to improve transport operations. Logistics companies use the technology to manage cargo distribution and maintain delivery efficiency.</p><p>Construction companies benefit from better control when transporting heavy materials and equipment. Proper load management helps protect vehicles operating under demanding conditions.</p><p>Agricultural businesses also use weight monitoring to transport goods safely. The technology helps ensure vehicles carry appropriate loads while maintaining compliance.</p><p>Mining, waste management, and other heavy-duty industries depend on accurate load information. In these sectors, even small weight errors can create major safety and operational problems.</p><h2>Choosing the Right Axle Load Monitoring Solution</h2><p>Choosing the right solution requires careful planning. Fleet operators should consider their vehicle types, operational needs, and integration requirements. A reliable system should provide accurate measurements and work well with existing fleet technologies. Businesses should also consider whether the solution can grow alongside their operations.</p><p>Professional installation and proper calibration are also important. Accurate sensor performance depends on correct setup and regular maintenance.</p><p>Working with an experienced technology provider helps businesses achieve better results. The right solution supports safer operations, lower costs, and improved fleet performance.</p><h2>Conclusion</h2><p>An axle load monitoring system gives fleet operators better control over vehicle weight and safety. It provides real-time visibility that helps businesses prevent overloading, reduce maintenance costs, and improve compliance. As transport operations become more complex, axle load monitoring and axle load control systems will continue to play an important role. Companies that adopt these technologies can build safer, more efficient, and more reliable fleets.</p>",
+      "date": "August 1, 2025",
+      "readTime": "8 min read",
+      "category": "Fleet Management",
+      "author": "FMS Africa Team",
+      "image": "/assets/landing/hero-fleet.jpg",
+      "featured": true,
+      "published": true,
+      "order": 0
+    },
+    {
+      "slug": "what-is-a-truck-weight-sensor-and-how-does-it-work",
+      "title": "What Is a Truck Weight Sensor and How Does It Work?",
+      "excerpt": "Fleet operators face constant pressure to improve safety, reduce costs, and maintain compliance. One factor that directly affects all three is accurate weight measurement.",
+      "content": "<p>Fleet operators face constant pressure to improve safety, reduce costs, and maintain compliance. One factor that directly affects all three is accurate weight measurement.</p><p>What Is a Truck Weight Sensor and How Does It Work? is a critical topic for fleet operators seeking to improve safety, reduce costs and maintain compliance across their operations.</p><h2>Introduction</h2><p>Modern fleet and asset management depends on accurate, real-time data. FMS Africa provides customer-centric solutions tailored to the specific needs of each industry — empowering businesses to make data-driven decisions that increase productivity and efficiency.</p><h2>Key benefits for fleet operators</h2><p>Real-time visibility across vehicles, cargo and assets helps operators respond quickly to issues before they become costly problems. Integration with GPS tracking, fuel management and telematics platforms creates a single source of truth for fleet decision makers.</p><p>Compliance with regional regulations, reduced maintenance costs and improved driver safety are among the measurable outcomes organisations achieve when deploying the right monitoring technology.</p><h2>Why choose FMS Africa</h2><p>Fleet Monitoring Systems Ltd is the leading Internet of Things technology company of choice globally. Our solutions provide businesses with real-time monitoring, analysis and control over their assets — enabling asset optimization, significant OPEX reductions and productivity maximization.</p><p>Contact our team for a free consultation and discover how our solutions can support your fleet operations.</p>",
+      "date": "July 18, 2025",
+      "readTime": "6 min read",
+      "category": "Weight Monitoring",
+      "author": "FMS Africa Team",
+      "image": "/assets/landing/trucks-highway.jpg",
+      "featured": false,
+      "published": true,
+      "order": 1
+    },
+    {
+      "slug": "asset-tracking-solutions",
+      "title": "Asset Tracking Solutions: Optimize Equipment and Resource Management",
+      "excerpt": "In many industries, businesses rely on valuable physical assets such as generators, cargo and industrial equipment that require real-time visibility.",
+      "content": "<p>In many industries, businesses rely on valuable physical assets such as generators, cargo and industrial equipment that require real-time visibility.</p><p>Asset Tracking Solutions: Optimize Equipment and Resource Management is a critical topic for fleet operators seeking to improve safety, reduce costs and maintain compliance across their operations.</p><h2>Introduction</h2><p>Modern fleet and asset management depends on accurate, real-time data. FMS Africa provides customer-centric solutions tailored to the specific needs of each industry — empowering businesses to make data-driven decisions that increase productivity and efficiency.</p><h2>Key benefits for fleet operators</h2><p>Real-time visibility across vehicles, cargo and assets helps operators respond quickly to issues before they become costly problems. Integration with GPS tracking, fuel management and telematics platforms creates a single source of truth for fleet decision makers.</p><p>Compliance with regional regulations, reduced maintenance costs and improved driver safety are among the measurable outcomes organisations achieve when deploying the right monitoring technology.</p><h2>Why choose FMS Africa</h2><p>Fleet Monitoring Systems Ltd is the leading Internet of Things technology company of choice globally. Our solutions provide businesses with real-time monitoring, analysis and control over their assets — enabling asset optimization, significant OPEX reductions and productivity maximization.</p><p>Contact our team for a free consultation and discover how our solutions can support your fleet operations.</p>",
+      "date": "July 5, 2025",
+      "readTime": "7 min read",
+      "category": "Asset Tracking",
+      "author": "FMS Africa Team",
+      "image": "/assets/landing/logistics-port.jpg",
+      "featured": false,
+      "published": true,
+      "order": 2
+    },
+    {
+      "slug": "cold-chain-monitoring-and-asset-tracking",
+      "title": "Cold Chain Monitoring and Asset Tracking: A Complete IoT Guide",
+      "excerpt": "In today's global supply chains, maintaining product integrity is critical — especially for temperature-sensitive goods across food, pharma and chemicals.",
+      "content": "<p>In today's global supply chains, maintaining product integrity is critical — especially for temperature-sensitive goods across food, pharma and chemicals.</p><p>Cold Chain Monitoring and Asset Tracking: A Complete IoT Guide is a critical topic for fleet operators seeking to improve safety, reduce costs and maintain compliance across their operations.</p><h2>Introduction</h2><p>Modern fleet and asset management depends on accurate, real-time data. FMS Africa provides customer-centric solutions tailored to the specific needs of each industry — empowering businesses to make data-driven decisions that increase productivity and efficiency.</p><h2>Key benefits for fleet operators</h2><p>Real-time visibility across vehicles, cargo and assets helps operators respond quickly to issues before they become costly problems. Integration with GPS tracking, fuel management and telematics platforms creates a single source of truth for fleet decision makers.</p><p>Compliance with regional regulations, reduced maintenance costs and improved driver safety are among the measurable outcomes organisations achieve when deploying the right monitoring technology.</p><h2>Why choose FMS Africa</h2><p>Fleet Monitoring Systems Ltd is the leading Internet of Things technology company of choice globally. Our solutions provide businesses with real-time monitoring, analysis and control over their assets — enabling asset optimization, significant OPEX reductions and productivity maximization.</p><p>Contact our team for a free consultation and discover how our solutions can support your fleet operations.</p>",
+      "date": "June 22, 2025",
+      "readTime": "9 min read",
+      "category": "Cold Chain",
+      "author": "FMS Africa Team",
+      "image": "/assets/landing/control-room.jpg",
+      "featured": false,
+      "published": true,
+      "order": 3
+    },
+    {
+      "slug": "fuel-management-systems",
+      "title": "Fuel Management Systems",
+      "excerpt": "Fuel expenses represent one of the largest costs for businesses operating vehicle fleets. Without proper monitoring, costs can spiral quickly.",
+      "content": "<p>Fuel expenses represent one of the largest costs for businesses operating vehicle fleets. Without proper monitoring, costs can spiral quickly.</p><p>Fuel Management Systems is a critical topic for fleet operators seeking to improve safety, reduce costs and maintain compliance across their operations.</p><h2>Introduction</h2><p>Modern fleet and asset management depends on accurate, real-time data. FMS Africa provides customer-centric solutions tailored to the specific needs of each industry — empowering businesses to make data-driven decisions that increase productivity and efficiency.</p><h2>Key benefits for fleet operators</h2><p>Real-time visibility across vehicles, cargo and assets helps operators respond quickly to issues before they become costly problems. Integration with GPS tracking, fuel management and telematics platforms creates a single source of truth for fleet decision makers.</p><p>Compliance with regional regulations, reduced maintenance costs and improved driver safety are among the measurable outcomes organisations achieve when deploying the right monitoring technology.</p><h2>Why choose FMS Africa</h2><p>Fleet Monitoring Systems Ltd is the leading Internet of Things technology company of choice globally. Our solutions provide businesses with real-time monitoring, analysis and control over their assets — enabling asset optimization, significant OPEX reductions and productivity maximization.</p><p>Contact our team for a free consultation and discover how our solutions can support your fleet operations.</p>",
+      "date": "June 10, 2025",
+      "readTime": "6 min read",
+      "category": "Fuel Management",
+      "author": "FMS Africa Team",
+      "image": "/assets/landing/hero-fleet.jpg",
+      "featured": false,
+      "published": true,
+      "order": 4
+    },
+    {
+      "slug": "advanced-gps-vehicle-tracking",
+      "title": "Advanced GPS Vehicle Tracking",
+      "excerpt": "In today's highly competitive business environment, companies must constantly improve efficiency, reduce operational costs, and enhance fleet visibility.",
+      "content": "<p>In today's highly competitive business environment, companies must constantly improve efficiency, reduce operational costs, and enhance fleet visibility.</p><p>Advanced GPS Vehicle Tracking is a critical topic for fleet operators seeking to improve safety, reduce costs and maintain compliance across their operations.</p><h2>Introduction</h2><p>Modern fleet and asset management depends on accurate, real-time data. FMS Africa provides customer-centric solutions tailored to the specific needs of each industry — empowering businesses to make data-driven decisions that increase productivity and efficiency.</p><h2>Key benefits for fleet operators</h2><p>Real-time visibility across vehicles, cargo and assets helps operators respond quickly to issues before they become costly problems. Integration with GPS tracking, fuel management and telematics platforms creates a single source of truth for fleet decision makers.</p><p>Compliance with regional regulations, reduced maintenance costs and improved driver safety are among the measurable outcomes organisations achieve when deploying the right monitoring technology.</p><h2>Why choose FMS Africa</h2><p>Fleet Monitoring Systems Ltd is the leading Internet of Things technology company of choice globally. Our solutions provide businesses with real-time monitoring, analysis and control over their assets — enabling asset optimization, significant OPEX reductions and productivity maximization.</p><p>Contact our team for a free consultation and discover how our solutions can support your fleet operations.</p>",
+      "date": "May 28, 2025",
+      "readTime": "7 min read",
+      "category": "GPS Tracking",
+      "author": "FMS Africa Team",
+      "image": "/assets/landing/trucks-highway.jpg",
+      "featured": false,
+      "published": true,
+      "order": 5
+    },
+    {
+      "slug": "asset-security-and-theft-prevention-using-telematics-solutions",
+      "title": "Asset Security and Theft Prevention Using Telematics Solutions",
+      "excerpt": "Protecting valuable assets is a top priority for any fleet or logistics operation. Telematics provides real-time alerts and recovery tools when theft occurs.",
+      "content": "<p>Protecting valuable assets is a top priority for any fleet or logistics operation. Telematics provides real-time alerts and recovery tools when theft occurs.</p><p>Asset Security and Theft Prevention Using Telematics Solutions is a critical topic for fleet operators seeking to improve safety, reduce costs and maintain compliance across their operations.</p><h2>Introduction</h2><p>Modern fleet and asset management depends on accurate, real-time data. FMS Africa provides customer-centric solutions tailored to the specific needs of each industry — empowering businesses to make data-driven decisions that increase productivity and efficiency.</p><h2>Key benefits for fleet operators</h2><p>Real-time visibility across vehicles, cargo and assets helps operators respond quickly to issues before they become costly problems. Integration with GPS tracking, fuel management and telematics platforms creates a single source of truth for fleet decision makers.</p><p>Compliance with regional regulations, reduced maintenance costs and improved driver safety are among the measurable outcomes organisations achieve when deploying the right monitoring technology.</p><h2>Why choose FMS Africa</h2><p>Fleet Monitoring Systems Ltd is the leading Internet of Things technology company of choice globally. Our solutions provide businesses with real-time monitoring, analysis and control over their assets — enabling asset optimization, significant OPEX reductions and productivity maximization.</p><p>Contact our team for a free consultation and discover how our solutions can support your fleet operations.</p>",
+      "date": "May 14, 2025",
+      "readTime": "6 min read",
+      "category": "Telematics",
+      "author": "FMS Africa Team",
+      "image": "/assets/landing/logistics-port.jpg",
+      "featured": false,
+      "published": true,
+      "order": 6
+    },
+    {
+      "slug": "preventive-vs-reactive-maintenance",
+      "title": "Preventive vs Reactive Maintenance: How Telematics Improves Vehicle Lifespan",
+      "excerpt": "Vehicle maintenance is critical to fleet efficiency, safety, and cost control. Telematics shifts maintenance from reactive repairs to proactive care.",
+      "content": "<p>Vehicle maintenance is critical to fleet efficiency, safety, and cost control. Telematics shifts maintenance from reactive repairs to proactive care.</p><p>Preventive vs Reactive Maintenance: How Telematics Improves Vehicle Lifespan is a critical topic for fleet operators seeking to improve safety, reduce costs and maintain compliance across their operations.</p><h2>Introduction</h2><p>Modern fleet and asset management depends on accurate, real-time data. FMS Africa provides customer-centric solutions tailored to the specific needs of each industry — empowering businesses to make data-driven decisions that increase productivity and efficiency.</p><h2>Key benefits for fleet operators</h2><p>Real-time visibility across vehicles, cargo and assets helps operators respond quickly to issues before they become costly problems. Integration with GPS tracking, fuel management and telematics platforms creates a single source of truth for fleet decision makers.</p><p>Compliance with regional regulations, reduced maintenance costs and improved driver safety are among the measurable outcomes organisations achieve when deploying the right monitoring technology.</p><h2>Why choose FMS Africa</h2><p>Fleet Monitoring Systems Ltd is the leading Internet of Things technology company of choice globally. Our solutions provide businesses with real-time monitoring, analysis and control over their assets — enabling asset optimization, significant OPEX reductions and productivity maximization.</p><p>Contact our team for a free consultation and discover how our solutions can support your fleet operations.</p>",
+      "date": "May 1, 2025",
+      "readTime": "7 min read",
+      "category": "Maintenance",
+      "author": "FMS Africa Team",
+      "image": "/assets/landing/control-room.jpg",
+      "featured": false,
+      "published": true,
+      "order": 7
+    },
+    {
+      "slug": "gps-tracking-for-fleet-fuel-optimization-cost-savings",
+      "title": "How GPS Tracking Helps Reduce Fuel Costs in Fleet Operations",
+      "excerpt": "Fuel is one of the largest expenses in fleet management. GPS tracking delivers the visibility needed to cut waste and improve driver behaviour.",
+      "content": "<p>Fuel is one of the largest expenses in fleet management. GPS tracking delivers the visibility needed to cut waste and improve driver behaviour.</p><p>How GPS Tracking Helps Reduce Fuel Costs in Fleet Operations is a critical topic for fleet operators seeking to improve safety, reduce costs and maintain compliance across their operations.</p><h2>Introduction</h2><p>Modern fleet and asset management depends on accurate, real-time data. FMS Africa provides customer-centric solutions tailored to the specific needs of each industry — empowering businesses to make data-driven decisions that increase productivity and efficiency.</p><h2>Key benefits for fleet operators</h2><p>Real-time visibility across vehicles, cargo and assets helps operators respond quickly to issues before they become costly problems. Integration with GPS tracking, fuel management and telematics platforms creates a single source of truth for fleet decision makers.</p><p>Compliance with regional regulations, reduced maintenance costs and improved driver safety are among the measurable outcomes organisations achieve when deploying the right monitoring technology.</p><h2>Why choose FMS Africa</h2><p>Fleet Monitoring Systems Ltd is the leading Internet of Things technology company of choice globally. Our solutions provide businesses with real-time monitoring, analysis and control over their assets — enabling asset optimization, significant OPEX reductions and productivity maximization.</p><p>Contact our team for a free consultation and discover how our solutions can support your fleet operations.</p>",
+      "date": "April 17, 2025",
+      "readTime": "6 min read",
+      "category": "Fuel Management",
+      "author": "FMS Africa Team",
+      "image": "/assets/landing/hero-fleet.jpg",
+      "featured": false,
+      "published": true,
+      "order": 8
+    },
+    {
+      "slug": "smart-fleet-management",
+      "title": "Smart Fleet Management with IoT and Telematics: The Complete Guide",
+      "excerpt": "Fleet management is evolving rapidly as businesses seek greater visibility, automation and data-driven decision making across their operations.",
+      "content": "<p>Fleet management is evolving rapidly as businesses seek greater visibility, automation and data-driven decision making across their operations.</p><p>Smart Fleet Management with IoT and Telematics: The Complete Guide is a critical topic for fleet operators seeking to improve safety, reduce costs and maintain compliance across their operations.</p><h2>Introduction</h2><p>Modern fleet and asset management depends on accurate, real-time data. FMS Africa provides customer-centric solutions tailored to the specific needs of each industry — empowering businesses to make data-driven decisions that increase productivity and efficiency.</p><h2>Key benefits for fleet operators</h2><p>Real-time visibility across vehicles, cargo and assets helps operators respond quickly to issues before they become costly problems. Integration with GPS tracking, fuel management and telematics platforms creates a single source of truth for fleet decision makers.</p><p>Compliance with regional regulations, reduced maintenance costs and improved driver safety are among the measurable outcomes organisations achieve when deploying the right monitoring technology.</p><h2>Why choose FMS Africa</h2><p>Fleet Monitoring Systems Ltd is the leading Internet of Things technology company of choice globally. Our solutions provide businesses with real-time monitoring, analysis and control over their assets — enabling asset optimization, significant OPEX reductions and productivity maximization.</p><p>Contact our team for a free consultation and discover how our solutions can support your fleet operations.</p>",
+      "date": "April 3, 2025",
+      "readTime": "10 min read",
+      "category": "IoT & Telematics",
+      "author": "FMS Africa Team",
+      "image": "/assets/landing/trucks-highway.jpg",
+      "featured": false,
+      "published": true,
+      "order": 9
+    },
+    {
+      "slug": "mobile-workforce-management",
+      "title": "Mobile Workforce Management: How IoT Improves Field Operations",
+      "excerpt": "Managing a mobile workforce efficiently is a major challenge. IoT-powered tracking improves coordination, accountability and response times.",
+      "content": "<p>Managing a mobile workforce efficiently is a major challenge. IoT-powered tracking improves coordination, accountability and response times.</p><p>Mobile Workforce Management: How IoT Improves Field Operations is a critical topic for fleet operators seeking to improve safety, reduce costs and maintain compliance across their operations.</p><h2>Introduction</h2><p>Modern fleet and asset management depends on accurate, real-time data. FMS Africa provides customer-centric solutions tailored to the specific needs of each industry — empowering businesses to make data-driven decisions that increase productivity and efficiency.</p><h2>Key benefits for fleet operators</h2><p>Real-time visibility across vehicles, cargo and assets helps operators respond quickly to issues before they become costly problems. Integration with GPS tracking, fuel management and telematics platforms creates a single source of truth for fleet decision makers.</p><p>Compliance with regional regulations, reduced maintenance costs and improved driver safety are among the measurable outcomes organisations achieve when deploying the right monitoring technology.</p><h2>Why choose FMS Africa</h2><p>Fleet Monitoring Systems Ltd is the leading Internet of Things technology company of choice globally. Our solutions provide businesses with real-time monitoring, analysis and control over their assets — enabling asset optimization, significant OPEX reductions and productivity maximization.</p><p>Contact our team for a free consultation and discover how our solutions can support your fleet operations.</p>",
+      "date": "March 20, 2025",
+      "readTime": "7 min read",
+      "category": "Workforce",
+      "author": "FMS Africa Team",
+      "image": "/assets/landing/logistics-port.jpg",
+      "featured": false,
+      "published": true,
+      "order": 10
+    },
+    {
+      "slug": "discover-how-video-telematics-and-ai-fleet-safety-improve-driver-behavior-analysis-detect-incidents-in-real-time-and-prevent-operational-risks",
+      "title": "AI Video Telematics: Enhancing Driver Safety and Preventing Risks",
+      "excerpt": "Road safety and fleet efficiency are top priorities. AI video telematics detects risky behaviour in real time and protects drivers and assets.",
+      "content": "<p>Road safety and fleet efficiency are top priorities. AI video telematics detects risky behaviour in real time and protects drivers and assets.</p><p>AI Video Telematics: Enhancing Driver Safety and Preventing Risks is a critical topic for fleet operators seeking to improve safety, reduce costs and maintain compliance across their operations.</p><h2>Introduction</h2><p>Modern fleet and asset management depends on accurate, real-time data. FMS Africa provides customer-centric solutions tailored to the specific needs of each industry — empowering businesses to make data-driven decisions that increase productivity and efficiency.</p><h2>Key benefits for fleet operators</h2><p>Real-time visibility across vehicles, cargo and assets helps operators respond quickly to issues before they become costly problems. Integration with GPS tracking, fuel management and telematics platforms creates a single source of truth for fleet decision makers.</p><p>Compliance with regional regulations, reduced maintenance costs and improved driver safety are among the measurable outcomes organisations achieve when deploying the right monitoring technology.</p><h2>Why choose FMS Africa</h2><p>Fleet Monitoring Systems Ltd is the leading Internet of Things technology company of choice globally. Our solutions provide businesses with real-time monitoring, analysis and control over their assets — enabling asset optimization, significant OPEX reductions and productivity maximization.</p><p>Contact our team for a free consultation and discover how our solutions can support your fleet operations.</p>",
+      "date": "March 6, 2025",
+      "readTime": "8 min read",
+      "category": "AI Telematics",
+      "author": "FMS Africa Team",
+      "image": "/assets/landing/control-room.jpg",
+      "featured": false,
+      "published": true,
+      "order": 11
+    }
+  ],
+  "galleryItems": [
+    {
+      "src": "/assets/gallery/Chinese-Chamber-of-Commerce-in-Malaysia_(1).jpg",
+      "title": "Chinese Chamber of Commerce in Malaysia",
+      "category": "partnerships",
+      "order": 0,
+      "active": true
+    },
+    {
+      "src": "/assets/gallery/Malaysia-Chamber-of-Commerce-Malaysia_(1).jpg",
+      "title": "Malaysia Chamber of Commerce Malaysia",
+      "category": "partnerships",
+      "order": 1,
+      "active": true
+    },
+    {
+      "src": "/assets/gallery/Factory-Visit-Malaysia-1-1_(1).jpg",
+      "title": "Factory Visit Malaysia 1 1",
+      "category": "malaysia",
+      "order": 2,
+      "active": true
+    },
+    {
+      "src": "/assets/gallery/Technical-Works-1.jpg",
+      "title": "Technical Works 1",
+      "category": "technical",
+      "order": 3,
+      "active": true
+    },
+    {
+      "src": "/assets/gallery/Technical-Works-1_(1).jpg",
+      "title": "Technical Works 1",
+      "category": "technical",
+      "order": 4,
+      "active": true
+    },
+    {
+      "src": "/assets/gallery/Technical-Works-2.jpg",
+      "title": "Technical Works 2",
+      "category": "technical",
+      "order": 5,
+      "active": true
+    },
+    {
+      "src": "/assets/gallery/Technical-Works-2_(1).jpg",
+      "title": "Technical Works 2",
+      "category": "technical",
+      "order": 6,
+      "active": true
+    },
+    {
+      "src": "/assets/gallery/Technical-Works-3.jpg",
+      "title": "Technical Works 3",
+      "category": "technical",
+      "order": 7,
+      "active": true
+    },
+    {
+      "src": "/assets/gallery/Technical-Works-3_(1).jpg",
+      "title": "Technical Works 3",
+      "category": "technical",
+      "order": 8,
+      "active": true
+    },
+    {
+      "src": "/assets/gallery/Technical-Works-4.jpg",
+      "title": "Technical Works 4",
+      "category": "technical",
+      "order": 9,
+      "active": true
+    },
+    {
+      "src": "/assets/gallery/Technical-Works-4_(1).jpg",
+      "title": "Technical Works 4",
+      "category": "technical",
+      "order": 10,
+      "active": true
+    },
+    {
+      "src": "/assets/gallery/Technical-Works-5.jpg",
+      "title": "Technical Works 5",
+      "category": "technical",
+      "order": 11,
+      "active": true
+    },
+    {
+      "src": "/assets/gallery/Technical-Works-5_(1).jpg",
+      "title": "Technical Works 5",
+      "category": "technical",
+      "order": 12,
+      "active": true
+    },
+    {
+      "src": "/assets/gallery/Technical-Works-6.jpg",
+      "title": "Technical Works 6",
+      "category": "technical",
+      "order": 13,
+      "active": true
+    },
+    {
+      "src": "/assets/gallery/Technical-Works-7.jpg",
+      "title": "Technical Works 7",
+      "category": "technical",
+      "order": 14,
+      "active": true
+    },
+    {
+      "src": "/assets/gallery/Technical-Works-8.jpg",
+      "title": "Technical Works 8",
+      "category": "technical",
+      "order": 15,
+      "active": true
+    },
+    {
+      "src": "/assets/gallery/Technical-Works-9.jpg",
+      "title": "Technical Works 9",
+      "category": "technical",
+      "order": 16,
+      "active": true
+    },
+    {
+      "src": "/assets/gallery/Technical-Works-10.jpg",
+      "title": "Technical Works 10",
+      "category": "technical",
+      "order": 17,
+      "active": true
+    },
+    {
+      "src": "/assets/gallery/Technical-Works-11.jpg",
+      "title": "Technical Works 11",
+      "category": "technical",
+      "order": 18,
+      "active": true
+    }
+  ],
+  "clientele": [
+    {
+      "name": "ACTV",
+      "src": "/assets/clientele/actv.jpg",
+      "category": "corporate",
+      "order": 0,
+      "active": true
+    },
+    {
+      "name": "Afrexim Bank",
+      "src": "/assets/clientele/afreximbank.jpg",
+      "category": "banking",
+      "order": 1,
+      "active": true
+    },
+    {
+      "name": "AGS",
+      "src": "/assets/clientele/ags.jpg",
+      "category": "corporate",
+      "order": 2,
+      "active": true
+    },
+    {
+      "name": "Akili",
+      "src": "/assets/clientele/akili.jpg",
+      "category": "corporate",
+      "order": 3,
+      "active": true
+    },
+    {
+      "name": "Alight",
+      "src": "/assets/clientele/alight.jpg",
+      "category": "ngo",
+      "order": 4,
+      "active": true
+    },
+    {
+      "name": "Alight Uganda",
+      "src": "/assets/clientele/alight-uganda.png",
+      "category": "ngo",
+      "order": 5,
+      "active": true
+    },
+    {
+      "name": "All in Trade",
+      "src": "/assets/clientele/all-in-trade.jpg",
+      "category": "corporate",
+      "order": 6,
+      "active": true
+    },
+    {
+      "name": "Alliance Media",
+      "src": "/assets/clientele/alliancemedia.jpg",
+      "category": "corporate",
+      "order": 7,
+      "active": true
+    },
+    {
+      "name": "Aron Foods",
+      "src": "/assets/clientele/aron-foods.jpg",
+      "category": "corporate",
+      "order": 8,
+      "active": true
+    },
+    {
+      "name": "Balton Uganda",
+      "src": "/assets/clientele/balton-uganda-1.jpg",
+      "category": "corporate",
+      "order": 9,
+      "active": true
+    },
+    {
+      "name": "Bank of Uganda",
+      "src": "/assets/clientele/bank-of-uganda-1.jpg",
+      "category": "banking",
+      "order": 10,
+      "active": true
+    },
+    {
+      "name": "Bugiri Sugar",
+      "src": "/assets/clientele/bugiri-sugar-logo.png",
+      "category": "corporate",
+      "order": 11,
+      "active": true
+    },
+    {
+      "name": "Cadam",
+      "src": "/assets/clientele/cadam.jpg",
+      "category": "corporate",
+      "order": 12,
+      "active": true
+    },
+    {
+      "name": "Care International",
+      "src": "/assets/clientele/care-international-1.jpg",
+      "category": "ngo",
+      "order": 13,
+      "active": true
+    },
+    {
+      "name": "Care International Uganda",
+      "src": "/assets/clientele/care-international-uganda.png",
+      "category": "ngo",
+      "order": 14,
+      "active": true
+    },
+    {
+      "name": "Central Public",
+      "src": "/assets/clientele/central-public.jpg",
+      "category": "government",
+      "order": 15,
+      "active": true
+    },
+    {
+      "name": "Chicken Tonight",
+      "src": "/assets/clientele/chicken-tonight.jpg",
+      "category": "corporate",
+      "order": 16,
+      "active": true
+    },
+    {
+      "name": "Cotton On Foundation",
+      "src": "/assets/clientele/cotton-on-foundation.jpg",
+      "category": "ngo",
+      "order": 17,
+      "active": true
+    },
+    {
+      "name": "Csbag",
+      "src": "/assets/clientele/csbag-1.jpg",
+      "category": "corporate",
+      "order": 18,
+      "active": true
+    },
+    {
+      "name": "CWS",
+      "src": "/assets/clientele/cws.jpg",
+      "category": "corporate",
+      "order": 19,
+      "active": true
+    },
+    {
+      "name": "DPF",
+      "src": "/assets/clientele/dpf.jpg",
+      "category": "corporate",
+      "order": 20,
+      "active": true
+    },
+    {
+      "name": "EAPS",
+      "src": "/assets/clientele/eaps.jpg",
+      "category": "corporate",
+      "order": 21,
+      "active": true
+    },
+    {
+      "name": "EcoTrends",
+      "src": "/assets/clientele/ecotrends.jpg",
+      "category": "corporate",
+      "order": 22,
+      "active": true
+    },
+    {
+      "name": "EDC",
+      "src": "/assets/clientele/edc.jpg",
+      "category": "corporate",
+      "order": 23,
+      "active": true
+    },
+    {
+      "name": "Elizabeth Glaser",
+      "src": "/assets/clientele/elizabeth-glaser.jpg",
+      "category": "ngo",
+      "order": 24,
+      "active": true
+    },
+    {
+      "name": "Emerging Market International",
+      "src": "/assets/clientele/emerging-market-international.jpg",
+      "category": "corporate",
+      "order": 25,
+      "active": true
+    },
+    {
+      "name": "Enabel",
+      "src": "/assets/clientele/enabel.jpg",
+      "category": "ngo",
+      "order": 26,
+      "active": true
+    },
+    {
+      "name": "Equity Bank",
+      "src": "/assets/clientele/equity-bank.png",
+      "category": "banking",
+      "order": 27,
+      "active": true
+    },
+    {
+      "name": "Equity Bank",
+      "src": "/assets/clientele/equity-logo.png",
+      "category": "banking",
+      "order": 28,
+      "active": true
+    },
+    {
+      "name": "Evidence Action",
+      "src": "/assets/clientele/evidence-action.jpg",
+      "category": "ngo",
+      "order": 29,
+      "active": true
+    },
+    {
+      "name": "FAO",
+      "src": "/assets/clientele/fao.jpg",
+      "category": "ngo",
+      "order": 30,
+      "active": true
+    },
+    {
+      "name": "Feed the Future",
+      "src": "/assets/clientele/feed-the-future.png",
+      "category": "ngo",
+      "order": 31,
+      "active": true
+    },
+    {
+      "name": "Finn Church Aid",
+      "src": "/assets/clientele/finn-church-aid.jpg",
+      "category": "ngo",
+      "order": 32,
+      "active": true
+    },
+    {
+      "name": "FSD Uganda",
+      "src": "/assets/clientele/fsd-uganda.jpg",
+      "category": "banking",
+      "order": 33,
+      "active": true
+    },
+    {
+      "name": "Future Link",
+      "src": "/assets/clientele/future-link.jpg",
+      "category": "corporate",
+      "order": 34,
+      "active": true
+    },
+    {
+      "name": "Geneva Global",
+      "src": "/assets/clientele/geneva-global-1.jpg",
+      "category": "ngo",
+      "order": 35,
+      "active": true
+    },
+    {
+      "name": "Global Vet Ltd",
+      "src": "/assets/clientele/global-vet-ltd.jpg",
+      "category": "corporate",
+      "order": 36,
+      "active": true
+    },
+    {
+      "name": "GOAL",
+      "src": "/assets/clientele/goal.jpg",
+      "category": "ngo",
+      "order": 37,
+      "active": true
+    },
+    {
+      "name": "Health Partners",
+      "src": "/assets/clientele/health-partners-1.jpg",
+      "category": "ngo",
+      "order": 38,
+      "active": true
+    },
+    {
+      "name": "Health Partners Uganda",
+      "src": "/assets/clientele/health-partners-uganda.png",
+      "category": "ngo",
+      "order": 39,
+      "active": true
+    },
+    {
+      "name": "HRAFP",
+      "src": "/assets/clientele/hrafp.jpg",
+      "category": "corporate",
+      "order": 40,
+      "active": true
+    },
+    {
+      "name": "Human Diagnostics",
+      "src": "/assets/clientele/human-diagnostics.jpg",
+      "category": "corporate",
+      "order": 41,
+      "active": true
+    },
+    {
+      "name": "IDLO",
+      "src": "/assets/clientele/idlo.jpg",
+      "category": "ngo",
+      "order": 42,
+      "active": true
+    },
+    {
+      "name": "IFPRI",
+      "src": "/assets/clientele/ifpri.jpg",
+      "category": "ngo",
+      "order": 43,
+      "active": true
+    },
+    {
+      "name": "IG",
+      "src": "/assets/clientele/ig.jpg",
+      "category": "corporate",
+      "order": 44,
+      "active": true
+    },
+    {
+      "name": "International School of Uganda",
+      "src": "/assets/clientele/international-school-of-uganda-1.jpg",
+      "category": "ngo",
+      "order": 45,
+      "active": true
+    },
+    {
+      "name": "JCRC",
+      "src": "/assets/clientele/jcrc.jpg",
+      "category": "ngo",
+      "order": 46,
+      "active": true
+    },
+    {
+      "name": "Jeff Hamilton",
+      "src": "/assets/clientele/jeff-hamilton-logo.jpg",
+      "category": "corporate",
+      "order": 47,
+      "active": true
+    },
+    {
+      "name": "JRS",
+      "src": "/assets/clientele/jrs.jpg",
+      "category": "ngo",
+      "order": 48,
+      "active": true
+    },
+    {
+      "name": "Keshwala",
+      "src": "/assets/clientele/keshwala.jpg",
+      "category": "corporate",
+      "order": 49,
+      "active": true
+    },
+    {
+      "name": "KIS",
+      "src": "/assets/clientele/kis-logo.jpg",
+      "category": "corporate",
+      "order": 50,
+      "active": true
+    },
+    {
+      "name": "M-KOPA",
+      "src": "/assets/clientele/m-kopa.jpg",
+      "category": "corporate",
+      "order": 51,
+      "active": true
+    },
+    {
+      "name": "Mercy Corps",
+      "src": "/assets/clientele/mercy-corps.jpg",
+      "category": "ngo",
+      "order": 52,
+      "active": true
+    },
+    {
+      "name": "Ministry of Water & Environment",
+      "src": "/assets/clientele/ministry-of-water-and-environment-1.jpg",
+      "category": "government",
+      "order": 53,
+      "active": true
+    },
+    {
+      "name": "Ministry of Water & Environment",
+      "src": "/assets/clientele/ministry-of-water-and-environment.jpg",
+      "category": "government",
+      "order": 54,
+      "active": true
+    },
+    {
+      "name": "Mr Price",
+      "src": "/assets/clientele/mr-price.jpg",
+      "category": "corporate",
+      "order": 55,
+      "active": true
+    },
+    {
+      "name": "MSC",
+      "src": "/assets/clientele/msc.jpg",
+      "category": "corporate",
+      "order": 56,
+      "active": true
+    },
+    {
+      "name": "MSH",
+      "src": "/assets/clientele/msh.jpg",
+      "category": "ngo",
+      "order": 57,
+      "active": true
+    },
+    {
+      "name": "MTN Zambia",
+      "src": "/assets/clientele/mtn-zambia.jpg",
+      "category": "corporate",
+      "order": 58,
+      "active": true
+    },
+    {
+      "name": "MUCOBADI",
+      "src": "/assets/clientele/mucobadi.jpg",
+      "category": "ngo",
+      "order": 59,
+      "active": true
+    },
+    {
+      "name": "Muduusi Gilbert",
+      "src": "/assets/clientele/muduusi-gilbert.png",
+      "category": "corporate",
+      "order": 60,
+      "active": true
+    },
+    {
+      "name": "New Vision",
+      "src": "/assets/clientele/new-vision.jpg",
+      "category": "corporate",
+      "order": 61,
+      "active": true
+    },
+    {
+      "name": "PE Connect",
+      "src": "/assets/clientele/pe-connect.jpg",
+      "category": "corporate",
+      "order": 62,
+      "active": true
+    },
+    {
+      "name": "PSI Engineering",
+      "src": "/assets/clientele/psi-engineering-1.jpg",
+      "category": "corporate",
+      "order": 63,
+      "active": true
+    },
+    {
+      "name": "Samaritan's Purse",
+      "src": "/assets/clientele/samaritans-purse-2.jpg",
+      "category": "ngo",
+      "order": 64,
+      "active": true
+    },
+    {
+      "name": "Seed Global Health",
+      "src": "/assets/clientele/seed-global-health.jpg",
+      "category": "ngo",
+      "order": 65,
+      "active": true
+    },
+    {
+      "name": "SNL",
+      "src": "/assets/clientele/snl.jpg",
+      "category": "corporate",
+      "order": 66,
+      "active": true
+    },
+    {
+      "name": "Somarelang Investments",
+      "src": "/assets/clientele/somarelang-investments-limited-logo.jpg",
+      "category": "corporate",
+      "order": 67,
+      "active": true
+    },
+    {
+      "name": "Stanbic Bank",
+      "src": "/assets/clientele/stanbic-bank.jpg",
+      "category": "banking",
+      "order": 68,
+      "active": true
+    },
+    {
+      "name": "SWICO",
+      "src": "/assets/clientele/swico.jpg",
+      "category": "corporate",
+      "order": 69,
+      "active": true
+    },
+    {
+      "name": "TASO",
+      "src": "/assets/clientele/taso.jpg",
+      "category": "ngo",
+      "order": 70,
+      "active": true
+    },
+    {
+      "name": "UBA Bank",
+      "src": "/assets/clientele/uba.png",
+      "category": "banking",
+      "order": 71,
+      "active": true
+    },
+    {
+      "name": "UBA Bank",
+      "src": "/assets/clientele/uba-bank.jpg",
+      "category": "banking",
+      "order": 72,
+      "active": true
+    },
+    {
+      "name": "UEDCL",
+      "src": "/assets/clientele/uedcl-logo.webp",
+      "category": "government",
+      "order": 73,
+      "active": true
+    },
+    {
+      "name": "UEGCL",
+      "src": "/assets/clientele/uegcl.png",
+      "category": "government",
+      "order": 74,
+      "active": true
+    },
+    {
+      "name": "Uganda Airlines",
+      "src": "/assets/clientele/uganda-airlines-1.jpg",
+      "category": "government",
+      "order": 75,
+      "active": true
+    },
+    {
+      "name": "Uganda Clays",
+      "src": "/assets/clientele/uganda-clays.jpg",
+      "category": "corporate",
+      "order": 76,
+      "active": true
+    },
+    {
+      "name": "Uganda Tourism Board",
+      "src": "/assets/clientele/uganda-tourism-board.jpg",
+      "category": "government",
+      "order": 77,
+      "active": true
+    },
+    {
+      "name": "UNAIDS",
+      "src": "/assets/clientele/unaids.jpg",
+      "category": "ngo",
+      "order": 78,
+      "active": true
+    },
+    {
+      "name": "URC",
+      "src": "/assets/clientele/urc.jpg",
+      "category": "ngo",
+      "order": 79,
+      "active": true
+    },
+    {
+      "name": "Vet Centre",
+      "src": "/assets/clientele/vetcentre.jpg",
+      "category": "corporate",
+      "order": 80,
+      "active": true
+    },
+    {
+      "name": "VVSAOL",
+      "src": "/assets/clientele/vvsaol.jpg",
+      "category": "corporate",
+      "order": 81,
+      "active": true
+    },
+    {
+      "name": "WHH",
+      "src": "/assets/clientele/whh.jpg",
+      "category": "ngo",
+      "order": 82,
+      "active": true
+    },
+    {
+      "name": "WHO",
+      "src": "/assets/clientele/who.jpg",
+      "category": "ngo",
+      "order": 83,
+      "active": true
+    },
+    {
+      "name": "World Vision Uganda",
+      "src": "/assets/clientele/world-vision-uganda.png",
+      "category": "ngo",
+      "order": 84,
+      "active": true
+    },
+    {
+      "name": "Wosha Products",
+      "src": "/assets/clientele/wosha-products.jpg",
+      "category": "corporate",
+      "order": 85,
+      "active": true
+    },
+    {
+      "name": "ZOA",
+      "src": "/assets/clientele/zoa.jpg",
+      "category": "ngo",
+      "order": 86,
+      "active": true
+    },
+    {
+      "name": "The Lutheran World Federation",
+      "src": "/assets/clientele/the-lutheran.jpg",
+      "category": "ngo",
+      "order": 87,
+      "active": true
+    }
+  ]
+}
