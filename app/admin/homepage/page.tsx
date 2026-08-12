@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Image from "next/image";
+import AdminImage from "@/components/AdminImage";
 import {
   getHomepage,
   saveHomepage,
@@ -206,7 +206,7 @@ export default function HomepagePage() {
                   <tr key={s.id}>
                     <td>
                       {s.image && (
-                        <Image
+                        <AdminImage
                           src={s.image}
                           alt=""
                           width={64}

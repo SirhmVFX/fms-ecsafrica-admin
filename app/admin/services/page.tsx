@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Image from "next/image";
+import AdminImage from "@/components/AdminImage";
 import {
   getServices,
   createService,
@@ -174,7 +174,7 @@ export default function ServicesPage() {
                 <tr key={service.id}>
                   <td>
                     {service.heroImage && (
-                      <Image
+                      <AdminImage
                         src={service.heroImage}
                         alt=""
                         width={64}

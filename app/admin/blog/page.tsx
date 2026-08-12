@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Image from "next/image";
+import AdminImage from "@/components/AdminImage";
 import {
   getBlogPosts,
   createBlogPost,
@@ -164,7 +164,7 @@ export default function BlogPage() {
                 <tr key={post.id}>
                   <td>
                     {post.image && (
-                      <Image
+                      <AdminImage
                         src={post.image}
                         alt=""
                         width={64}

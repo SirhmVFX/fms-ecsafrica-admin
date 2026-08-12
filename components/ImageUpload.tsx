@@ -1,8 +1,8 @@
 "use client";
 
 import { useRef, useState } from "react";
-import Image from "next/image";
 import { uploadToCloudinary } from "@/lib/cloudinary";
+import AdminImage from "@/components/AdminImage";
 import { MdUpload, MdClose } from "react-icons/md";
 
 interface Props {
@@ -37,7 +37,7 @@ export default function ImageUpload({ value, onChange, label = "Image" }: Props)
       <label className="admin-label">{label}</label>
       {value ? (
         <div className="relative border border-gray-200 inline-block">
-          <Image
+          <AdminImage
             src={value}
             alt="Uploaded"
             width={320}

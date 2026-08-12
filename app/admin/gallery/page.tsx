@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Image from "next/image";
+import AdminImage from "@/components/AdminImage";
 import {
   getGalleryItems,
   createGalleryItem,
@@ -137,7 +137,7 @@ export default function GalleryPage() {
                 <tr key={item.id}>
                   <td>
                     {item.src && (
-                      <Image
+                      <AdminImage
                         src={item.src}
                         alt=""
                         width={64}

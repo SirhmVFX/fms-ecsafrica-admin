@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Image from "next/image";
+import AdminImage from "@/components/AdminImage";
 import {
   getCsrPage,
   saveCsrPage,
@@ -304,7 +304,7 @@ export default function CsrPage() {
                   <tr key={item.id}>
                     <td>
                       {item.image && (
-                        <Image
+                        <AdminImage
                           src={item.image}
                           alt=""
                           width={64}
