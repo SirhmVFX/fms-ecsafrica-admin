@@ -8,6 +8,9 @@ import type {
   CsrInitiative,
   CsrPageContent,
   GalleryItem,
+  GalleryPageContent,
+  BlogPageContent,
+  ClientelePageContent,
   HeroSlide,
   HomepageContent,
   PrivacyPageContent,
@@ -43,6 +46,11 @@ export const emptySiteSettings: Omit<SiteSettings, "id" | "updatedAt"> = {
   footerQuickLinks: [],
   footerPortalLinks: [],
   footerFeaturedProducts: [],
+  ctaImage: "",
+  ctaHeadline: "",
+  ctaBody: "",
+  ctaButtonLabel: "",
+  ctaHref: "",
 };
 
 export const seedSiteSettings = payload.siteSettings as Omit<
@@ -120,6 +128,21 @@ export const seedClientele = payload.clientele as Omit<
   "id" | "createdAt" | "updatedAt"
 >[];
 
+export const seedGalleryPage = payload.galleryPage as Omit<
+  GalleryPageContent,
+  "id" | "updatedAt"
+>;
+
+export const seedBlogPage = payload.blogPage as Omit<
+  BlogPageContent,
+  "id" | "updatedAt"
+>;
+
+export const seedClientelePage = payload.clientelePage as Omit<
+  ClientelePageContent,
+  "id" | "updatedAt"
+>;
+
 export type SeedSectionId =
   | "siteSettings"
   | "heroSlides"
@@ -132,6 +155,9 @@ export type SeedSectionId =
   | "resellersPage"
   | "contactPage"
   | "privacyPage"
+  | "galleryPage"
+  | "blogPage"
+  | "clientelePage"
   | "services"
   | "blogPosts"
   | "galleryItems"
@@ -219,6 +245,27 @@ export const seedSections: {
     label: "Privacy Page",
     kind: "singleton",
     collection: "privacyPage",
+    count: 1,
+  },
+  {
+    id: "galleryPage",
+    label: "Gallery Page",
+    kind: "singleton",
+    collection: "galleryPage",
+    count: 1,
+  },
+  {
+    id: "blogPage",
+    label: "Blog Listing",
+    kind: "singleton",
+    collection: "blogPage",
+    count: 1,
+  },
+  {
+    id: "clientelePage",
+    label: "Clientele Listing",
+    kind: "singleton",
+    collection: "clientelePage",
     count: 1,
   },
   {

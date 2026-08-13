@@ -13,6 +13,9 @@ import {
   saveResellersPage,
   saveContactPage,
   savePrivacyPage,
+  saveGalleryPage,
+  saveBlogPage,
+  saveClientelePage,
   createHeroSlide,
   createCsrInitiative,
   createService,
@@ -33,6 +36,9 @@ import {
   seedResellersPage,
   seedContactPage,
   seedPrivacyPage,
+  seedGalleryPage,
+  seedBlogPage,
+  seedClientelePage,
   seedServices,
   seedBlogPosts,
   seedGalleryItems,
@@ -100,6 +106,15 @@ async function seedSection(
       break;
     case "privacyPage":
       await savePrivacyPage(seedPrivacyPage);
+      break;
+    case "galleryPage":
+      await saveGalleryPage(seedGalleryPage);
+      break;
+    case "blogPage":
+      await saveBlogPage(seedBlogPage);
+      break;
+    case "clientelePage":
+      await saveClientelePage(seedClientelePage);
       break;
     case "heroSlides":
       for (const slide of seedHeroSlides) {

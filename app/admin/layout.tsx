@@ -113,11 +113,14 @@ export default function AdminLayout({
   const Sidebar = () => (
     <div className="admin-sidebar flex flex-col h-full">
       <div className="flex items-center gap-3 px-5 py-5 border-b border-white/10">
-        <div className="w-9 h-9 bg-[#0B3D91] flex items-center justify-center shrink-0">
-          <span className="text-white text-[10px] font-bold">FMS</span>
-        </div>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/assets/FMS-Logo-Blue-1.png"
+          alt="FMS Africa"
+          className="h-9 w-auto brightness-0 invert"
+        />
         <div>
-          <p className="text-[10px] uppercase tracking-[0.3em] text-blue-300">
+          <p className="text-[10px] uppercase tracking-[0.3em] text-[#ffd200]">
             FMS Africa
           </p>
           <p className="text-sm font-semibold text-white">Admin Panel</p>
@@ -202,7 +205,8 @@ export default function AdminLayout({
       </aside>
 
       <div className="flex-1 flex flex-col lg:ml-[260px]">
-        <header className="bg-white border-b border-gray-200 px-4 py-3 flex items-center justify-between sticky top-0 z-20">
+        <div className="admin-topbar-accent sticky top-0 z-30" />
+        <header className="bg-white border-b border-gray-200 px-4 py-3 flex items-center justify-between sticky top-[3px] z-20">
           <button
             className="lg:hidden p-1"
             onClick={() => setSidebarOpen(true)}
@@ -230,7 +234,7 @@ export default function AdminLayout({
           </div>
         </header>
 
-        <main className="flex-1 p-4 md:p-6">{children}</main>
+        <main className="min-w-0 flex-1 overflow-x-hidden p-4 md:p-6">{children}</main>
       </div>
     </div>
   );

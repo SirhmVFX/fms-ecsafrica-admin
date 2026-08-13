@@ -55,17 +55,30 @@ export default function ImageUpload({ value, onChange, label = "Image" }: Props)
         </div>
       ) : (
         <div
-          className="border border-dashed border-gray-300 p-8 text-center cursor-pointer hover:border-blue-400 transition-colors"
+          className="border border-dashed border-gray-300 p-8 text-center cursor-pointer hover:border-yellow-400 transition-colors"
           onClick={() => inputRef.current?.click()}
         >
           <MdUpload size={24} className="mx-auto text-gray-400 mb-2" />
           <p className="text-sm text-gray-500">Click to upload image</p>
-          <p className="text-xs text-gray-400 mt-1">Max 8 MB</p>
         </div>
+      )}
+
+      {value && (
+        <button
+          type="button"
+          className="mt-2 text-xs font-medium text-navy-700 underline"
+          onClick={() => inputRef.current?.click()}
+        >
+          Replace image
+        </button>
       )}
 
       {uploading && <p className="text-xs text-blue-600 mt-1">Uploading…</p>}
       {error && <p className="text-xs text-red-600 mt-1">{error}</p>}
+      <p className="text-xs text-amber-700 mt-1">
+        After uploading, click Save on this page — otherwise the previous image
+        comes back on refresh.
+      </p>
 
       <input
         type="url"

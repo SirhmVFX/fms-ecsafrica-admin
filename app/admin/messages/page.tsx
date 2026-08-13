@@ -275,7 +275,7 @@ export default function MessagesPage() {
               </button>
             </div>
             <div className="p-5 space-y-4">
-              <div className="grid grid-cols-2 gap-4 text-sm">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
                 <div>
                   <span className="admin-label">Email</span>
                   <p>{selectedMsg.email}</p>
@@ -341,7 +341,7 @@ export default function MessagesPage() {
               </button>
             </div>
             <div className="p-5 space-y-4">
-              <div className="grid grid-cols-2 gap-4 text-sm">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
                 <div>
                   <span className="admin-label">Email</span>
                   <p>{selectedApp.email}</p>

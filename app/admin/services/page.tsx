@@ -2,6 +2,8 @@
 
 import { useEffect, useState } from "react";
 import AdminImage from "@/components/AdminImage";
+import ImageUpload from "@/components/ImageUpload";
+import ServiceBlocksEditor from "@/components/ServiceBlocksEditor";
 import {
   getServices,
   createService,
@@ -9,10 +11,10 @@ import {
   deleteService,
   Service,
 } from "@/lib/firestore";
-import ImageUpload from "@/components/ImageUpload";
-import { MdAdd, MdEdit, MdDelete, MdClose } from "react-icons/md";
+import type { ServiceBlock } from "@/lib/service-blocks";
+import { MdAdd, MdClose, MdEdit, MdDelete } from "react-icons/md";
 
-type FormState = Omit<Service, "id" | "blocks"> & { blocksJson: string };
+type FormState = Omit<Service, "id" | "blocks"> & { blocks: ServiceBlock[] };
 
 const empty: FormState = {
   slug: "",
@@ -25,7 +27,7 @@ const empty: FormState = {
   navLabel: "",
   order: 0,
   published: false,
-  blocksJson: "[]",
+  blocks: [],
 };
 
 function slugify(s: string) {
@@ -39,7 +41,7 @@ function slugify(s: string) {
 export default function ServicesPage() {
   const [items, setItems] = useState<Service[]>([]);
   const [loading, setLoading] = useState(true);
-  const [showModal, setShowModal] = useState(false);
+  const [showEditor, setShowEditor] = useState(false);
   const [editing, setEditing] = useState<Service | null>(null);
   const [form, setForm] = useState<FormState>(empty);
   const [saving, setSaving] = useState(false);
@@ -59,7 +61,7 @@ export default function ServicesPage() {
     setEditing(null);
     setForm({ ...empty, order: items.length });
     setError("");
-    setShowModal(true);
+    setShowEditor(true);
   }
 
   function openEdit(service: Service) {
@@ -75,10 +77,10 @@ export default function ServicesPage() {
       navLabel: service.navLabel || "",
       order: service.order,
       published: service.published,
-      blocksJson: JSON.stringify(service.blocks ?? [], null, 2),
+      blocks: Array.isArray(service.blocks) ? service.blocks : [],
     });
     setError("");
-    setShowModal(true);
+    setShowEditor(true);
   }
 
   async function handleSave() {
@@ -86,24 +88,11 @@ export default function ServicesPage() {
       setError("Title is required.");
       return;
     }
-    let blocks: Service["blocks"] = [];
-    try {
-      const parsed = JSON.parse(form.blocksJson || "[]");
-      if (!Array.isArray(parsed)) {
-        setError("Blocks must be a JSON array.");
-        return;
-      }
-      blocks = parsed;
-    } catch {
-      setError("Invalid JSON in blocks field.");
-      return;
-    }
 
-    const { blocksJson: _, ...rest } = form;
     const payload: Omit<Service, "id"> = {
-      ...rest,
+      ...form,
       slug: form.slug || slugify(form.title),
-      blocks,
+      blocks: form.blocks,
     };
 
     setSaving(true);
@@ -114,7 +103,7 @@ export default function ServicesPage() {
       } else {
         await createService(payload);
       }
-      setShowModal(false);
+      setShowEditor(false);
       await load();
     } catch (e) {
       setError(e instanceof Error ? e.message : "Failed to save.");
@@ -141,7 +130,7 @@ export default function ServicesPage() {
         <div>
           <h1 className="text-lg font-semibold text-gray-900">Services</h1>
           <p className="text-xs text-gray-500 mt-0.5">
-            Manage service pages and content blocks
+            Edit each service page with ordinary text, photos and lists
           </p>
         </div>
         <button className="btn-primary flex items-center gap-2" onClick={openNew}>
@@ -223,24 +212,53 @@ export default function ServicesPage() {
         </div>
       )}
 
-      {showModal && (
-        <div className="modal-overlay">
-          <div className="modal-box" style={{ maxWidth: 760 }}>
-            <div className="modal-header">
-              <h2 className="text-base font-semibold">
-                {editing ? "Edit Service" : "New Service"}
+      {showEditor && (
+        <div className="fixed inset-0 z-50 overflow-y-auto bg-white">
+          <div className="sticky top-0 z-10 flex flex-wrap items-center justify-between gap-3 border-b border-gray-200 bg-white px-4 py-3 sm:px-6">
+            <div className="min-w-0">
+              <h2 className="truncate text-base font-semibold text-gray-900">
+                {editing ? `Edit: ${form.title || "Service"}` : "New Service"}
               </h2>
-              <button onClick={() => setShowModal(false)}>
+              <p className="text-xs text-gray-500">
+                Fill in the page details, then add the sections visitors will
+                see.
+              </p>
+            </div>
+            <div className="flex items-center gap-2">
+              <button
+                className="btn-secondary"
+                onClick={() => setShowEditor(false)}
+              >
+                Cancel
+              </button>
+              <button
+                className="btn-primary"
+                onClick={handleSave}
+                disabled={saving}
+              >
+                {saving ? "Saving…" : "Save service"}
+              </button>
+              <button
+                className="p-1 lg:hidden"
+                onClick={() => setShowEditor(false)}
+                aria-label="Close"
+              >
                 <MdClose size={20} />
               </button>
             </div>
-            <div className="p-5 space-y-4">
-              {error && (
-                <p className="text-sm text-red-600 bg-red-50 border border-red-200 px-3 py-2">
-                  {error}
-                </p>
-              )}
+          </div>
 
+          <div className="mx-auto max-w-4xl space-y-6 px-4 py-6 sm:px-6">
+            {error && (
+              <p className="border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-600">
+                {error}
+              </p>
+            )}
+
+            <div className="admin-card space-y-4">
+              <p className="text-xs font-semibold uppercase text-gray-500 border-b border-gray-100 pb-3">
+                Page details
+              </p>
               <div>
                 <label className="admin-label">Title</label>
                 <input
@@ -257,23 +275,27 @@ export default function ServicesPage() {
                 />
               </div>
 
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
-                  <label className="admin-label">Slug</label>
+                  <label className="admin-label">Page URL</label>
                   <input
                     className="admin-input"
                     value={form.slug}
                     onChange={(e) => setForm({ ...form, slug: e.target.value })}
                   />
+                  <p className="mt-1 text-xs text-gray-400">
+                    Appears after /services/
+                  </p>
                 </div>
                 <div>
-                  <label className="admin-label">Nav Label</label>
+                  <label className="admin-label">Menu name</label>
                   <input
                     className="admin-input"
                     value={form.navLabel}
                     onChange={(e) =>
                       setForm({ ...form, navLabel: e.target.value })
                     }
+                    placeholder="Shown in the Services menu"
                   />
                 </div>
               </div>
@@ -288,7 +310,7 @@ export default function ServicesPage() {
               </div>
 
               <div>
-                <label className="admin-label">Meta Description</label>
+                <label className="admin-label">Short description</label>
                 <textarea
                   className="admin-input"
                   rows={2}
@@ -301,12 +323,12 @@ export default function ServicesPage() {
 
               <ImageUpload
                 value={form.heroImage}
-                onChange={(url) => setForm({ ...form, heroImage: url })}
-                label="Hero Image"
+                onChange={(url) => setForm((f) => ({ ...f, heroImage: url }))}
+                label="Hero image"
               />
 
               <div>
-                <label className="admin-label">Hero Image Alt</label>
+                <label className="admin-label">Hero image description</label>
                 <input
                   className="admin-input"
                   value={form.heroImageAlt}
@@ -317,32 +339,17 @@ export default function ServicesPage() {
               </div>
 
               <div>
-                <label className="admin-label">Callout</label>
+                <label className="admin-label">Highlight box</label>
                 <textarea
                   className="admin-input"
                   rows={2}
                   value={form.callout}
                   onChange={(e) => setForm({ ...form, callout: e.target.value })}
+                  placeholder="Short note shown beside the title"
                 />
               </div>
 
-              <div>
-                <label className="admin-label">Blocks (JSON array)</label>
-                <textarea
-                  className="admin-input font-mono text-xs"
-                  rows={10}
-                  value={form.blocksJson}
-                  onChange={(e) =>
-                    setForm({ ...form, blocksJson: e.target.value })
-                  }
-                  placeholder='[{"type":"text","body":"..."}]'
-                />
-                <p className="text-xs text-gray-400 mt-1">
-                  Must be valid JSON. Default: []
-                </p>
-              </div>
-
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
                   <label className="admin-label">Order</label>
                   <input
@@ -354,7 +361,7 @@ export default function ServicesPage() {
                     }
                   />
                 </div>
-                <label className="flex items-center gap-2 text-sm cursor-pointer mt-6">
+                <label className="flex items-center gap-2 text-sm cursor-pointer sm:mt-6">
                   <input
                     type="checkbox"
                     checked={form.published}
@@ -362,25 +369,32 @@ export default function ServicesPage() {
                       setForm({ ...form, published: e.target.checked })
                     }
                   />
-                  Published
+                  Published on the website
                 </label>
               </div>
+            </div>
 
-              <div className="flex gap-3 pt-2">
-                <button
-                  className="btn-primary flex-1"
-                  onClick={handleSave}
-                  disabled={saving}
-                >
-                  {saving ? "Saving…" : "Save Service"}
-                </button>
-                <button
-                  className="btn-secondary"
-                  onClick={() => setShowModal(false)}
-                >
-                  Cancel
-                </button>
-              </div>
+            <div className="admin-card">
+              <ServiceBlocksEditor
+                blocks={form.blocks}
+                onChange={(blocks) => setForm((f) => ({ ...f, blocks }))}
+              />
+            </div>
+
+            <div className="flex flex-col-reverse gap-3 pb-10 sm:flex-row">
+              <button
+                className="btn-secondary sm:flex-1"
+                onClick={() => setShowEditor(false)}
+              >
+                Cancel
+              </button>
+              <button
+                className="btn-primary sm:flex-1"
+                onClick={handleSave}
+                disabled={saving}
+              >
+                {saving ? "Saving…" : "Save service"}
+              </button>
             </div>
           </div>
         </div>

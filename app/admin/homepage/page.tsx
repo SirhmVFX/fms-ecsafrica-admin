@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import AdminImage from "@/components/AdminImage";
 import {
   getHomepage,
@@ -29,11 +29,27 @@ const emptyHomepage: HomepageForm = {
   solutionsPhotoHref: "",
   solutionsPhotoImage: "",
   solutionsPhotoTitle: "",
+  solutionsEyebrow: "",
+  solutionsHeadline: "",
+  solutionsCtaLabel: "",
+  solutionsCtaHref: "",
   benefits: [],
   pillars: [],
   stories: [],
+  benefitsBandImage: "",
+  benefitsBandCtaLabel: "",
+  benefitsBandCtaHref: "",
+  benefitsEyebrow: "",
+  benefitsHeadline: "",
+  approachEyebrow: "",
+  approachHeadline: "",
+  approachCtaLabel: "",
+  approachCtaHref: "",
+  storiesEyebrow: "",
+  storiesHeadline: "",
   ctaImage: "",
   ctaHeadline: "",
+  ctaBody: "",
   ctaPrimaryLabel: "",
   ctaPrimaryHref: "",
   ctaSecondaryLabel: "",
@@ -63,6 +79,8 @@ export default function HomepagePage() {
   const [slideForm, setSlideForm] = useState<Omit<HeroSlide, "id">>(emptySlide);
   const [slideSaving, setSlideSaving] = useState(false);
   const [slideError, setSlideError] = useState("");
+  const formRef = useRef(form);
+  formRef.current = form;
 
   async function load() {
     setLoading(true);
@@ -84,7 +102,7 @@ export default function HomepagePage() {
     setSaved(false);
     setError("");
     try {
-      await saveHomepage(form);
+      await saveHomepage(formRef.current);
       setSaved(true);
       setTimeout(() => setSaved(false), 3000);
     } catch (e) {
@@ -254,7 +272,7 @@ export default function HomepagePage() {
         <p className="text-xs font-semibold uppercase text-gray-500 border-b border-gray-100 pb-3">
           Mission Section
         </p>
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div>
             <label className="admin-label">Eyebrow</label>
             <input
@@ -287,10 +305,10 @@ export default function HomepagePage() {
         </div>
         <ImageUpload
           value={form.missionImage}
-          onChange={(url) => setForm({ ...form, missionImage: url })}
-          label="Mission Image"
+          onChange={(url) => setForm((f) => ({ ...f, missionImage: url }))}
+          label="Mission Image (right of Who we are)"
         />
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div>
             <label className="admin-label">Callout Text</label>
             <input
@@ -392,7 +410,7 @@ export default function HomepagePage() {
             <MdAdd size={14} className="inline" /> Add
           </button>
         </div>
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div>
             <label className="admin-label">Solutions Photo Title</label>
             <input
@@ -416,9 +434,59 @@ export default function HomepagePage() {
         </div>
         <ImageUpload
           value={form.solutionsPhotoImage}
-          onChange={(url) => setForm({ ...form, solutionsPhotoImage: url })}
+          onChange={(url) =>
+            setForm((f) => ({ ...f, solutionsPhotoImage: url }))
+          }
           label="Solutions Photo"
         />
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label className="admin-label">Section Eyebrow</label>
+            <input
+              className="admin-input"
+              value={form.solutionsEyebrow}
+              onChange={(e) =>
+                setForm({ ...form, solutionsEyebrow: e.target.value })
+              }
+              placeholder="What we do"
+            />
+          </div>
+          <div>
+            <label className="admin-label">All services button</label>
+            <input
+              className="admin-input"
+              value={form.solutionsCtaLabel}
+              onChange={(e) =>
+                setForm({ ...form, solutionsCtaLabel: e.target.value })
+              }
+              placeholder="View all services"
+            />
+          </div>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label className="admin-label">Section Headline</label>
+            <input
+              className="admin-input"
+              value={form.solutionsHeadline}
+              onChange={(e) =>
+                setForm({ ...form, solutionsHeadline: e.target.value })
+              }
+              placeholder="Our solutions, your connected fleet."
+            />
+          </div>
+          <div>
+            <label className="admin-label">All services URL</label>
+            <input
+              className="admin-input"
+              value={form.solutionsCtaHref}
+              onChange={(e) =>
+                setForm({ ...form, solutionsCtaHref: e.target.value })
+              }
+              placeholder="/services"
+            />
+          </div>
+        </div>
         {form.solutions.map((sol, i) => (
           <div
             key={i}
@@ -435,7 +503,7 @@ export default function HomepagePage() {
             >
               <MdDelete size={12} />
             </button>
-            <div className="grid grid-cols-2 gap-2">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
               <div>
                 <label className="admin-label">Title</label>
                 <input
@@ -518,8 +586,32 @@ export default function HomepagePage() {
           })
         }
       >
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label className="admin-label">Section Eyebrow</label>
+            <input
+              className="admin-input"
+              value={form.benefitsEyebrow}
+              onChange={(e) =>
+                setForm({ ...form, benefitsEyebrow: e.target.value })
+              }
+              placeholder="Why it matters"
+            />
+          </div>
+          <div>
+            <label className="admin-label">Section Headline</label>
+            <input
+              className="admin-input"
+              value={form.benefitsHeadline}
+              onChange={(e) =>
+                setForm({ ...form, benefitsHeadline: e.target.value })
+              }
+              placeholder="Benefits of FMS Africa"
+            />
+          </div>
+        </div>
         {form.benefits.map((b, i) => (
-          <div key={i} className="grid grid-cols-[1fr_2fr_auto] gap-2 items-end">
+          <div key={i} className="grid grid-cols-1 sm:grid-cols-[1fr_2fr_auto] gap-2 items-end">
             <div>
               <label className="admin-label">Title</label>
               <input
@@ -559,6 +651,43 @@ export default function HomepagePage() {
         ))}
       </ArrayCard>
 
+      <div className="admin-card space-y-4">
+        <p className="text-xs font-semibold uppercase text-gray-500 border-b border-gray-100 pb-3">
+          Benefits Band Image
+        </p>
+        <ImageUpload
+          value={form.benefitsBandImage}
+          onChange={(url) =>
+            setForm((f) => ({ ...f, benefitsBandImage: url }))
+          }
+          label="Image below benefits accordion"
+        />
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label className="admin-label">Band CTA Label</label>
+            <input
+              className="admin-input"
+              value={form.benefitsBandCtaLabel}
+              onChange={(e) =>
+                setForm({ ...form, benefitsBandCtaLabel: e.target.value })
+              }
+              placeholder="Partner with us"
+            />
+          </div>
+          <div>
+            <label className="admin-label">Band CTA URL</label>
+            <input
+              className="admin-input"
+              value={form.benefitsBandCtaHref}
+              onChange={(e) =>
+                setForm({ ...form, benefitsBandCtaHref: e.target.value })
+              }
+              placeholder="/resellers"
+            />
+          </div>
+        </div>
+      </div>
+
       {/* Pillars */}
       <ArrayCard
         title="Pillars"
@@ -570,7 +699,7 @@ export default function HomepagePage() {
         }
       >
         {form.pillars.map((p, i) => (
-          <div key={i} className="grid grid-cols-[1fr_2fr_auto] gap-2 items-end">
+          <div key={i} className="grid grid-cols-1 sm:grid-cols-[1fr_2fr_auto] gap-2 items-end">
             <div>
               <label className="admin-label">Title</label>
               <input
@@ -610,6 +739,82 @@ export default function HomepagePage() {
         ))}
       </ArrayCard>
 
+      <div className="admin-card space-y-4">
+        <p className="text-xs font-semibold uppercase text-gray-500 border-b border-gray-100 pb-3">
+          Approach & Testimonials Copy
+        </p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label className="admin-label">Approach Eyebrow</label>
+            <input
+              className="admin-input"
+              value={form.approachEyebrow}
+              onChange={(e) =>
+                setForm({ ...form, approachEyebrow: e.target.value })
+              }
+              placeholder="Our approach"
+            />
+          </div>
+          <div>
+            <label className="admin-label">Approach CTA Label</label>
+            <input
+              className="admin-input"
+              value={form.approachCtaLabel}
+              onChange={(e) =>
+                setForm({ ...form, approachCtaLabel: e.target.value })
+              }
+              placeholder="Get a free consultation"
+            />
+          </div>
+        </div>
+        <div>
+          <label className="admin-label">Approach CTA URL</label>
+          <input
+            className="admin-input"
+            value={form.approachCtaHref}
+            onChange={(e) =>
+              setForm({ ...form, approachCtaHref: e.target.value })
+            }
+            placeholder="/about-us/contact-us"
+          />
+        </div>
+        <div>
+          <label className="admin-label">Approach Headline</label>
+          <textarea
+            className="admin-input"
+            rows={2}
+            value={form.approachHeadline}
+            onChange={(e) =>
+              setForm({ ...form, approachHeadline: e.target.value })
+            }
+          />
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label className="admin-label">Testimonials Eyebrow</label>
+            <input
+              className="admin-input"
+              value={form.storiesEyebrow}
+              onChange={(e) =>
+                setForm({ ...form, storiesEyebrow: e.target.value })
+              }
+              placeholder="Testimonials"
+            />
+          </div>
+          <div>
+            <label className="admin-label">Testimonials Headline</label>
+            <input
+              className="admin-input"
+              value={form.storiesHeadline}
+              onChange={(e) =>
+                setForm({ ...form, storiesHeadline: e.target.value })
+              }
+              placeholder="What customers say."
+            />
+          </div>
+        </div>
+      </div>
+
       {/* Stories */}
       <ArrayCard
         title="Stories"
@@ -621,7 +826,7 @@ export default function HomepagePage() {
         }
       >
         {form.stories.map((s, i) => (
-          <div key={i} className="grid grid-cols-[1fr_2fr_auto] gap-2 items-end">
+          <div key={i} className="grid grid-cols-1 sm:grid-cols-[1fr_2fr_auto] gap-2 items-end">
             <div>
               <label className="admin-label">Company</label>
               <input
@@ -668,8 +873,8 @@ export default function HomepagePage() {
         </p>
         <ImageUpload
           value={form.ctaImage}
-          onChange={(url) => setForm({ ...form, ctaImage: url })}
-          label="CTA Image"
+          onChange={(url) => setForm((f) => ({ ...f, ctaImage: url }))}
+          label="Consultation background image"
         />
         <div>
           <label className="admin-label">Headline</label>
@@ -681,7 +886,16 @@ export default function HomepagePage() {
             }
           />
         </div>
-        <div className="grid grid-cols-2 gap-4">
+        <div>
+          <label className="admin-label">Body</label>
+          <textarea
+            className="admin-input"
+            rows={2}
+            value={form.ctaBody}
+            onChange={(e) => setForm({ ...form, ctaBody: e.target.value })}
+          />
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div>
             <label className="admin-label">Primary Label</label>
             <input
@@ -750,7 +964,9 @@ export default function HomepagePage() {
               )}
               <ImageUpload
                 value={slideForm.image}
-                onChange={(url) => setSlideForm({ ...slideForm, image: url })}
+                onChange={(url) =>
+                  setSlideForm((f) => ({ ...f, image: url }))
+                }
                 label="Slide Image"
               />
               <div>
@@ -794,7 +1010,7 @@ export default function HomepagePage() {
                   }
                 />
               </div>
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
                   <label className="admin-label">Order</label>
                   <input

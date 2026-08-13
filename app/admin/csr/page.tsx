@@ -22,6 +22,9 @@ const emptyPage: PageForm = {
   intro: "",
   heroImage: "",
   pillars: [],
+  ctaHeadline: "",
+  ctaBody: "",
+  ctaImage: "",
 };
 
 const emptyInitiative: Omit<CsrInitiative, "id"> = {
@@ -187,8 +190,30 @@ export default function CsrPage() {
         </div>
         <ImageUpload
           value={form.heroImage}
-          onChange={(url) => setForm({ ...form, heroImage: url })}
+          onChange={(url) => setForm((f) => ({ ...f, heroImage: url }))}
           label="Hero Image"
+        />
+        <div>
+          <label className="admin-label">CTA Headline</label>
+          <input
+            className="admin-input"
+            value={form.ctaHeadline}
+            onChange={(e) => setForm({ ...form, ctaHeadline: e.target.value })}
+          />
+        </div>
+        <div>
+          <label className="admin-label">CTA Body</label>
+          <textarea
+            className="admin-input"
+            rows={2}
+            value={form.ctaBody}
+            onChange={(e) => setForm({ ...form, ctaBody: e.target.value })}
+          />
+        </div>
+        <ImageUpload
+          value={form.ctaImage}
+          onChange={(url) => setForm((f) => ({ ...f, ctaImage: url }))}
+          label="CTA Image"
         />
       </div>
 
@@ -228,7 +253,7 @@ export default function CsrPage() {
                 <MdDelete size={12} />
               </button>
             </div>
-            <div className="grid grid-cols-2 gap-2">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
               <div>
                 <label className="admin-label">Label</label>
                 <input
@@ -375,7 +400,7 @@ export default function CsrPage() {
                   }
                 />
               </div>
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
                   <label className="admin-label">Partner</label>
                   <input
@@ -410,10 +435,10 @@ export default function CsrPage() {
               </div>
               <ImageUpload
                 value={initForm.image}
-                onChange={(url) => setInitForm({ ...initForm, image: url })}
+                onChange={(url) => setInitForm((f) => ({ ...f, image: url }))}
                 label="Image"
               />
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
                   <label className="admin-label">Order</label>
                   <input

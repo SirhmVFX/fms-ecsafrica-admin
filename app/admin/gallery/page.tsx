@@ -7,7 +7,10 @@ import {
   createGalleryItem,
   updateGalleryItem,
   deleteGalleryItem,
+  getGalleryPage,
+  saveGalleryPage,
   GalleryItem,
+  GalleryPageContent,
 } from "@/lib/firestore";
 import ImageUpload from "@/components/ImageUpload";
 import { MdAdd, MdEdit, MdDelete, MdClose } from "react-icons/md";
@@ -22,8 +25,17 @@ const empty: Omit<GalleryItem, "id"> = {
   active: true,
 };
 
+const emptyPage: Omit<GalleryPageContent, "id" | "updatedAt"> = {
+  heroHeadline: "",
+  intro: "",
+  heroImage: "",
+};
+
 export default function GalleryPage() {
   const [items, setItems] = useState<GalleryItem[]>([]);
+  const [pageForm, setPageForm] = useState(emptyPage);
+  const [pageSaving, setPageSaving] = useState(false);
+  const [pageSaved, setPageSaved] = useState(false);
   const [loading, setLoading] = useState(true);
   const [showModal, setShowModal] = useState(false);
   const [editing, setEditing] = useState<GalleryItem | null>(null);
@@ -33,7 +45,15 @@ export default function GalleryPage() {
 
   async function load() {
     setLoading(true);
-    setItems(await getGalleryItems());
+    const [list, page] = await Promise.all([
+      getGalleryItems(),
+      getGalleryPage(),
+    ]);
+    setItems(list);
+    if (page) {
+      const { id: _id, updatedAt: _u, ...rest } = page;
+      setPageForm({ ...emptyPage, ...rest });
+    }
     setLoading(false);
   }
 
@@ -111,6 +131,63 @@ export default function GalleryPage() {
         <button className="btn-primary flex items-center gap-2" onClick={openNew}>
           <MdAdd size={16} /> New Item
         </button>
+      </div>
+
+      {pageSaved && (
+        <div className="bg-green-50 border border-green-200 text-green-700 text-sm px-4 py-3">
+          Gallery page saved.
+        </div>
+      )}
+
+      <div className="admin-card space-y-4">
+        <div className="flex items-center justify-between border-b border-gray-100 pb-3">
+          <p className="text-xs font-semibold uppercase text-gray-500">
+            Gallery Hero
+          </p>
+          <button
+            className="btn-primary"
+            disabled={pageSaving}
+            onClick={async () => {
+              setPageSaving(true);
+              try {
+                await saveGalleryPage(pageForm);
+                setPageSaved(true);
+                setTimeout(() => setPageSaved(false), 3000);
+              } finally {
+                setPageSaving(false);
+              }
+            }}
+          >
+            {pageSaving ? "Saving…" : "Save Hero"}
+          </button>
+        </div>
+        <div>
+          <label className="admin-label">Headline</label>
+          <input
+            className="admin-input"
+            value={pageForm.heroHeadline}
+            onChange={(e) =>
+              setPageForm({ ...pageForm, heroHeadline: e.target.value })
+            }
+            placeholder="Our work in action."
+          />
+        </div>
+        <div>
+          <label className="admin-label">Intro</label>
+          <textarea
+            className="admin-input"
+            rows={2}
+            value={pageForm.intro}
+            onChange={(e) =>
+              setPageForm({ ...pageForm, intro: e.target.value })
+            }
+          />
+        </div>
+        <ImageUpload
+          value={pageForm.heroImage}
+          onChange={(url) => setPageForm((f) => ({ ...f, heroImage: url }))}
+          label="Hero Image"
+        />
       </div>
 
       {loading ? (
@@ -203,7 +280,7 @@ export default function GalleryPage() {
 
               <ImageUpload
                 value={form.src}
-                onChange={(url) => setForm({ ...form, src: url })}
+                onChange={(url) => setForm((f) => ({ ...f, src: url }))}
                 label="Image"
               />
 
@@ -216,7 +293,7 @@ export default function GalleryPage() {
                 />
               </div>
 
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
                   <label className="admin-label">Category</label>
                   <select

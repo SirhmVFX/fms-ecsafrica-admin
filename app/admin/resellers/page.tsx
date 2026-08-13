@@ -6,6 +6,7 @@ import {
   saveResellersPage,
   ResellersPageContent,
 } from "@/lib/firestore";
+import ImageUpload from "@/components/ImageUpload";
 import { MdAdd, MdDelete } from "react-icons/md";
 
 type Form = Omit<ResellersPageContent, "id" | "updatedAt">;
@@ -15,6 +16,12 @@ const empty: Form = {
   heroHeadline: "",
   heroBody: "",
   heroCtaLabel: "",
+  programImage: "",
+  whyEyebrow: "",
+  whyHeadline: "",
+  whyBody: "",
+  howEyebrow: "",
+  howHeadline: "",
   benefits: [],
   steps: [],
   regions: [],
@@ -131,6 +138,54 @@ export default function ResellersPage() {
             }
           />
         </div>
+        <ImageUpload
+          value={form.programImage}
+          onChange={(url) => setForm((f) => ({ ...f, programImage: url }))}
+          label="How it works image"
+        />
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label className="admin-label">Why Eyebrow</label>
+            <input
+              className="admin-input"
+              value={form.whyEyebrow}
+              onChange={(e) => setForm({ ...form, whyEyebrow: e.target.value })}
+            />
+          </div>
+          <div>
+            <label className="admin-label">How Eyebrow</label>
+            <input
+              className="admin-input"
+              value={form.howEyebrow}
+              onChange={(e) => setForm({ ...form, howEyebrow: e.target.value })}
+            />
+          </div>
+        </div>
+        <div>
+          <label className="admin-label">Why Headline</label>
+          <input
+            className="admin-input"
+            value={form.whyHeadline}
+            onChange={(e) => setForm({ ...form, whyHeadline: e.target.value })}
+          />
+        </div>
+        <div>
+          <label className="admin-label">Why Body</label>
+          <textarea
+            className="admin-input"
+            rows={2}
+            value={form.whyBody}
+            onChange={(e) => setForm({ ...form, whyBody: e.target.value })}
+          />
+        </div>
+        <div>
+          <label className="admin-label">How Headline</label>
+          <input
+            className="admin-input"
+            value={form.howHeadline}
+            onChange={(e) => setForm({ ...form, howHeadline: e.target.value })}
+          />
+        </div>
       </div>
 
       <div className="admin-card space-y-4">
@@ -174,7 +229,7 @@ export default function ResellersPage() {
                 <MdDelete size={12} />
               </button>
             </div>
-            <div className="grid grid-cols-2 gap-2">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
               <div>
                 <label className="admin-label">ID</label>
                 <input
@@ -367,7 +422,7 @@ export default function ResellersPage() {
                 }}
               />
             </div>
-            <div className="grid grid-cols-2 gap-2">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
               <div>
                 <label className="admin-label">Author</label>
                 <input

@@ -14,6 +14,7 @@ type Form = Omit<AccreditationPageContent, "id" | "updatedAt">;
 const empty: Form = {
   heroHeadline: "",
   intro: "",
+  heroImage: "",
   certificateImage: "",
   certificateTitle: "",
   highlights: [],
@@ -21,6 +22,7 @@ const empty: Form = {
   stats: [],
   ctaHeadline: "",
   ctaBody: "",
+  ctaImage: "",
 };
 
 export default function AccreditationsPage() {
@@ -115,6 +117,11 @@ export default function AccreditationsPage() {
             onChange={(e) => setForm({ ...form, intro: e.target.value })}
           />
         </div>
+        <ImageUpload
+          value={form.heroImage}
+          onChange={(url) => setForm((f) => ({ ...f, heroImage: url }))}
+          label="Hero Image"
+        />
       </div>
 
       <div className="admin-card space-y-4">
@@ -123,7 +130,7 @@ export default function AccreditationsPage() {
         </p>
         <ImageUpload
           value={form.certificateImage}
-          onChange={(url) => setForm({ ...form, certificateImage: url })}
+          onChange={(url) => setForm((f) => ({ ...f, certificateImage: url }))}
           label="Certificate Image"
         />
         <div>
@@ -171,7 +178,7 @@ export default function AccreditationsPage() {
           </button>
         </div>
         {form.commitments.map((c, i) => (
-          <div key={i} className="grid grid-cols-[1fr_2fr_auto] gap-2 items-end">
+          <div key={i} className="grid grid-cols-1 sm:grid-cols-[1fr_2fr_auto] gap-2 items-end">
             <div>
               <label className="admin-label">Title</label>
               <input
@@ -293,6 +300,11 @@ export default function AccreditationsPage() {
             onChange={(e) => setForm({ ...form, ctaBody: e.target.value })}
           />
         </div>
+        <ImageUpload
+          value={form.ctaImage}
+          onChange={(url) => setForm((f) => ({ ...f, ctaImage: url }))}
+          label="CTA Image"
+        />
       </div>
     </div>
   );

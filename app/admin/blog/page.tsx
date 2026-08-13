@@ -7,7 +7,10 @@ import {
   createBlogPost,
   updateBlogPost,
   deleteBlogPost,
+  getBlogPage,
+  saveBlogPage,
   BlogPost,
+  BlogPageContent,
 } from "@/lib/firestore";
 import ImageUpload from "@/components/ImageUpload";
 import WysiwygEditor from "@/components/WysiwygEditor";
@@ -40,8 +43,16 @@ function slugify(s: string) {
     .replace(/^-|-$/g, "");
 }
 
+const emptyPage: Omit<BlogPageContent, "id" | "updatedAt"> = {
+  heroHeadline: "",
+  intro: "",
+};
+
 export default function BlogPage() {
   const [items, setItems] = useState<BlogPost[]>([]);
+  const [pageForm, setPageForm] = useState(emptyPage);
+  const [pageSaving, setPageSaving] = useState(false);
+  const [pageSaved, setPageSaved] = useState(false);
   const [loading, setLoading] = useState(true);
   const [showModal, setShowModal] = useState(false);
   const [editing, setEditing] = useState<BlogPost | null>(null);
@@ -51,7 +62,12 @@ export default function BlogPage() {
 
   async function load() {
     setLoading(true);
-    setItems(await getBlogPosts());
+    const [list, page] = await Promise.all([getBlogPosts(), getBlogPage()]);
+    setItems(list);
+    if (page) {
+      const { id: _id, updatedAt: _u, ...rest } = page;
+      setPageForm({ ...emptyPage, ...rest });
+    }
     setLoading(false);
   }
 
@@ -136,6 +152,56 @@ export default function BlogPage() {
         <button className="btn-primary flex items-center gap-2" onClick={openNew}>
           <MdAdd size={16} /> New Post
         </button>
+      </div>
+
+      <div className="admin-card space-y-4">
+        <div className="flex items-center justify-between border-b border-gray-100 pb-3">
+          <p className="text-xs font-semibold uppercase text-gray-500">
+            Listing page
+          </p>
+          <button
+            className="btn-primary"
+            disabled={pageSaving}
+            onClick={async () => {
+              setPageSaving(true);
+              setPageSaved(false);
+              try {
+                await saveBlogPage(pageForm);
+                setPageSaved(true);
+                setTimeout(() => setPageSaved(false), 3000);
+              } finally {
+                setPageSaving(false);
+              }
+            }}
+          >
+            {pageSaving ? "Saving…" : "Save listing"}
+          </button>
+        </div>
+        {pageSaved && (
+          <p className="text-sm text-green-700">Listing saved.</p>
+        )}
+        <div>
+          <label className="admin-label">Headline</label>
+          <input
+            className="admin-input"
+            value={pageForm.heroHeadline}
+            onChange={(e) =>
+              setPageForm({ ...pageForm, heroHeadline: e.target.value })
+            }
+            placeholder="Insights for smarter fleet operations."
+          />
+        </div>
+        <div>
+          <label className="admin-label">Intro / sidebar copy</label>
+          <textarea
+            className="admin-input"
+            rows={3}
+            value={pageForm.intro}
+            onChange={(e) =>
+              setPageForm({ ...pageForm, intro: e.target.value })
+            }
+          />
+        </div>
       </div>
 
       {loading ? (
@@ -255,7 +321,7 @@ export default function BlogPage() {
                 />
               </div>
 
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
                   <label className="admin-label">Slug</label>
                   <input
@@ -291,11 +357,11 @@ export default function BlogPage() {
 
               <ImageUpload
                 value={form.image}
-                onChange={(url) => setForm({ ...form, image: url })}
+                onChange={(url) => setForm((f) => ({ ...f, image: url }))}
                 label="Cover Image"
               />
 
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
                   <label className="admin-label">Date</label>
                   <input
@@ -317,7 +383,7 @@ export default function BlogPage() {
                 </div>
               </div>
 
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
                   <label className="admin-label">Author</label>
                   <input

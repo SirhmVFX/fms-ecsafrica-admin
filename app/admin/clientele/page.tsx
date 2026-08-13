@@ -7,7 +7,10 @@ import {
   createClientele,
   updateClientele,
   deleteClientele,
+  getClientelePage,
+  saveClientelePage,
   ClienteleItem,
+  ClientelePageContent,
 } from "@/lib/firestore";
 import ImageUpload from "@/components/ImageUpload";
 import { MdAdd, MdEdit, MdDelete, MdClose } from "react-icons/md";
@@ -22,8 +25,17 @@ const empty: Omit<ClienteleItem, "id"> = {
   active: true,
 };
 
+const emptyPage: Omit<ClientelePageContent, "id" | "updatedAt"> = {
+  heroHeadline: "",
+  intro: "",
+  stats: [],
+};
+
 export default function ClientelePage() {
   const [items, setItems] = useState<ClienteleItem[]>([]);
+  const [pageForm, setPageForm] = useState(emptyPage);
+  const [pageSaving, setPageSaving] = useState(false);
+  const [pageSaved, setPageSaved] = useState(false);
   const [loading, setLoading] = useState(true);
   const [showModal, setShowModal] = useState(false);
   const [editing, setEditing] = useState<ClienteleItem | null>(null);
@@ -33,7 +45,12 @@ export default function ClientelePage() {
 
   async function load() {
     setLoading(true);
-    setItems(await getClientele());
+    const [list, page] = await Promise.all([getClientele(), getClientelePage()]);
+    setItems(list);
+    if (page) {
+      const { id: _id, updatedAt: _u, ...rest } = page;
+      setPageForm({ ...emptyPage, ...rest });
+    }
     setLoading(false);
   }
 
@@ -111,6 +128,56 @@ export default function ClientelePage() {
         <button className="btn-primary flex items-center gap-2" onClick={openNew}>
           <MdAdd size={16} /> New Client
         </button>
+      </div>
+
+      <div className="admin-card space-y-4">
+        <div className="flex items-center justify-between border-b border-gray-100 pb-3">
+          <p className="text-xs font-semibold uppercase text-gray-500">
+            Listing page
+          </p>
+          <button
+            className="btn-primary"
+            disabled={pageSaving}
+            onClick={async () => {
+              setPageSaving(true);
+              setPageSaved(false);
+              try {
+                await saveClientelePage(pageForm);
+                setPageSaved(true);
+                setTimeout(() => setPageSaved(false), 3000);
+              } finally {
+                setPageSaving(false);
+              }
+            }}
+          >
+            {pageSaving ? "Saving…" : "Save listing"}
+          </button>
+        </div>
+        {pageSaved && (
+          <p className="text-sm text-green-700">Listing saved.</p>
+        )}
+        <div>
+          <label className="admin-label">Headline</label>
+          <input
+            className="admin-input"
+            value={pageForm.heroHeadline}
+            onChange={(e) =>
+              setPageForm({ ...pageForm, heroHeadline: e.target.value })
+            }
+            placeholder="Trusted by organisations across Africa"
+          />
+        </div>
+        <div>
+          <label className="admin-label">Intro</label>
+          <textarea
+            className="admin-input"
+            rows={3}
+            value={pageForm.intro}
+            onChange={(e) =>
+              setPageForm({ ...pageForm, intro: e.target.value })
+            }
+          />
+        </div>
       </div>
 
       {loading ? (
@@ -212,11 +279,11 @@ export default function ClientelePage() {
 
               <ImageUpload
                 value={form.src}
-                onChange={(url) => setForm({ ...form, src: url })}
+                onChange={(url) => setForm((f) => ({ ...f, src: url }))}
                 label="Logo"
               />
 
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
                   <label className="admin-label">Category</label>
                   <select

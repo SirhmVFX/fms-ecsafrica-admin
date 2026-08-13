@@ -6,6 +6,7 @@ import {
   addDoc,
   updateDoc,
   deleteDoc,
+  setDoc,
   query,
   orderBy,
   serverTimestamp,
@@ -30,6 +31,9 @@ import type {
   Service,
   BlogPost,
   GalleryItem,
+  GalleryPageContent,
+  BlogPageContent,
+  ClientelePageContent,
   ClienteleItem,
   ContactMessage,
   ResellerApplication,
@@ -51,6 +55,9 @@ export type {
   Service,
   BlogPost,
   GalleryItem,
+  GalleryPageContent,
+  BlogPageContent,
+  ClientelePageContent,
   ClienteleItem,
   ContactMessage,
   ResellerApplication,
@@ -81,12 +88,38 @@ async function getOne<T>(col: string, id: string): Promise<T | null> {
   return { id: snap.id, ...snap.data() } as T;
 }
 
+/** Firestore rejects `undefined` — strip it so image/optional field saves don't fail silently. */
+function sanitize<T>(value: T): T {
+  if (Array.isArray(value)) {
+    return value.map((item) => sanitize(item)) as T;
+  }
+  if (value && typeof value === "object" && value.constructor === Object) {
+    const out: Record<string, unknown> = {};
+    for (const [key, val] of Object.entries(value as Record<string, unknown>)) {
+      if (val === undefined) continue;
+      out[key] = sanitize(val);
+    }
+    return out as T;
+  }
+  return value;
+}
+
+function withoutMeta(data: Record<string, unknown>) {
+  const {
+    id: _id,
+    createdAt: _createdAt,
+    updatedAt: _updatedAt,
+    ...rest
+  } = data;
+  return rest;
+}
+
 async function create<T extends DocumentData>(
   col: string,
   data: Omit<T, "id">
 ): Promise<string> {
   const ref = await addDoc(collection(db, col), {
-    ...data,
+    ...sanitize(data as DocumentData),
     createdAt: serverTimestamp(),
     updatedAt: serverTimestamp(),
   });
@@ -99,7 +132,7 @@ async function update<T>(
   data: Partial<T>
 ): Promise<void> {
   await updateDoc(doc(db, col, id), {
-    ...data,
+    ...sanitize(withoutMeta(data as Record<string, unknown>)),
     updatedAt: serverTimestamp(),
   });
 }
@@ -108,7 +141,13 @@ async function remove(col: string, id: string): Promise<void> {
   await deleteDoc(doc(db, col, id));
 }
 
+const SINGLETON_ID = "default";
+
 async function getSingleton<T>(col: string): Promise<T | null> {
+  const named = await getDoc(doc(db, col, SINGLETON_ID));
+  if (named.exists()) {
+    return { id: named.id, ...named.data() } as T;
+  }
   const snap = await getDocs(collection(db, col));
   if (snap.empty) return null;
   const d = snap.docs[0];
@@ -119,18 +158,35 @@ async function saveSingleton<T extends DocumentData>(
   col: string,
   data: Partial<T>
 ): Promise<void> {
-  const snap = await getDocs(collection(db, col));
-  if (snap.empty) {
-    await addDoc(collection(db, col), {
-      ...data,
-      updatedAt: serverTimestamp(),
-    });
-  } else {
-    await updateDoc(doc(db, col, snap.docs[0].id), {
-      ...data,
-      updatedAt: serverTimestamp(),
-    });
+  const payload = {
+    ...sanitize(withoutMeta(data as Record<string, unknown>)),
+    updatedAt: serverTimestamp(),
+  };
+  const namedRef = doc(db, col, SINGLETON_ID);
+  const named = await getDoc(namedRef);
+
+  if (!named.exists()) {
+    const snap = await getDocs(collection(db, col));
+    if (!snap.empty) {
+      const existing = snap.docs[0].data();
+      await setDoc(namedRef, { ...existing, ...payload }, { merge: true });
+      await Promise.all(
+        snap.docs
+          .filter((d) => d.id !== SINGLETON_ID)
+          .map((d) => deleteDoc(d.ref))
+      );
+      return;
+    }
   }
+
+  await setDoc(namedRef, payload, { merge: true });
+
+  const extras = await getDocs(collection(db, col));
+  await Promise.all(
+    extras.docs
+      .filter((d) => d.id !== SINGLETON_ID)
+      .map((d) => deleteDoc(d.ref))
+  );
 }
 
 // Site Settings
@@ -196,6 +252,20 @@ export const getPrivacyPage = () =>
   getSingleton<PrivacyPageContent>("privacyPage");
 export const savePrivacyPage = (data: Partial<PrivacyPageContent>) =>
   saveSingleton<PrivacyPageContent>("privacyPage", data);
+
+export const getGalleryPage = () =>
+  getSingleton<GalleryPageContent>("galleryPage");
+export const saveGalleryPage = (data: Partial<GalleryPageContent>) =>
+  saveSingleton<GalleryPageContent>("galleryPage", data);
+
+export const getBlogPage = () => getSingleton<BlogPageContent>("blogPage");
+export const saveBlogPage = (data: Partial<BlogPageContent>) =>
+  saveSingleton<BlogPageContent>("blogPage", data);
+
+export const getClientelePage = () =>
+  getSingleton<ClientelePageContent>("clientelePage");
+export const saveClientelePage = (data: Partial<ClientelePageContent>) =>
+  saveSingleton<ClientelePageContent>("clientelePage", data);
 
 // Services
 export const getServices = () => getOrdered<Service>("services");

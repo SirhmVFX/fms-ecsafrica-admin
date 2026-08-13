@@ -20,8 +20,21 @@ const empty: Form = {
   faqs: [],
   featuredQuote: "",
   featuredQuoteAuthor: "",
+  featuredEyebrow: "",
+  featuredHeadline: "",
+  pillarsImage: "",
+  pillarsEyebrow: "",
+  pillarsHeadline: "",
+  pillarsCtaLabel: "",
+  pillarsCtaHref: "",
+  valuesEyebrow: "",
+  valuesHeadline: "",
+  trustedEyebrow: "",
+  faqEyebrow: "",
+  faqHeadline: "",
   ctaHeadline: "",
   ctaBody: "",
+  ctaImage: "",
 };
 
 export default function AboutPage() {
@@ -116,7 +129,7 @@ export default function AboutPage() {
         </div>
         <ImageUpload
           value={form.heroImage}
-          onChange={(url) => setForm({ ...form, heroImage: url })}
+          onChange={(url) => setForm((f) => ({ ...f, heroImage: url }))}
           label="Hero Image"
         />
       </div>
@@ -150,6 +163,57 @@ export default function AboutPage() {
             rows={2}
             value={form.purpose}
             onChange={(e) => setForm({ ...form, purpose: e.target.value })}
+          />
+        </div>
+        <ImageUpload
+          value={form.pillarsImage}
+          onChange={(url) => setForm((f) => ({ ...f, pillarsImage: url }))}
+          label="Image beside Vision / Mission / Purpose"
+        />
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label className="admin-label">Button label</label>
+            <input
+              className="admin-input"
+              value={form.pillarsCtaLabel}
+              onChange={(e) =>
+                setForm({ ...form, pillarsCtaLabel: e.target.value })
+              }
+              placeholder="Learn more"
+            />
+          </div>
+          <div>
+            <label className="admin-label">Button URL</label>
+            <input
+              className="admin-input"
+              value={form.pillarsCtaHref}
+              onChange={(e) =>
+                setForm({ ...form, pillarsCtaHref: e.target.value })
+              }
+              placeholder="/about-us/contact-us"
+            />
+          </div>
+        </div>
+        <div>
+          <label className="admin-label">Section Eyebrow</label>
+          <input
+            className="admin-input"
+            value={form.pillarsEyebrow}
+            onChange={(e) =>
+              setForm({ ...form, pillarsEyebrow: e.target.value })
+            }
+            placeholder="Who we are"
+          />
+        </div>
+        <div>
+          <label className="admin-label">Section Headline</label>
+          <input
+            className="admin-input"
+            value={form.pillarsHeadline}
+            onChange={(e) =>
+              setForm({ ...form, pillarsHeadline: e.target.value })
+            }
+            placeholder="Our vision, mission and purpose"
           />
         </div>
       </div>
@@ -227,8 +291,32 @@ export default function AboutPage() {
             <MdAdd size={14} className="inline" /> Add
           </button>
         </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label className="admin-label">Section Eyebrow</label>
+            <input
+              className="admin-input"
+              value={form.valuesEyebrow}
+              onChange={(e) =>
+                setForm({ ...form, valuesEyebrow: e.target.value })
+              }
+              placeholder="What guides us"
+            />
+          </div>
+          <div>
+            <label className="admin-label">Section Headline</label>
+            <input
+              className="admin-input"
+              value={form.valuesHeadline}
+              onChange={(e) =>
+                setForm({ ...form, valuesHeadline: e.target.value })
+              }
+              placeholder="Core values"
+            />
+          </div>
+        </div>
         {form.coreValues.map((v, i) => (
-          <div key={i} className="grid grid-cols-[1fr_2fr_auto] gap-2 items-end">
+          <div key={i} className="grid grid-cols-1 sm:grid-cols-[1fr_2fr_auto] gap-2 items-end">
             <div>
               <label className="admin-label">Title</label>
               <input
@@ -273,6 +361,17 @@ export default function AboutPage() {
           Trusted By
         </p>
         <div>
+          <label className="admin-label">Section Eyebrow</label>
+          <input
+            className="admin-input"
+            value={form.trustedEyebrow}
+            onChange={(e) =>
+              setForm({ ...form, trustedEyebrow: e.target.value })
+            }
+            placeholder="Trusted by"
+          />
+        </div>
+        <div>
           <label className="admin-label">Names (one per line)</label>
           <textarea
             className="admin-input"
@@ -298,6 +397,30 @@ export default function AboutPage() {
           >
             <MdAdd size={14} className="inline" /> Add
           </button>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label className="admin-label">Section Eyebrow</label>
+            <input
+              className="admin-input"
+              value={form.faqEyebrow}
+              onChange={(e) =>
+                setForm({ ...form, faqEyebrow: e.target.value })
+              }
+              placeholder="FAQ"
+            />
+          </div>
+          <div>
+            <label className="admin-label">Section Headline</label>
+            <input
+              className="admin-input"
+              value={form.faqHeadline}
+              onChange={(e) =>
+                setForm({ ...form, faqHeadline: e.target.value })
+              }
+              placeholder="Your questions, answered"
+            />
+          </div>
         </div>
         {form.faqs.map((f, i) => (
           <div key={i} className="border border-gray-100 p-3 space-y-2">
@@ -345,6 +468,27 @@ export default function AboutPage() {
           Featured Quote & CTA
         </p>
         <div>
+          <label className="admin-label">Featured Eyebrow</label>
+          <input
+            className="admin-input"
+            value={form.featuredEyebrow}
+            onChange={(e) =>
+              setForm({ ...form, featuredEyebrow: e.target.value })
+            }
+            placeholder="What we stand for"
+          />
+        </div>
+        <div>
+          <label className="admin-label">Featured Headline</label>
+          <input
+            className="admin-input"
+            value={form.featuredHeadline}
+            onChange={(e) =>
+              setForm({ ...form, featuredHeadline: e.target.value })
+            }
+          />
+        </div>
+        <div>
           <label className="admin-label">Featured Quote</label>
           <textarea
             className="admin-input"
@@ -365,6 +509,11 @@ export default function AboutPage() {
             }
           />
         </div>
+        <ImageUpload
+          value={form.ctaImage}
+          onChange={(url) => setForm((f) => ({ ...f, ctaImage: url }))}
+          label="Consultation CTA Image (optional override)"
+        />
         <div>
           <label className="admin-label">CTA Headline</label>
           <input

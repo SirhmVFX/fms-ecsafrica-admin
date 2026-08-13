@@ -15,12 +15,15 @@ const empty: Form = {
   heroHeadline: "",
   intro: "",
   heroImage: "",
+  stepsImage: "",
+  stepsHeadline: "",
   steps: [],
   industries: [],
   pillars: [],
   stats: [],
   ctaHeadline: "",
   ctaBody: "",
+  ctaImage: "",
 };
 
 export default function BenefitsPage() {
@@ -107,9 +110,25 @@ export default function BenefitsPage() {
         </div>
         <ImageUpload
           value={form.heroImage}
-          onChange={(url) => setForm({ ...form, heroImage: url })}
+          onChange={(url) => setForm((f) => ({ ...f, heroImage: url }))}
           label="Hero Image"
         />
+        <ImageUpload
+          value={form.stepsImage}
+          onChange={(url) => setForm((f) => ({ ...f, stepsImage: url }))}
+          label="Image beside steps"
+        />
+        <div>
+          <label className="admin-label">Steps Headline</label>
+          <input
+            className="admin-input"
+            value={form.stepsHeadline}
+            onChange={(e) =>
+              setForm({ ...form, stepsHeadline: e.target.value })
+            }
+            placeholder="Our step-by-step approach."
+          />
+        </div>
       </div>
 
       <div className="admin-card space-y-4">
@@ -146,7 +165,7 @@ export default function BenefitsPage() {
                 <MdDelete size={12} />
               </button>
             </div>
-            <div className="grid grid-cols-2 gap-2">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
               <div>
                 <label className="admin-label">Number</label>
                 <input
@@ -219,7 +238,7 @@ export default function BenefitsPage() {
           </button>
         </div>
         {form.industries.map((item, i) => (
-          <div key={i} className="grid grid-cols-[1fr_2fr_auto] gap-2 items-end">
+          <div key={i} className="grid grid-cols-1 sm:grid-cols-[1fr_2fr_auto] gap-2 items-end">
             <div>
               <label className="admin-label">Title</label>
               <input
@@ -277,7 +296,7 @@ export default function BenefitsPage() {
           </button>
         </div>
         {form.pillars.map((item, i) => (
-          <div key={i} className="grid grid-cols-[1fr_2fr_auto] gap-2 items-end">
+          <div key={i} className="grid grid-cols-1 sm:grid-cols-[1fr_2fr_auto] gap-2 items-end">
             <div>
               <label className="admin-label">Title</label>
               <input
@@ -396,6 +415,11 @@ export default function BenefitsPage() {
             onChange={(e) => setForm({ ...form, ctaBody: e.target.value })}
           />
         </div>
+        <ImageUpload
+          value={form.ctaImage}
+          onChange={(url) => setForm((f) => ({ ...f, ctaImage: url }))}
+          label="CTA Image"
+        />
       </div>
     </div>
   );

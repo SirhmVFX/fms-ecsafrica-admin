@@ -186,7 +186,12 @@
         "label": "Push-To-Talk Telematics",
         "href": "/services/push-to-talk-telematics"
       }
-    ]
+    ],
+    "ctaImage": "/assets/landing/hero-fleet.jpg",
+    "ctaHeadline": "Get started with a free consultation",
+    "ctaBody": "Discover fleet and asset solutions that reduce costs and improve visibility. Take the first step today.",
+    "ctaButtonLabel": "Get a free consultation",
+    "ctaHref": "/about-us/contact-us"
   },
   "heroSlides": [
     {
@@ -348,7 +353,20 @@
     "ctaPrimaryLabel": "Request a Free Quote",
     "ctaPrimaryHref": "/about-us/contact-us",
     "ctaSecondaryLabel": "Contact Us",
-    "ctaSecondaryHref": "/about-us/contact-us"
+    "ctaSecondaryHref": "/about-us/contact-us",
+    "solutionsEyebrow": "What we do",
+    "solutionsHeadline": "Our solutions, your connected fleet.",
+    "solutionsCtaLabel": "View all services",
+    "solutionsCtaHref": "/services",
+    "benefitsEyebrow": "Why it matters",
+    "benefitsHeadline": "Benefits of FMS Africa",
+    "approachCtaHref": "/about-us/contact-us",
+    "benefitsBandImage": "/assets/landing/logistics-port.jpg",
+    "benefitsBandCtaLabel": "Partner with us",
+    "benefitsBandCtaHref": "/resellers",
+    "approachEyebrow": "Our approach",
+    "storiesEyebrow": "Testimonials",
+    "storiesHeadline": "What customers say."
   },
   "aboutPage": {
     "heroHeadline": "Driven by innovation,\npowered by data.",
@@ -431,7 +449,20 @@
     "featuredQuote": "We empower businesses with real-time operational data, enabling smarter decision making that drives productivity, cost savings and operational excellence.",
     "featuredQuoteAuthor": "FMS Africa Purpose Statement",
     "ctaHeadline": "Join the connected fleet movement with FMS Africa",
-    "ctaBody": "We're on 24/7 to react promptly to your service needs. If you are interested in partnering with us, leave a message and we will reply as soon as we can."
+    "ctaBody": "We're on 24/7 to react promptly to your service needs. If you are interested in partnering with us, leave a message and we will reply as soon as we can.",
+    "pillarsImage": "/assets/landing/control-room.jpg",
+    "pillarsEyebrow": "Who we are",
+    "pillarsHeadline": "Our vision, mission and purpose",
+    "pillarsCtaLabel": "Learn more",
+    "pillarsCtaHref": "/about-us/contact-us",
+    "valuesEyebrow": "What guides us",
+    "valuesHeadline": "Core values",
+    "trustedEyebrow": "Trusted by",
+    "faqEyebrow": "FAQ",
+    "faqHeadline": "Your questions, answered",
+    "featuredEyebrow": "What we stand for",
+    "featuredHeadline": "Real-time data. Smarter decisions. Better outcomes.",
+    "ctaImage": "/assets/landing/hero-fleet.jpg"
   },
   "accreditationPage": {
     "heroHeadline": "Certified compliance,\nproven quality.",
@@ -3560,5 +3591,19 @@
       "order": 87,
       "active": true
     }
-  ]
+  ],
+  "blogPage": {
+    "heroHeadline": "Insights for smarter fleet operations.",
+    "intro": "Explore tips, trends and innovations in GPS tracking, telematics and IoT to inspire your journey toward safer, more efficient fleet management."
+  },
+  "clientelePage": {
+    "heroHeadline": "",
+    "intro": "From global NGOs and development agencies to banks, government ministries and leading corporates — FMS Africa powers fleet and asset intelligence for partners who demand reliability.",
+    "stats": []
+  },
+  "galleryPage": {
+    "heroHeadline": "Our work in\naction.",
+    "intro": "",
+    "heroImage": "/assets/gallery/Technical-Works-1.jpg"
+  }
 }

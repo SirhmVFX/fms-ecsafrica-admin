@@ -37,6 +37,11 @@ const empty: Form = {
   youtubeUrl: "",
   instagramUrl: "",
   regionalPhones: [],
+  ctaImage: "",
+  ctaHeadline: "",
+  ctaBody: "",
+  ctaButtonLabel: "",
+  ctaHref: "",
 };
 
 export default function SettingsPage() {
@@ -70,6 +75,11 @@ export default function SettingsPage() {
           youtubeUrl: s.youtubeUrl || "",
           instagramUrl: s.instagramUrl || "",
           regionalPhones: s.regionalPhones || [],
+          ctaImage: s.ctaImage || "",
+          ctaHeadline: s.ctaHeadline || "",
+          ctaBody: s.ctaBody || "",
+          ctaButtonLabel: s.ctaButtonLabel || "",
+          ctaHref: s.ctaHref || "",
         });
       }
       setLoading(false);
@@ -150,7 +160,7 @@ export default function SettingsPage() {
           onChange={(url) => set("logoUrl", url)}
           label="Logo"
         />
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div>
             <label className="admin-label">Header Tagline</label>
             <input
@@ -199,7 +209,7 @@ export default function SettingsPage() {
             onChange={(e) => set("footerBlurb", e.target.value)}
           />
         </div>
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div>
             <label className="admin-label">Footer Phone</label>
             <input
@@ -255,7 +265,7 @@ export default function SettingsPage() {
         <p className="text-xs font-semibold uppercase text-gray-500 border-b border-gray-100 pb-3">
           Social URLs
         </p>
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {(
             [
               ["facebookUrl", "Facebook"],
@@ -274,6 +284,58 @@ export default function SettingsPage() {
               />
             </div>
           ))}
+        </div>
+      </div>
+
+      <div className="admin-card space-y-4">
+        <p className="text-xs font-semibold uppercase text-gray-500 border-b border-gray-100 pb-3">
+          Site-wide Consultation CTA
+        </p>
+        <p className="text-xs text-gray-400">
+          Used on every page unless that page sets its own CTA image/copy.
+        </p>
+        <ImageUpload
+          value={form.ctaImage}
+          onChange={(url) => set("ctaImage", url)}
+          label="Background Image"
+        />
+        <div>
+          <label className="admin-label">Headline</label>
+          <input
+            className="admin-input"
+            value={form.ctaHeadline}
+            onChange={(e) => set("ctaHeadline", e.target.value)}
+            placeholder="Get started with a free consultation"
+          />
+        </div>
+        <div>
+          <label className="admin-label">Body</label>
+          <textarea
+            className="admin-input"
+            rows={2}
+            value={form.ctaBody}
+            onChange={(e) => set("ctaBody", e.target.value)}
+          />
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label className="admin-label">Button Label</label>
+            <input
+              className="admin-input"
+              value={form.ctaButtonLabel}
+              onChange={(e) => set("ctaButtonLabel", e.target.value)}
+              placeholder="Get a free consultation"
+            />
+          </div>
+          <div>
+            <label className="admin-label">Button URL</label>
+            <input
+              className="admin-input"
+              value={form.ctaHref}
+              onChange={(e) => set("ctaHref", e.target.value)}
+              placeholder="/about-us/contact-us"
+            />
+          </div>
         </div>
       </div>
 
@@ -342,6 +404,58 @@ export default function SettingsPage() {
             </button>
           </div>
         ))}
+      </div>
+
+      <div className="admin-card space-y-4">
+        <p className="text-xs font-semibold uppercase text-gray-500 border-b border-gray-100 pb-3">
+          Site-wide Consultation CTA
+        </p>
+        <p className="text-xs text-gray-400">
+          Used on every page unless that page sets its own CTA image/copy.
+        </p>
+        <ImageUpload
+          value={form.ctaImage}
+          onChange={(url) => set("ctaImage", url)}
+          label="Background Image"
+        />
+        <div>
+          <label className="admin-label">Headline</label>
+          <input
+            className="admin-input"
+            value={form.ctaHeadline}
+            onChange={(e) => set("ctaHeadline", e.target.value)}
+            placeholder="Get started with a free consultation"
+          />
+        </div>
+        <div>
+          <label className="admin-label">Body</label>
+          <textarea
+            className="admin-input"
+            rows={2}
+            value={form.ctaBody}
+            onChange={(e) => set("ctaBody", e.target.value)}
+          />
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label className="admin-label">Button Label</label>
+            <input
+              className="admin-input"
+              value={form.ctaButtonLabel}
+              onChange={(e) => set("ctaButtonLabel", e.target.value)}
+              placeholder="Get a free consultation"
+            />
+          </div>
+          <div>
+            <label className="admin-label">Button URL</label>
+            <input
+              className="admin-input"
+              value={form.ctaHref}
+              onChange={(e) => set("ctaHref", e.target.value)}
+              placeholder="/about-us/contact-us"
+            />
+          </div>
+        </div>
       </div>
     </div>
   );
