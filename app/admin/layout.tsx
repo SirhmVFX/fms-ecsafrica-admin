@@ -116,12 +116,12 @@ export default function AdminLayout({
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src="/assets/FMS-Logo-Blue-1.png"
-          alt="FMS Africa"
-          className="h-9 w-auto brightness-0 invert"
+          alt="FMS Africa Nigeria Ltd"
+          className="h-10 w-auto brightness-0 invert"
         />
         <div>
           <p className="text-[10px] uppercase tracking-[0.3em] text-[#ffd200]">
-            FMS Africa
+            Nigeria Ltd
           </p>
           <p className="text-sm font-semibold text-white">Admin Panel</p>
         </div>

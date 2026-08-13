@@ -84,21 +84,22 @@ export default function LoginPage() {
           <div>
             <Image
               src="/assets/FMS-Logo-Blue-1.png"
-              alt="FMS Africa"
-              width={160}
-              height={58}
-              className="h-12 w-auto brightness-0 invert"
+              alt="FMS Africa Nigeria Ltd"
+              width={270}
+              height={126}
+              className="h-12 w-auto brightness-0 invert sm:h-14"
               priority
+              unoptimized
             />
             <div className="mt-3 h-1 w-16 bg-[#ffd200]" />
           </div>
 
           <div>
             <p className="text-xs uppercase tracking-[0.35em] text-[#ffd200]">
-              Fleet Monitoring Systems
+              FMS Africa Nigeria Ltd
             </p>
             <h1 className="mt-3 max-w-md text-3xl font-semibold text-white">
-              FMS Africa Admin
+              Nigeria Admin
             </h1>
             <p className="mt-3 max-w-sm text-sm text-white/70">
               {slides[slide].label}
@@ -126,10 +127,11 @@ export default function LoginPage() {
           <div className="mb-8 lg:hidden">
             <Image
               src="/assets/FMS-Logo-Blue-1.png"
-              alt="FMS Africa"
-              width={140}
-              height={50}
-              className="mx-auto h-10 w-auto"
+              alt="FMS Africa Nigeria Ltd"
+              width={270}
+              height={126}
+              className="mx-auto h-12 w-auto"
+              unoptimized
             />
             <div className="mx-auto mt-3 h-1 w-12 bg-[#ffd200]" />
           </div>
@@ -156,7 +158,7 @@ export default function LoginPage() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 className="admin-input"
-                placeholder="admin@fms-ecsafrica.com"
+                placeholder="admin@fmsafrica.com"
                 required
               />
             </div>
