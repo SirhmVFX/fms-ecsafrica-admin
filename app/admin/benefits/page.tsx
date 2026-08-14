@@ -21,6 +21,15 @@ const empty: Form = {
   industries: [],
   pillars: [],
   stats: [],
+  promisesEyebrow: "",
+  promisesHeadline: "",
+  promisesNote: "",
+  promises: [],
+  slaBadge: "",
+  slaHeadline: "",
+  slaIntro: "",
+  slaFootnote: "",
+  slaPackages: [],
   ctaHeadline: "",
   ctaBody: "",
   ctaImage: "",
@@ -32,12 +41,14 @@ export default function BenefitsPage() {
   const [saving, setSaving] = useState(false);
   const [saved, setSaved] = useState(false);
   const [error, setError] = useState("");
+  const [promisesText, setPromisesText] = useState("");
 
   useEffect(() => {
     getBenefitsPage().then((data) => {
       if (data) {
         const { id: _id, updatedAt: _u, ...rest } = data;
         setForm({ ...empty, ...rest });
+        setPromisesText((rest.promises || []).join("\n"));
       }
       setLoading(false);
     });
@@ -48,7 +59,13 @@ export default function BenefitsPage() {
     setSaved(false);
     setError("");
     try {
-      await saveBenefitsPage(form);
+      await saveBenefitsPage({
+        ...form,
+        promises: promisesText
+          .split("\n")
+          .map((s) => s.trim())
+          .filter(Boolean),
+      });
       setSaved(true);
       setTimeout(() => setSaved(false), 3000);
     } catch (e) {
@@ -388,6 +405,323 @@ export default function BenefitsPage() {
             >
               <MdDelete size={14} />
             </button>
+          </div>
+        ))}
+      </div>
+
+      <div className="admin-card space-y-4">
+        <p className="text-xs font-semibold uppercase text-gray-500 border-b border-gray-100 pb-3">
+          Customer Promises
+        </p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label className="admin-label">Eyebrow</label>
+            <input
+              className="admin-input"
+              value={form.promisesEyebrow}
+              onChange={(e) =>
+                setForm({ ...form, promisesEyebrow: e.target.value })
+              }
+              placeholder="Our word, in writing"
+            />
+          </div>
+          <div>
+            <label className="admin-label">
+              Headline (last two words are highlighted)
+            </label>
+            <input
+              className="admin-input"
+              value={form.promisesHeadline}
+              onChange={(e) =>
+                setForm({ ...form, promisesHeadline: e.target.value })
+              }
+              placeholder="The 5 strongest promises we make to Nigerian operators."
+            />
+          </div>
+        </div>
+        <div>
+          <label className="admin-label">Side note</label>
+          <textarea
+            className="admin-input"
+            rows={2}
+            value={form.promisesNote}
+            onChange={(e) =>
+              setForm({ ...form, promisesNote: e.target.value })
+            }
+            placeholder="Not marketing lines — operating targets our Lagos team is measured against."
+          />
+        </div>
+        <div>
+          <label className="admin-label">Promises (one per line)</label>
+          <textarea
+            className="admin-input"
+            rows={5}
+            value={promisesText}
+            onChange={(e) => setPromisesText(e.target.value)}
+            placeholder={"Reduce fuel losses and theft\nReduce fleet and asset downtime"}
+          />
+        </div>
+      </div>
+
+      <div className="admin-card space-y-4">
+        <div className="flex items-center justify-between border-b border-gray-100 pb-3">
+          <p className="text-xs font-semibold uppercase text-gray-500">
+            SLA Packages
+          </p>
+          <button
+            className="btn-secondary text-xs py-1.5"
+            onClick={() =>
+              setForm({
+                ...form,
+                slaPackages: [
+                  ...form.slaPackages,
+                  {
+                    name: "",
+                    label: "",
+                    response: "",
+                    resolution: "",
+                    desc: "",
+                    features: [],
+                  },
+                ],
+              })
+            }
+          >
+            <MdAdd size={14} className="inline" /> Add package
+          </button>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label className="admin-label">Badge</label>
+            <input
+              className="admin-input"
+              value={form.slaBadge}
+              onChange={(e) => setForm({ ...form, slaBadge: e.target.value })}
+              placeholder="Service Level Agreement"
+            />
+          </div>
+          <div>
+            <label className="admin-label">
+              Headline (use a line break for two lines)
+            </label>
+            <textarea
+              className="admin-input"
+              rows={2}
+              value={form.slaHeadline}
+              onChange={(e) =>
+                setForm({ ...form, slaHeadline: e.target.value })
+              }
+              placeholder={"Respond faster.\nResolve faster."}
+            />
+          </div>
+        </div>
+        <div>
+          <label className="admin-label">Intro</label>
+          <textarea
+            className="admin-input"
+            rows={2}
+            value={form.slaIntro}
+            onChange={(e) => setForm({ ...form, slaIntro: e.target.value })}
+            placeholder="The recommended FMS Africa SLA. Every tier is a signed commitment…"
+          />
+        </div>
+        <div>
+          <label className="admin-label">Footnote</label>
+          <textarea
+            className="admin-input"
+            rows={2}
+            value={form.slaFootnote}
+            onChange={(e) =>
+              setForm({ ...form, slaFootnote: e.target.value })
+            }
+            placeholder="Response and resolution times are measured from first contact…"
+          />
+        </div>
+        {form.slaPackages.map((pkg, i) => (
+          <div key={i} className="border border-gray-100 p-3 space-y-2">
+            <div className="flex justify-between items-center">
+              <label className="admin-label mb-0">
+                Package {i + 1}{" "}
+                <span className="text-gray-400 normal-case">
+                  (card colour follows position: 1 silver, 2 gold, 3 platinum)
+                </span>
+              </label>
+              <button
+                className="btn-danger py-1 px-2"
+                onClick={() =>
+                  setForm({
+                    ...form,
+                    slaPackages: form.slaPackages.filter((_, j) => j !== i),
+                  })
+                }
+              >
+                <MdDelete size={12} />
+              </button>
+            </div>
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
+              <div>
+                <label className="admin-label">Name</label>
+                <input
+                  className="admin-input"
+                  value={pkg.name}
+                  onChange={(e) => {
+                    const slaPackages = [...form.slaPackages];
+                    slaPackages[i] = { ...slaPackages[i], name: e.target.value };
+                    setForm({ ...form, slaPackages });
+                  }}
+                  placeholder="Silver"
+                />
+              </div>
+              <div>
+                <label className="admin-label">Tier label</label>
+                <input
+                  className="admin-input"
+                  value={pkg.label}
+                  onChange={(e) => {
+                    const slaPackages = [...form.slaPackages];
+                    slaPackages[i] = {
+                      ...slaPackages[i],
+                      label: e.target.value,
+                    };
+                    setForm({ ...form, slaPackages });
+                  }}
+                  placeholder="Essential"
+                />
+              </div>
+              <div>
+                <label className="admin-label">Response (on card)</label>
+                <input
+                  className="admin-input"
+                  value={pkg.response}
+                  onChange={(e) => {
+                    const slaPackages = [...form.slaPackages];
+                    slaPackages[i] = {
+                      ...slaPackages[i],
+                      response: e.target.value,
+                    };
+                    setForm({ ...form, slaPackages });
+                  }}
+                  placeholder="4 HRS"
+                />
+              </div>
+              <div>
+                <label className="admin-label">Resolution</label>
+                <input
+                  className="admin-input"
+                  value={pkg.resolution}
+                  onChange={(e) => {
+                    const slaPackages = [...form.slaPackages];
+                    slaPackages[i] = {
+                      ...slaPackages[i],
+                      resolution: e.target.value,
+                    };
+                    setForm({ ...form, slaPackages });
+                  }}
+                  placeholder="24 hrs"
+                />
+              </div>
+            </div>
+            <div>
+              <label className="admin-label">Description</label>
+              <textarea
+                className="admin-input"
+                rows={2}
+                value={pkg.desc}
+                onChange={(e) => {
+                  const slaPackages = [...form.slaPackages];
+                  slaPackages[i] = { ...slaPackages[i], desc: e.target.value };
+                  setForm({ ...form, slaPackages });
+                }}
+              />
+            </div>
+            <div className="flex items-center justify-between pt-1">
+              <label className="admin-label mb-0">Features</label>
+              <button
+                className="btn-secondary text-xs py-1"
+                onClick={() => {
+                  const slaPackages = [...form.slaPackages];
+                  slaPackages[i] = {
+                    ...slaPackages[i],
+                    features: [
+                      ...slaPackages[i].features,
+                      { label: "", value: "", included: true },
+                    ],
+                  };
+                  setForm({ ...form, slaPackages });
+                }}
+              >
+                <MdAdd size={12} className="inline" /> Add feature
+              </button>
+            </div>
+            {pkg.features.map((feat, fi) => (
+              <div
+                key={fi}
+                className="grid grid-cols-[2fr_1fr_auto_auto] gap-2 items-end"
+              >
+                <div>
+                  <label className="admin-label">Label</label>
+                  <input
+                    className="admin-input"
+                    value={feat.label}
+                    onChange={(e) => {
+                      const slaPackages = [...form.slaPackages];
+                      const features = [...slaPackages[i].features];
+                      features[fi] = { ...features[fi], label: e.target.value };
+                      slaPackages[i] = { ...slaPackages[i], features };
+                      setForm({ ...form, slaPackages });
+                    }}
+                    placeholder="Response time"
+                  />
+                </div>
+                <div>
+                  <label className="admin-label">Value</label>
+                  <input
+                    className="admin-input"
+                    value={feat.value}
+                    onChange={(e) => {
+                      const slaPackages = [...form.slaPackages];
+                      const features = [...slaPackages[i].features];
+                      features[fi] = { ...features[fi], value: e.target.value };
+                      slaPackages[i] = { ...slaPackages[i], features };
+                      setForm({ ...form, slaPackages });
+                    }}
+                    placeholder="4 hours"
+                  />
+                </div>
+                <label className="flex items-center gap-1.5 pb-2 text-xs text-gray-600">
+                  <input
+                    type="checkbox"
+                    checked={feat.included}
+                    onChange={(e) => {
+                      const slaPackages = [...form.slaPackages];
+                      const features = [...slaPackages[i].features];
+                      features[fi] = {
+                        ...features[fi],
+                        included: e.target.checked,
+                      };
+                      slaPackages[i] = { ...slaPackages[i], features };
+                      setForm({ ...form, slaPackages });
+                    }}
+                  />
+                  Included
+                </label>
+                <button
+                  className="btn-danger py-2 px-2"
+                  onClick={() => {
+                    const slaPackages = [...form.slaPackages];
+                    slaPackages[i] = {
+                      ...slaPackages[i],
+                      features: slaPackages[i].features.filter(
+                        (_, j) => j !== fi,
+                      ),
+                    };
+                    setForm({ ...form, slaPackages });
+                  }}
+                >
+                  <MdDelete size={12} />
+                </button>
+              </div>
+            ))}
           </div>
         ))}
       </div>

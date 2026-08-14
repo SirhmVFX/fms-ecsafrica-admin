@@ -32,6 +32,12 @@ const empty: Form = {
   trustedEyebrow: "",
   faqEyebrow: "",
   faqHeadline: "",
+  teamEyebrow: "",
+  teamHeadline: "",
+  teamIntro: "",
+  teamCtaText: "",
+  teamCtaLabel: "",
+  teamMembers: [],
   ctaHeadline: "",
   ctaBody: "",
   ctaImage: "",
@@ -458,6 +464,162 @@ export default function AboutPage() {
                 faqs[i] = { ...faqs[i], answer: e.target.value };
                 setForm({ ...form, faqs });
               }}
+            />
+          </div>
+        ))}
+      </div>
+
+      <div className="admin-card space-y-4">
+        <div className="flex items-center justify-between border-b border-gray-100 pb-3">
+          <p className="text-xs font-semibold uppercase text-gray-500">
+            Meet Our Team
+          </p>
+          <button
+            className="btn-secondary text-xs py-1.5"
+            onClick={() =>
+              setForm({
+                ...form,
+                teamMembers: [
+                  ...form.teamMembers,
+                  { initials: "", role: "", dept: "", photo: "" },
+                ],
+              })
+            }
+          >
+            <MdAdd size={14} className="inline" /> Add member
+          </button>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label className="admin-label">Section Eyebrow</label>
+            <input
+              className="admin-input"
+              value={form.teamEyebrow}
+              onChange={(e) =>
+                setForm({ ...form, teamEyebrow: e.target.value })
+              }
+              placeholder="Meet our team"
+            />
+          </div>
+          <div>
+            <label className="admin-label">
+              Headline (use a line break for two lines)
+            </label>
+            <textarea
+              className="admin-input"
+              rows={2}
+              value={form.teamHeadline}
+              onChange={(e) =>
+                setForm({ ...form, teamHeadline: e.target.value })
+              }
+              placeholder={"The people behind\nthe platform"}
+            />
+          </div>
+        </div>
+        <div>
+          <label className="admin-label">Intro</label>
+          <textarea
+            className="admin-input"
+            rows={2}
+            value={form.teamIntro}
+            onChange={(e) => setForm({ ...form, teamIntro: e.target.value })}
+            placeholder="A Lagos-based team of engineers and fleet specialists…"
+          />
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label className="admin-label">Banner text</label>
+            <input
+              className="admin-input"
+              value={form.teamCtaText}
+              onChange={(e) =>
+                setForm({ ...form, teamCtaText: e.target.value })
+              }
+              placeholder="We're growing our Lagos team — want to work with us?"
+            />
+          </div>
+          <div>
+            <label className="admin-label">Banner button label</label>
+            <input
+              className="admin-input"
+              value={form.teamCtaLabel}
+              onChange={(e) =>
+                setForm({ ...form, teamCtaLabel: e.target.value })
+              }
+              placeholder="Get in touch"
+            />
+          </div>
+        </div>
+        {form.teamMembers.map((m, i) => (
+          <div key={i} className="border border-gray-100 p-3 space-y-2">
+            <div className="flex justify-between items-center">
+              <label className="admin-label mb-0">Member {i + 1}</label>
+              <button
+                className="btn-danger py-1 px-2"
+                onClick={() =>
+                  setForm({
+                    ...form,
+                    teamMembers: form.teamMembers.filter((_, j) => j !== i),
+                  })
+                }
+              >
+                <MdDelete size={12} />
+              </button>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-[1fr_2fr_2fr] gap-2">
+              <div>
+                <label className="admin-label">Initials</label>
+                <input
+                  className="admin-input"
+                  value={m.initials}
+                  onChange={(e) => {
+                    const teamMembers = [...form.teamMembers];
+                    teamMembers[i] = {
+                      ...teamMembers[i],
+                      initials: e.target.value,
+                    };
+                    setForm({ ...form, teamMembers });
+                  }}
+                  placeholder="MD"
+                />
+              </div>
+              <div>
+                <label className="admin-label">Role / Name</label>
+                <input
+                  className="admin-input"
+                  value={m.role}
+                  onChange={(e) => {
+                    const teamMembers = [...form.teamMembers];
+                    teamMembers[i] = { ...teamMembers[i], role: e.target.value };
+                    setForm({ ...form, teamMembers });
+                  }}
+                  placeholder="Managing Director"
+                />
+              </div>
+              <div>
+                <label className="admin-label">Department</label>
+                <input
+                  className="admin-input"
+                  value={m.dept}
+                  onChange={(e) => {
+                    const teamMembers = [...form.teamMembers];
+                    teamMembers[i] = { ...teamMembers[i], dept: e.target.value };
+                    setForm({ ...form, teamMembers });
+                  }}
+                  placeholder="Leadership & Strategy"
+                />
+              </div>
+            </div>
+            <ImageUpload
+              value={m.photo}
+              onChange={(url) => {
+                setForm((f) => {
+                  const teamMembers = [...f.teamMembers];
+                  teamMembers[i] = { ...teamMembers[i], photo: url };
+                  return { ...f, teamMembers };
+                });
+              }}
+              label="Photo (optional — silhouette placeholder shown if empty)"
             />
           </div>
         ))}

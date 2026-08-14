@@ -97,6 +97,11 @@ export interface HomepageContent {
   approachCtaHref: string;
   storiesEyebrow: string;
   storiesHeadline: string;
+  pyramidEyebrow: string;
+  pyramidHeadline: string;
+  pyramidIntro: string;
+  pyramidFootnote: string;
+  pyramidLevels: { title: string; body: string }[];
   ctaImage: string;
   ctaHeadline: string;
   ctaBody: string;
@@ -133,6 +138,12 @@ export interface AboutPageContent {
   trustedEyebrow: string;
   faqEyebrow: string;
   faqHeadline: string;
+  teamEyebrow: string;
+  teamHeadline: string;
+  teamIntro: string;
+  teamCtaText: string;
+  teamCtaLabel: string;
+  teamMembers: { initials: string; role: string; dept: string; photo: string }[];
   ctaHeadline: string;
   ctaBody: string;
   ctaImage: string;
@@ -181,6 +192,15 @@ export interface CsrPageContent {
   updatedAt?: Timestamp;
 }
 
+export interface SlaPackage {
+  name: string;
+  label: string;
+  response: string;
+  resolution: string;
+  desc: string;
+  features: { label: string; value: string; included: boolean }[];
+}
+
 export interface BenefitsPageContent {
   id?: string;
   heroHeadline: string;
@@ -192,6 +212,15 @@ export interface BenefitsPageContent {
   industries: { title: string; body: string }[];
   pillars: { title: string; body: string }[];
   stats: { value: string; label: string }[];
+  promisesEyebrow: string;
+  promisesHeadline: string;
+  promisesNote: string;
+  promises: string[];
+  slaBadge: string;
+  slaHeadline: string;
+  slaIntro: string;
+  slaFootnote: string;
+  slaPackages: SlaPackage[];
   ctaHeadline: string;
   ctaBody: string;
   ctaImage: string;

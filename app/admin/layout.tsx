@@ -41,10 +41,18 @@ const navSections = [
     items: [
       { href: "/admin/homepage", label: "Homepage", icon: MdSlideshow },
       { href: "/admin/about", label: "About Us", icon: MdBusiness },
-      { href: "/admin/accreditations", label: "Accreditations", icon: MdVerified },
+      {
+        href: "/admin/accreditations",
+        label: "Accreditations",
+        icon: MdVerified,
+      },
       { href: "/admin/csr", label: "CSR", icon: MdFavorite },
       { href: "/admin/benefits", label: "Benefits", icon: MdTrendingUp },
-      { href: "/admin/resellers", label: "Resellers / Partners", icon: MdHandshake },
+      {
+        href: "/admin/resellers",
+        label: "Resellers / Partners",
+        icon: MdHandshake,
+      },
       { href: "/admin/contact", label: "Contact", icon: MdContactMail },
       { href: "/admin/privacy", label: "Privacy Policy", icon: MdPrivacyTip },
     ],
@@ -52,7 +60,11 @@ const navSections = [
   {
     label: "Services",
     items: [
-      { href: "/admin/services", label: "All Services", icon: MdMiscellaneousServices },
+      {
+        href: "/admin/services",
+        label: "All Services",
+        icon: MdMiscellaneousServices,
+      },
     ],
   },
   {
@@ -97,7 +109,7 @@ export default function AdminLayout({
 
   if (loading) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-[#0a1628]">
+      <div className="min-h-screen flex items-center justify-center bg-admin-sidebar">
         <p className="text-white text-sm">Loading…</p>
       </div>
     );
@@ -234,7 +246,9 @@ export default function AdminLayout({
           </div>
         </header>
 
-        <main className="min-w-0 flex-1 overflow-x-hidden p-4 md:p-6">{children}</main>
+        <main className="min-w-0 flex-1 overflow-x-hidden p-4 md:p-6">
+          {children}
+        </main>
       </div>
     </div>
   );

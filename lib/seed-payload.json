@@ -373,7 +373,33 @@
     "benefitsBandCtaHref": "/resellers",
     "approachEyebrow": "Our approach",
     "storiesEyebrow": "Testimonials",
-    "storiesHeadline": "What customers say."
+    "storiesHeadline": "What customers say.",
+    "pyramidEyebrow": "How value compounds",
+    "pyramidHeadline": "The FMS Nigeria Customer Value Pyramid",
+    "pyramidIntro": "Every layer builds on the one beneath it — start with visibility, climb to intelligence.",
+    "pyramidFootnote": "Value flows upward — from raw location data to boardroom decisions",
+    "pyramidLevels": [
+      {
+        "title": "Business Intelligence",
+        "body": "Strategic decisions & predictive analytics"
+      },
+      {
+        "title": "Cost Optimization",
+        "body": "Fuel, maintenance, utilization & energy"
+      },
+      {
+        "title": "Operational Control",
+        "body": "Fleet, drivers, assets & generators"
+      },
+      {
+        "title": "Risk & Security",
+        "body": "Theft, accidents, unauthorized movement"
+      },
+      {
+        "title": "Visibility",
+        "body": "Real-time location & status"
+      }
+    ]
   },
   "aboutPage": {
     "heroHeadline": "Driven by innovation,\npowered by data.",
@@ -469,6 +495,37 @@
     "faqHeadline": "Your questions, answered",
     "featuredEyebrow": "What we stand for",
     "featuredHeadline": "Real-time data. Smarter decisions. Better outcomes.",
+    "teamEyebrow": "Meet our team",
+    "teamHeadline": "The people behind\nthe platform",
+    "teamIntro": "A Lagos-based team of engineers and fleet specialists, backed by the FMS Africa group's two decades of telematics experience — focused on your fleet from day one.",
+    "teamCtaText": "We're growing our Lagos team — want to work with us or meet us in person?",
+    "teamCtaLabel": "Get in touch",
+    "teamMembers": [
+      {
+        "initials": "MD",
+        "role": "Managing Director",
+        "dept": "Leadership & Strategy",
+        "photo": ""
+      },
+      {
+        "initials": "TO",
+        "role": "Head of Technical Operations",
+        "dept": "Engineering & Field Ops",
+        "photo": ""
+      },
+      {
+        "initials": "FS",
+        "role": "Fleet Solutions Engineer",
+        "dept": "Deployments & Integrations",
+        "photo": ""
+      },
+      {
+        "initials": "CS",
+        "role": "Customer Success Manager",
+        "dept": "Onboarding & SLA Reviews",
+        "photo": ""
+      }
+    ],
     "ctaImage": "/assets/landing/hero-fleet.jpg"
   },
   "accreditationPage": {
@@ -684,7 +741,130 @@
     "ctaBody": "Don't leave success up to chance. Partner with us and chart your course to efficiency, security and peace of mind.",
     "ctaImage": "/assets/landing/hero-fleet.jpg",
     "stepsImage": "/assets/landing/hero-fleet.jpg",
-    "stepsHeadline": "How we deliver"
+    "stepsHeadline": "How we deliver",
+    "promisesEyebrow": "Our word, in writing",
+    "promisesHeadline": "The 5 strongest promises we make to Nigerian operators.",
+    "promisesNote": "Not marketing lines — operating targets our Lagos team is measured against, every single month.",
+    "promises": [
+      "Reduce fuel losses and theft",
+      "Reduce fleet and asset downtime",
+      "Improve vehicle and driver productivity",
+      "Reduce operational and safety risks",
+      "Turn operational data into measurable financial intelligence"
+    ],
+    "slaBadge": "Service Level Agreement",
+    "slaHeadline": "Respond faster.\nResolve faster.",
+    "slaIntro": "The recommended FMS Africa SLA. Every tier is a signed commitment — response and resolution times our Lagos support team is measured against.",
+    "slaFootnote": "Response and resolution times are measured from first contact with our Lagos support desk. Reports and audits are delivered per fleet, per period.",
+    "slaPackages": [
+      {
+        "name": "Silver",
+        "label": "Essential",
+        "response": "4 HRS",
+        "resolution": "24 hrs",
+        "desc": "Your entry into guaranteed support. A 4-hour response and next-day resolution keeps growing fleets fully covered.",
+        "features": [
+          {
+            "label": "Response time",
+            "value": "4 hours",
+            "included": true
+          },
+          {
+            "label": "Resolution",
+            "value": "24 hours",
+            "included": true
+          },
+          {
+            "label": "Monthly report",
+            "value": "Included",
+            "included": true
+          },
+          {
+            "label": "Dedicated account officer",
+            "value": "No",
+            "included": false
+          }
+        ]
+      },
+      {
+        "name": "Gold",
+        "label": "Popular",
+        "response": "2 HRS",
+        "resolution": "12 hrs",
+        "desc": "For operations that can't wait. Half-day resolution, a dedicated account manager and a quarterly audit.",
+        "features": [
+          {
+            "label": "Response time",
+            "value": "2 hours",
+            "included": true
+          },
+          {
+            "label": "Resolution",
+            "value": "12 hours",
+            "included": true
+          },
+          {
+            "label": "Monthly fleet review",
+            "value": "Included",
+            "included": true
+          },
+          {
+            "label": "Dedicated account manager",
+            "value": "Yes",
+            "included": true
+          },
+          {
+            "label": "Quarterly audit",
+            "value": "Included",
+            "included": true
+          }
+        ]
+      },
+      {
+        "name": "Platinum",
+        "label": "Mission critical",
+        "response": "30 MIN",
+        "resolution": "4 hrs",
+        "desc": "The pinnacle of FMS support. A dedicated engineer, 24/7 cover and a 30-minute response — for fleets where every minute costs money.",
+        "features": [
+          {
+            "label": "Response time",
+            "value": "30 minutes",
+            "included": true
+          },
+          {
+            "label": "Resolution",
+            "value": "4 hours",
+            "included": true
+          },
+          {
+            "label": "24/7 support",
+            "value": "Yes",
+            "included": true
+          },
+          {
+            "label": "Dedicated engineer",
+            "value": "Yes",
+            "included": true
+          },
+          {
+            "label": "Executive dashboard",
+            "value": "Yes",
+            "included": true
+          },
+          {
+            "label": "Quarterly board report",
+            "value": "Yes",
+            "included": true
+          },
+          {
+            "label": "Annual optimization audit",
+            "value": "Yes",
+            "included": true
+          }
+        ]
+      }
+    ]
   },
   "resellersPage": {
     "badge": "Nigeria reseller partners required",

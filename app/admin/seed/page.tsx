@@ -47,7 +47,11 @@ import {
   type SeedSectionId,
 } from "@/lib/seed-data";
 
-type LogEntry = { section: string; status: "ok" | "skip" | "error"; message: string };
+type LogEntry = {
+  section: string;
+  status: "ok" | "skip" | "error";
+  message: string;
+};
 
 async function collectionHasDocs(col: string): Promise<boolean> {
   const snap = await getDocs(collection(db, col));
@@ -194,10 +198,7 @@ export default function SeedPage() {
       setLogs((prev) => [result, ...prev]);
     } catch (e) {
       const message = e instanceof Error ? e.message : "Unknown error";
-      setLogs((prev) => [
-        { section: id, status: "error", message },
-        ...prev,
-      ]);
+      setLogs((prev) => [{ section: id, status: "error", message }, ...prev]);
     } finally {
       setBusy(false);
       setActiveId(null);
@@ -260,10 +261,12 @@ export default function SeedPage() {
   return (
     <div className="max-w-4xl space-y-6">
       <div>
-        <h1 className="text-xl font-semibold text-gray-900">Import Seed Data</h1>
+        <h1 className="text-xl font-semibold text-gray-900">
+          Import Seed Data
+        </h1>
         <p className="mt-1 text-sm text-gray-500">
-          Copy hardcoded public-site content into Firestore. Existing collections
-          prompt for overwrite confirmation before replace.
+          Copy hardcoded public-site content into Firestore. Existing
+          collections prompt for overwrite confirmation before replace.
         </p>
       </div>
 
@@ -274,9 +277,7 @@ export default function SeedPage() {
           onClick={handleSeedAll}
           className="bg-[#0B3D91] px-5 py-2.5 text-sm font-semibold text-white disabled:opacity-50"
         >
-          {activeId === "all" || busy
-            ? "Seeding…"
-            : "Seed All"}
+          {activeId === "all" || busy ? "Seeding…" : "Seed All"}
         </button>
         <button
           type="button"
@@ -299,7 +300,10 @@ export default function SeedPage() {
           </thead>
           <tbody>
             {seedSections.map((section) => (
-              <tr key={section.id} className="border-b border-gray-100 last:border-0">
+              <tr
+                key={section.id}
+                className="border-b border-gray-100 last:border-0"
+              >
                 <td className="px-4 py-3 font-medium text-gray-900">
                   {section.label}
                 </td>
@@ -335,7 +339,8 @@ export default function SeedPage() {
                       : "text-red-700"
                 }
               >
-                <span className="font-semibold">{log.section}:</span> {log.message}
+                <span className="font-semibold">{log.section}:</span>{" "}
+                {log.message}
               </li>
             ))}
           </ul>

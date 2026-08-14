@@ -47,6 +47,11 @@ const emptyHomepage: HomepageForm = {
   approachCtaHref: "",
   storiesEyebrow: "",
   storiesHeadline: "",
+  pyramidEyebrow: "",
+  pyramidHeadline: "",
+  pyramidIntro: "",
+  pyramidFootnote: "",
+  pyramidLevels: [],
   ctaImage: "",
   ctaHeadline: "",
   ctaBody: "",
@@ -865,6 +870,129 @@ export default function HomepagePage() {
           </div>
         ))}
       </ArrayCard>
+
+      {/* Value Pyramid */}
+      <div className="admin-card space-y-4">
+        <p className="text-xs font-semibold uppercase text-gray-500 border-b border-gray-100 pb-3">
+          Value Pyramid
+        </p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label className="admin-label">Eyebrow</label>
+            <input
+              className="admin-input"
+              value={form.pyramidEyebrow}
+              onChange={(e) =>
+                setForm({ ...form, pyramidEyebrow: e.target.value })
+              }
+              placeholder="How value compounds"
+            />
+          </div>
+          <div>
+            <label className="admin-label">Headline</label>
+            <input
+              className="admin-input"
+              value={form.pyramidHeadline}
+              onChange={(e) =>
+                setForm({ ...form, pyramidHeadline: e.target.value })
+              }
+              placeholder="The FMS Nigeria Customer Value Pyramid"
+            />
+          </div>
+        </div>
+        <div>
+          <label className="admin-label">Intro</label>
+          <textarea
+            className="admin-input"
+            rows={2}
+            value={form.pyramidIntro}
+            onChange={(e) =>
+              setForm({ ...form, pyramidIntro: e.target.value })
+            }
+            placeholder="Every layer builds on the one beneath it — start with visibility, climb to intelligence."
+          />
+        </div>
+        <div>
+          <label className="admin-label">Footnote</label>
+          <input
+            className="admin-input"
+            value={form.pyramidFootnote}
+            onChange={(e) =>
+              setForm({ ...form, pyramidFootnote: e.target.value })
+            }
+            placeholder="Value flows upward — from raw location data to boardroom decisions"
+          />
+        </div>
+        <div className="flex items-center justify-between border-t border-gray-100 pt-3">
+          <p className="text-xs font-semibold uppercase text-gray-500">
+            Levels (top of pyramid first)
+          </p>
+          <button
+            className="btn-secondary text-xs py-1.5"
+            onClick={() =>
+              setForm({
+                ...form,
+                pyramidLevels: [
+                  ...form.pyramidLevels,
+                  { title: "", body: "" },
+                ],
+              })
+            }
+          >
+            <MdAdd size={14} className="inline" /> Add
+          </button>
+        </div>
+        {form.pyramidLevels.map((lvl, i) => (
+          <div
+            key={i}
+            className="grid grid-cols-1 sm:grid-cols-[1fr_2fr_auto] gap-2 items-end"
+          >
+            <div>
+              <label className="admin-label">
+                Level {form.pyramidLevels.length - i} Title
+              </label>
+              <input
+                className="admin-input"
+                value={lvl.title}
+                onChange={(e) => {
+                  const pyramidLevels = [...form.pyramidLevels];
+                  pyramidLevels[i] = {
+                    ...pyramidLevels[i],
+                    title: e.target.value,
+                  };
+                  setForm({ ...form, pyramidLevels });
+                }}
+              />
+            </div>
+            <div>
+              <label className="admin-label">Body</label>
+              <input
+                className="admin-input"
+                value={lvl.body}
+                onChange={(e) => {
+                  const pyramidLevels = [...form.pyramidLevels];
+                  pyramidLevels[i] = {
+                    ...pyramidLevels[i],
+                    body: e.target.value,
+                  };
+                  setForm({ ...form, pyramidLevels });
+                }}
+              />
+            </div>
+            <button
+              className="btn-danger py-2 px-2"
+              onClick={() =>
+                setForm({
+                  ...form,
+                  pyramidLevels: form.pyramidLevels.filter((_, j) => j !== i),
+                })
+              }
+            >
+              <MdDelete size={14} />
+            </button>
+          </div>
+        ))}
+      </div>
 
       {/* CTA */}
       <div className="admin-card space-y-4">
