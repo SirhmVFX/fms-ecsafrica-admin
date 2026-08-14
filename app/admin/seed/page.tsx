@@ -275,7 +275,7 @@ export default function SeedPage() {
           type="button"
           disabled={busy}
           onClick={handleSeedAll}
-          className="bg-[#0B3D91] px-5 py-2.5 text-sm font-semibold text-white disabled:opacity-50"
+          className="bg-primary px-5 py-2.5 text-sm font-semibold text-white disabled:opacity-50"
         >
           {activeId === "all" || busy ? "Seeding…" : "Seed All"}
         </button>
@@ -313,7 +313,7 @@ export default function SeedPage() {
                     type="button"
                     disabled={busy}
                     onClick={() => handleSeedOne(section.id)}
-                    className="text-sm font-semibold text-[#0B3D91] hover:underline disabled:opacity-50"
+                    className="text-sm font-semibold text-primary hover:underline disabled:opacity-50"
                   >
                     {activeId === section.id ? "Seeding…" : "Seed"}
                   </button>
